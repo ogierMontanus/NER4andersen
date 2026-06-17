@@ -1,0 +1,4 @@
+# prototype outputs
+prototype/**/out/
+__pycache__/
+*.pyc
