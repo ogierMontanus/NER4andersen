@@ -87,3 +87,29 @@ def reconcile_place(distilled, register: dict[str, set[str]]) -> PlaceMatch | No
         if geo_ids:
             return PlaceMatch(distilled.row.rid, name, geo_ids, method)
     return None
+
+
+def candidate_shortlist(
+    name: str, register: dict[str, set[str]], limit: int = 15
+) -> list[tuple[str, str]]:
+    """Register candidates sharing a token/prefix with `name`, for the LLM.
+
+    `register` maps normalized key -> set of authority ids. Returns
+    (authority_id, display_name) pairs — cheap blocking so the LLM ranks a small,
+    plausible set rather than the whole register. Excludes exact matches (those
+    are already handled by the rule-based path).
+    """
+    key = normalize(name)
+    tokens = {t for t in re.split(r"[\s,]+", key) if len(t) >= 3}
+    out: list[tuple[str, str]] = []
+    for rkey, ids in register.items():
+        if rkey == key or not ids:
+            continue
+        rtokens = set(re.split(r"[\s,]+", rkey))
+        prefix = len(key) >= 4 and (rkey.startswith(key[:4]) or key.startswith(rkey[:4]))
+        if (tokens & rtokens) or prefix:
+            out.append((sorted(ids)[0], rkey))
+        if len(out) >= limit:
+            break
+    return out
+

@@ -9,7 +9,12 @@ sys.path.insert(0, os.path.join(HERE, ".."))   # make the modules importable
 
 from tei_comments import load_volume, load_place_register, normalize  # noqa: E402
 from classify import classify  # noqa: E402
-from reconcile import reconcile_place, reconcile_entity_name  # noqa: E402
+from reconcile import (  # noqa: E402
+    reconcile_place,
+    reconcile_entity_name,
+    candidate_shortlist,
+)
+import reconcile_llm  # noqa: E402
 
 VOL = os.path.join(HERE, "fixtures", "mini_volume.xml")
 REG = os.path.join(HERE, "fixtures", "mini_places.xml")
@@ -97,6 +102,36 @@ class ReconcileTests(unittest.TestCase):
         m = reconcile_place(d, self.reg)
         self.assertIsNotNone(m)
         self.assertIn("geo-1", m.geo_ids)
+
+
+class LLMOptionalTests(unittest.TestCase):
+    """The LLM path must be a graceful no-op without a key — keeps CI free."""
+
+    def setUp(self):
+        self.reg = load_place_register(REG)
+
+    def test_unavailable_without_key(self):
+        old = os.environ.pop("ANTHROPIC_API_KEY", None)
+        try:
+            self.assertFalse(reconcile_llm.llm_available())
+            # no key -> link returns None regardless of candidates
+            link = reconcile_llm.llm_link(
+                "Slangerup", "a village", [("geo-1", "slangerup")]
+            )
+            self.assertIsNone(link)
+        finally:
+            if old is not None:
+                os.environ["ANTHROPIC_API_KEY"] = old
+
+    def test_link_none_when_no_candidates(self):
+        link = reconcile_llm.llm_link("Nowhere", "a place", [])
+        self.assertIsNone(link)
+
+    def test_shortlist_blocks_to_plausible_candidates(self):
+        # "Roskilds" (inflected) should surface the Roskilde register entry
+        cands = candidate_shortlist("Roskilds", self.reg)
+        ids = {cid for cid, _ in cands}
+        self.assertIn("geo-2", ids)
 
 
 if __name__ == "__main__":

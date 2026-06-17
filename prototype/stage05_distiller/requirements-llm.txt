@@ -1,0 +1,7 @@
+# Optional — only needed to enable the LLM-linking path (reconcile_llm.py).
+# The distiller itself is stdlib-only; install this ONLY if you have funded an
+# Anthropic API account and want --llm to do real linking.
+#   pip install -r requirements-llm.txt
+#   export ANTHROPIC_API_KEY=sk-ant-...
+#   python distill.py --llm
+anthropic>=0.69

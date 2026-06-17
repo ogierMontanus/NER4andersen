@@ -60,9 +60,30 @@ point at the dev sibling checkout under `/home/user/svNames`.
 | --- | --- |
 | `tei_comments.py` | Parse comments rows, body name sets, and the place register. |
 | `classify.py` | Rule-based classifier + entity splitting + noise reduction. |
-| `reconcile.py` | Inflection-/fuzzy-aware place ↔ `geo-*` reconciliation. |
+| `reconcile.py` | Inflection-/fuzzy-aware place ↔ `geo-*` reconciliation + LLM candidate shortlisting. |
+| `reconcile_llm.py` | **Optional** LLM linking for hard cases (no-op without a key). |
 | `distill.py` | Entry point: candidate JSON + evaluation report. |
 | `tests/` | Stdlib `unittest` + tiny TEI fixtures (run in CI, no corpus). |
+
+### Optional LLM linking (`--llm`)
+
+The hybrid Stage-2 path (plan-v3 §7): when the rule-based reconciler finds **no**
+register match for a place candidate, `--llm` asks Claude to pick the right
+`geo-*` id from a cheap candidate shortlist, using the editorial gloss as context.
+
+It is **free and inert by default** — `reconcile_llm.llm_available()` is False
+unless both `ANTHROPIC_API_KEY` *and* the `anthropic` SDK are present, so the
+distiller, CI, and a plain `--llm` run all stay zero-cost and fall back to the
+rule-based result. To actually enable it:
+
+```bash
+pip install -r requirements-llm.txt
+export ANTHROPIC_API_KEY=sk-ant-...        # a *funded API* account (not a Pro plan)
+python3 distill.py --llm
+```
+
+Default model is `claude-haiku-4-5` (override with `NER4ANDERSEN_LLM_MODEL`);
+the shared instruction is prompt-cached, so a full-corpus run costs cents.
 
 ## Results
 

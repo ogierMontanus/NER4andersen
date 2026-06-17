@@ -21,7 +21,8 @@ from collections import Counter
 
 from tei_comments import load_volume, load_place_register, normalize
 from classify import classify, NAMED_ENTITY_TYPES
-from reconcile import reconcile_place
+from reconcile import reconcile_place, candidate_shortlist
+from reconcile_llm import llm_available, llm_link
 
 DEFAULT_VOL = (
     "/home/user/svNames/data/"
@@ -30,7 +31,8 @@ DEFAULT_VOL = (
 DEFAULT_REGISTER = "/home/user/svNames/data/registers/places.xml"
 
 
-def run(vol_path: str, out_path: str | None, register_path: str | None) -> int:
+def run(vol_path: str, out_path: str | None, register_path: str | None,
+        use_llm: bool = False) -> int:
     vol = load_volume(vol_path)
     if not vol.rows:
         print(f"No comment rows found in {vol_path}", file=sys.stderr)
@@ -49,12 +51,23 @@ def run(vol_path: str, out_path: str | None, register_path: str | None) -> int:
     distilled = [classify(r, place_keys) for r in vol.rows]
 
     place_matches: dict[str, object] = {}
+    llm_links: dict[str, object] = {}
+    # LLM path is opt-in AND gated on a key + SDK being present (else no-op).
+    llm_on = use_llm and register is not None and llm_available()
     if register:
         for d in distilled:
-            if any(e.etype == "place" for e in d.entities):
-                m = reconcile_place(d, register)
-                if m:
-                    place_matches[d.row.rid] = m
+            if not any(e.etype == "place" for e in d.entities):
+                continue
+            m = reconcile_place(d, register)
+            if m:
+                place_matches[d.row.rid] = m
+            elif llm_on:
+                # hard case: rule-based found nothing — ask the LLM to pick
+                pname = next(e.name for e in d.entities if e.etype == "place")
+                shortlist = candidate_shortlist(pname, register)
+                link = llm_link(pname, d.row.definition, shortlist)
+                if link and link.authority_id:
+                    llm_links[d.row.rid] = link
 
     # --- candidate records (the spec's unified shape, provenance kept) ----
     candidates = []
@@ -85,6 +98,15 @@ def run(vol_path: str, out_path: str | None, register_path: str | None) -> int:
                 "geoIds": m.geo_ids,
                 "method": m.method,
             }
+        link = llm_links.get(d.row.rid)
+        if link is not None:
+            rec["reconciliation"] = {
+                "authority": "svNames/places.xml",
+                "geoIds": [link.authority_id],
+                "method": "llm",
+                "confidence": link.confidence,
+                "rationale": link.rationale,
+            }
         candidates.append(rec)
 
     if out_path:
@@ -92,11 +114,12 @@ def run(vol_path: str, out_path: str | None, register_path: str | None) -> int:
         with open(out_path, "w", encoding="utf-8") as fh:
             json.dump(candidates, fh, ensure_ascii=False, indent=2)
 
-    _report(vol, distilled, out_path, register, place_matches)
+    _report(vol, distilled, out_path, register, place_matches, llm_links, llm_on)
     return 0
 
 
-def _report(vol, distilled, out_path, register, place_matches):
+def _report(vol, distilled, out_path, register, place_matches,
+            llm_links=None, llm_on=False):
     counts = Counter(d.etype for d in distilled)
     ne = sum(1 for d in distilled if d.is_named_entity)
 
@@ -156,6 +179,11 @@ def _report(vol, distilled, out_path, register, place_matches):
               f"({100*len(linked)/max(len(pred_place),1):.1f}%)")
         print(f"   of those, hard-case rows promoted (not in exact set): "
               f"{hard_linked}")
+        if llm_on:
+            print(f"   LLM-linked hard cases (rule-based found nothing): "
+                  f"{len(llm_links or {})}")
+        elif llm_links is not None:
+            print("   LLM linking: off (no ANTHROPIC_API_KEY/SDK, or --llm not set)")
     if out_path:
         print("-" * 64)
         print(f"candidates written to: {out_path}")
@@ -169,8 +197,12 @@ def main(argv=None):
                     help="output JSON path ('' to skip writing)")
     ap.add_argument("--register", default=DEFAULT_REGISTER,
                     help="path to svNames places.xml ('' to skip reconciliation)")
+    ap.add_argument("--llm", action="store_true",
+                    help="enable optional LLM linking for hard cases "
+                         "(no-op unless ANTHROPIC_API_KEY + anthropic SDK present)")
     args = ap.parse_args(argv)
-    return run(args.volume, args.out or None, args.register or None)
+    return run(args.volume, args.out or None, args.register or None,
+               use_llm=args.llm)
 
 
 if __name__ == "__main__":
