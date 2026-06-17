@@ -1,85 +1,96 @@
 # Stage 0.5 — Comments-table distiller (prototype)
 
-A first, deliberately transparent prototype for **plan-v3 §5**: distil the
-editorial comments apparatus of a svNames volume into typed authority
-candidates, and validate the place output against the volume's tagged
-`placeName`/`geo-*` set.
+A transparent, stdlib-only baseline for **plan-v3 §5**: distil the editorial
+comments apparatus of any svNames volume into typed authority candidates, split
+multi-entity lemmas, reduce non-entity noise, and reconcile place candidates
+against the internal `places.xml` register.
 
-It is the **baseline** that later, context-aware reconciliation is meant to
-beat — pure Danish lexical cues over each row's *lemma* + *definition*, no ML,
-stdlib only.
+It is the **baseline** later context-aware reconciliation must beat — Danish
+lexical cues over each row's *lemma* + *definition*, no ML.
 
 ## What it does
 
-For each `<row xml:id="txtcmnt-…">` in
-`<div type="comments">/<table rend="textcomments">`:
+For each `<row xml:id="txtcmnt-…">` in a `<table rend="textcomments">`
+(anywhere in the document — volumes scatter many of these inside
+`<div type="work-comments">`):
 
-1. reads the `data-term` (**lemma**) and `data-definition` (**explanation**);
-2. **classifies** the row — `place`, `person`, `mythological` (named entities),
-   or `phrase`, `gloss`, `other` (not entities);
-3. **distils** the actual entity name(s) from descriptive lemmas
-   (e.g. *Kingos Fødeby* → person *Thomas Kingo*; *Tycho Brahes Øe* →
-   *Tycho Brahe*);
-4. emits a candidate record with **provenance** (`txtcmnt-*` id, page, file).
+1. reads `data-term` (**lemma**) + `data-definition` (**explanation**);
+2. **classifies + splits** into a list of typed `Entity` objects —
+   `place` / `person` / `mythological` (named entities), e.g.
+   *Kingos Fødeby* → person **Thomas Kingo** + place **Slangerup**;
+3. **reduces noise** — rows with no entity evidence become
+   `phrase` / `work` / `gloss` / `other` (not entities);
+4. **reconciles** place entities to svNames `places.xml`
+   (exact / inflection / token / fuzzy match → `geo-*` ids);
+5. emits a candidate record with **provenance** (`txtcmnt-*` id, page, file).
+
+### Robustness to other volumes (important)
+
+Volumes 3, 5, … 18 are **not** simple like volume 14. The parser is built to
+cope:
+
+- **Only `textcomments` rows are ingested.** `<table rend="textdeviations">`
+  (text-critical variants, `position`/`deviation` cells) and trailing
+  **name/title registers** (`Navneregister`, `Titelregister`, TOC rows) are
+  excluded — they lack `data-term`/`data-definition`, and register `<div>`s are
+  stripped explicitly.
+- **Body `placeName`/`persName` are read from running text only** — apparatus
+  and register tables are removed first, so comment/register names are never
+  mistaken for text occurrences.
+- Most volumes (fairy tales, novels, poems) have **no body NER tags at all**;
+  the place P/R metric is then reported as N/A, but reconciliation against the
+  register still produces linked place candidates.
 
 ## Run
 
 ```bash
 cd prototype/stage05_distiller
-python3 distill.py --out out/vol14_candidates.json
-# or point at any svNames volume:
-python3 distill.py "/path/to/svNames/data/Andersen 14 - Rejseskildringer I_w_notes_Rebecca.xml"
+python3 distill.py --out out/vol14.json
+# any volume + the internal place register:
+python3 distill.py "/path/to/svNames/data/Andersen 3 - Eventyr og Historier III_w_notes.xml" \
+    --register "/path/to/svNames/data/registers/places.xml"
 ```
 
-Requires a local svNames checkout (the corpus XML is **not** vendored here).
-The default path is the dev sibling checkout
-`/home/user/svNames/data/noHiSeg_Andersen 14 - Rejseskildringer I_w_notes_Rebecca.xml`.
+The corpus XML is **not** vendored; supply a local svNames checkout. Defaults
+point at the dev sibling checkout under `/home/user/svNames`.
 
 ## Files
 
 | File | Role |
 | --- | --- |
-| `tei_comments.py` | Parse the comments table + the body `placeName`/`persName` sets. |
-| `classify.py` | Rule-based classifier + entity distillation. |
-| `distill.py` | Entry point: candidates JSON + evaluation report. |
+| `tei_comments.py` | Parse comments rows, body name sets, and the place register. |
+| `classify.py` | Rule-based classifier + entity splitting + noise reduction. |
+| `reconcile.py` | Inflection-/fuzzy-aware place ↔ `geo-*` reconciliation. |
+| `distill.py` | Entry point: candidate JSON + evaluation report. |
+| `tests/` | Stdlib `unittest` + tiny TEI fixtures (run in CI, no corpus). |
 
-## Current results (volume 14)
+## Results
 
-3,109 comment rows → ~45% classified as named entities.
+**Volume 14** (3,109 rows, tagged placeNames):
 
-| type | count |
-| --- | --- |
-| gloss | 864 |
-| place* | 697 |
-| person* | 576 |
-| other | 560 |
-| phrase | 282 |
-| mythological* | 130 |
+- ~40% rows classified as named entities (down from 47% before noise reduction).
+- Place identification vs. the 285 exact-lemma gold places: **recall 1.00**.
+- Reconciliation links **301 / 818** place-candidate rows to `places.xml`,
+  promoting **165** descriptive/inflected hard-case places (e.g.
+  *Marienlyst → Helsingør*, *Stige → Lumby*). The unreconciled remainder is the
+  candidate/noise pool the next stage prunes.
 
-\* counted as named entities.
+**Volume 3** (Eventyr, no body NER tags, has a Navneregister):
 
-**Place identification vs. the 285 tagged-place lemmas (gold = exact lemma
-match against a vol-14 `placeName` surface form):**
+- Only **27%** of rows are named entities — heavy gloss/phrase/work noise is
+  correctly demoted; **zero** register/TOC rows leak into the candidates.
 
-```
-TP=285  FP=412  FN=0   precision=0.41  recall=1.00  F1=0.58
-```
+Run `distill.py` on any volume to reproduce these reports.
 
-Recall is total: every exactly-tagged place is caught. The 412 "false
-positives" are the **hard cases** the plan calls out — descriptive/inflected
-place lemmas not in the exact surface set (*Marienlyst → slot nord for
-Helsingør*, *Stige → landsby i Lumby sogn …*) **plus** genuine
-misclassifications (e.g. a few guild/custom rows). Separating those two is the
-job of the next stage.
+## Known limitations / next steps
 
-## Honest limitations (next steps)
-
-- **Place precision is low by construction** — the broad place class mixes real
-  new places with noise. Stage 2 reconciliation (geo cues, gazetteer, context
-  ranking) should promote the true ones and reject the rest.
-- Distillation truncates some abbreviated names (*St. Knuds Kloster* → `St`).
-- Many descriptive lemmas denote **two** entities (person *and* birthplace);
-  only the dominant one is currently emitted.
-- The gold set here is *exact-lemma* place matches; a fuller evaluation should
-  use fuzzy/inflection-aware matching against all 490 surface forms and the
-  `geo-*` register.
+- Place precision in the *raw* class is low by design; reconciliation is the
+  filter. A confidence threshold + register-confirmation should gate what
+  reaches curation.
+- Splitting occasionally over-generates (a stray capitalised token typed as a
+  place) or mis-types legendary kings as `mythological`; orthographic drift
+  between inline tags and the register (*Roeskilde* vs *Roskilde*) costs some
+  links.
+- The `places.xml` register de-duplicates to ~388 name keys / 390 `geo-*` ids;
+  a cleaned register and a `persons.xml` reconciler are natural follow-ups, as
+  is using the volume **Navneregister** sections as gazetteers.

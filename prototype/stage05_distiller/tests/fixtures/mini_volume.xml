@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="da">
+  <text>
+    <body>
+      <div type="works">
+        <div type="work">
+          <p>En rejse forbi <placeName ref="geo-1">Slangerup</placeName> og
+             <placeName ref="geo-2">Roskilde</placeName>, hvor
+             <persName>Thomas Kingo</persName> var biskop.</p>
+          <p>Senere til <placeName ref="geo-2">Roskilde</placeName> igen.</p>
+
+          <!-- editorial apparatus: textcomments rows (lemma + definition) -->
+          <div type="work-comments">
+            <table rend="textcomments">
+              <cell type="page">48</cell>
+              <row xml:id="txtcmnt-048-01">
+                <cell type="data-term">Kingos Fødeby</cell>
+                <cell type="data-definition">salmedigteren Thomas Kingo (1634-1703) blev født i Slangerup, hvor han var præst.</cell>
+              </row>
+              <row xml:id="txtcmnt-048-02">
+                <cell type="data-term">Frederiksborg</cell>
+                <cell type="data-definition">slot ved Hillerød i Nordsjælland.</cell>
+              </row>
+              <row xml:id="txtcmnt-048-03">
+                <cell type="data-term">Morpheus</cell>
+                <cell type="data-definition">søvnguden i græsk mytologi.</cell>
+              </row>
+              <row xml:id="txtcmnt-048-04">
+                <cell type="data-term">»Spute dich!«</cell>
+                <cell type="data-definition">(tysk) skynd dig! Et citat fra et digt.</cell>
+              </row>
+              <row xml:id="txtcmnt-048-05">
+                <cell type="data-term">konstigt</cell>
+                <cell type="data-definition">kunstigt, kunstfærdigt.</cell>
+              </row>
+            </table>
+            <!-- deviation table must be ignored (no data-term/data-definition) -->
+            <table rend="textdeviations">
+              <row xml:id="txtcmnt-048-06">
+                <cell type="position">12.3</cell>
+                <cell type="deviation">Slangerup] Slangerub</cell>
+              </row>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- trailing name register must NOT be ingested as comments -->
+      <div type="navneregister">
+        <list>
+          <item><persName>Kingo, Thomas</persName></item>
+          <item><placeName ref="geo-1">Slangerup</placeName></item>
+        </list>
+      </div>
+    </body>
+  </text>
+</TEI>

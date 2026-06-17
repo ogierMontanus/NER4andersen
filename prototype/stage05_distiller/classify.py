@@ -1,73 +1,98 @@
-"""Rule-based classifier + entity distillation for editorial-comment rows.
+"""Rule-based classification + entity distillation for comment rows.
 
-This is the *baseline* the plan (v3, Stage 0.5) sets out to beat with later
-context-aware methods. It is deliberately transparent: Danish lexical cues over
-the lemma + definition decide an entity type, and a light distillation step
-pulls the actual entity name(s) out of descriptive lemmas such as
-"Kingos Fødeby" (-> person *Kingo* + place *Slangerup*).
+Baseline for plan-v3 Stage 0.5/§5, now with two improvements requested after
+the vol-14 run:
 
-Types: place, person, mythological, work, phrase, gloss, other.
-Only `place`, `person`, `mythological` count as named entities here.
+* **Splitting** — a single descriptive lemma can denote *several* entities
+  (e.g. "Kingos Fødeby" -> person *Thomas Kingo* + place *Slangerup*;
+  "Værrebro, og Frode" -> place *Værebro* + person *Frode*). Each row yields a
+  list of typed `Entity` objects.
+* **Noise reduction** — the comment apparatus across volumes is dominated by
+  non-entities (archaic word glosses, foreign phrases, literary references).
+  A row is only a named entity when at least one entity passes positive
+  evidence; otherwise it is typed `gloss` / `phrase` / `work` / `other` and
+  carries no entities.
+
+Named-entity types: place, person, mythological.
 """
 
 from __future__ import annotations
 
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from tei_comments import CommentRow, normalize
 
 NAMED_ENTITY_TYPES = {"place", "person", "mythological"}
+_TYPE_PRIORITY = {"person": 3, "place": 2, "mythological": 1}
 
 # --- lexical cues (Danish) -------------------------------------------------
 
 PLACE_CUES = [
-    "slot", "landsby", "købstad", "by ", "byen", "ø,", "øen", "halvø", "sogn",
+    "slot", "landsby", "købstad", "byen", "halvø", "ø,", "øen", "sogn",
     "herred", "amt", "gade", "stræde", "torv", "kanal", "havn", "ladeplads",
-    "flod", "flod,", "å,", "bjerg", "bjerge", "dal", "skov", "borg", "kirke",
-    "kloster", "residensslot", "provins", "region", "hovedstad", "landevej",
-    "ved ", "nord for", "syd for", "øst for", "vest for", "beliggende",
+    "flod", "bjerg", "dal", "skov", "borg", "kirke", "kloster", "provins",
+    "hovedstad", "landevej", "ved ", "nord for", "syd for", "øst for",
+    "vest for", "beliggende", "ligger",
 ]
-PLACE_LEMMA_CUES = ["fødeby", " øe", " ø", "broe", "broen", "veien", "vej"]
-
 PERSON_CUES = [
-    "digteren", "salmedigteren", "forfatteren", "forfatter", "skrev",
-    "astronomen", "maleren", "billedhuggeren", "komponisten", "filosoffen",
-    "teologen", "præsten", "biskop", "professor", "general", "officeren",
-    "adelsmanden", "adelsdame", "godsejeren", "kong ", "konge", "kongen",
-    "dronning", "prins", "prinds", "kejser", "kejserinde", "hertug", "greve",
-    "baron", "fru ", "frøken", "skuespiller", "videnskabsmanden", "lægen",
+    "digteren", "salmedigteren", "forfatteren", "forfatter", "astronomen",
+    "maleren", "billedhuggeren", "komponisten", "filosoffen", "teologen",
+    "præsten", "biskop", "professor", "general", "officeren", "adelsmanden",
+    "godsejeren", "kong ", "konge", "kongen", "dronning", "prins", "prinds",
+    "kejser", "hertug", "greve", "baron", "skuespiller", "lægen",
 ]
-# A "Name (1546-1601)" / "(d. 1086)" / "(f. 1782)" date signature.
-PERSON_DATE = re.compile(r"\((?:[dfDF]\.\s*)?\d{3,4}(?:\s*[-–]\s*\d{0,4})?\)")
-# Leading proper-name + date, e.g. "Thomas Kingo (1634-1703)".
-NAME_WITH_DATE = re.compile(
-    r"([A-ZÆØÅ][\wÆØÅæøåüäöéèêç.'’-]+(?:\s+(?:[a-zæøå]+\s+)?[A-ZÆØÅ\d][\wÆØÅæøåüäöéèêç.'’-]*){0,4})"
-    r"\s*\((?:[dfDF]\.\s*)?\d{3,4}"
-)
-
 MYTH_CUES = [
     "mytologi", "i græsk", "i romersk", "i nordisk", "gudinde", " gud",
-    "guden", "halvgud", "nymfe", "titan", "sagnkonge", "sagn",
+    "guden", "halvgud", "nymfe", "titan", "sagnkonge",
 ]
 PHRASE_CUES = [
     "(tysk)", "(latin)", "(fransk)", "(græsk)", "(italiensk)", "(engelsk)",
     "(spansk)", "vending", "førstelinjen", "indledningslinjen", "citat",
-    "citeret", "ordsprog", "talemåde", "replik", "jf. ", "if. ",
+    "citeret", "ordsprog", "talemåde", "replik",
 ]
+WORK_CUES = [
+    "komedie", "tragedie", "skuespil", "roman", "digt", "digtet", "digtning",
+    "sang", "salme", "opera", "ballet", "bog", "værk", "skrift", "epistler",
+    "avis", "tidsskrift",
+]
+
+PERSON_DATE = re.compile(r"\((?:[dfDF]\.\s*)?\d{3,4}(?:\s*[-–]\s*\d{0,4})?\)")
+NAME_WITH_DATE = re.compile(
+    r"([A-ZÆØÅ][\wÆØÅæøåüäöéèêç.'’-]+(?:\s+(?:[a-zæøå]+\s+)?"
+    r"[A-ZÆØÅ\d][\wÆØÅæøåüäöéèêç.'’-]*){0,4})"
+    r"\s*\((?:[dfDF]\.\s*)?\d{3,4}"
+)
+# capitalised name after a place preposition: "født i Slangerup", "ved Hven"
+PREP_PLACE = re.compile(
+    r"\b(?:ved|i|fra|mellem|nord for|syd for|øst for|vest for|nær)\s+"
+    r"([A-ZÆØÅ][\wÆØÅæøå'’-]+)"
+)
+
+
+@dataclass
+class Entity:
+    name: str
+    etype: str
+    evidence: str
 
 
 @dataclass
 class Distilled:
     row: CommentRow
-    etype: str
+    primary_type: str
     confidence: float
-    entities: list[str]          # distilled entity name(s)
-    cues: list[str]              # which cues fired (for transparency)
+    entities: list[Entity] = field(default_factory=list)
+    cues: list[str] = field(default_factory=list)
+
+    # backwards-compatible accessor
+    @property
+    def etype(self) -> str:
+        return self.primary_type
 
     @property
     def is_named_entity(self) -> bool:
-        return self.etype in NAMED_ENTITY_TYPES
+        return any(e.etype in NAMED_ENTITY_TYPES for e in self.entities)
 
 
 def _hits(text: str, cues: list[str]) -> list[str]:
@@ -75,91 +100,92 @@ def _hits(text: str, cues: list[str]) -> list[str]:
     return [c for c in cues if c in low]
 
 
-def _distill_person_names(definition: str) -> list[str]:
-    names = []
+def _extract_persons(definition: str) -> list[Entity]:
+    out, seen = [], set()
     for m in NAME_WITH_DATE.finditer(definition):
         name = m.group(1).strip(" .,–-")
-        if len(name) > 2:
-            names.append(name)
-    return names
+        key = normalize(name)
+        if len(name) > 2 and key not in seen:
+            seen.add(key)
+            out.append(Entity(name, "person", "name+date"))
+    return out
 
 
-def classify(row: CommentRow, place_surface_norm: set[str]) -> Distilled:
+def _extract_places(lemma: str, definition: str,
+                    place_keys: set[str]) -> list[Entity]:
+    out, seen = [], set()
+
+    def add(name, evidence):
+        key = normalize(name)
+        if key and key not in seen:
+            seen.add(key)
+            out.append(Entity(name, "place", evidence))
+
+    if normalize(lemma) in place_keys:
+        add(lemma, "lemma=knownPlace")
+    for m in PREP_PLACE.finditer(definition):
+        cand = m.group(1)
+        if normalize(cand) in place_keys:
+            add(cand, "prep+knownPlace")
+    return out
+
+
+def classify(row: CommentRow, place_keys: set[str]) -> Distilled:
+    """Classify a row. `place_keys` = normalized known place surfaces/register."""
     lemma, defn = row.lemma, row.definition
-    low_def = defn.lower()
     cues: list[str] = []
 
-    # Strong signal: lemma is literally a tagged place surface form.
-    lemma_is_tagged_place = normalize(lemma) in place_surface_norm
+    persons = _extract_persons(defn)
+    places = _extract_places(lemma, defn, place_keys)
 
-    place_hits = _hits(defn, PLACE_CUES) + [c for c in PLACE_LEMMA_CUES if c in lemma.lower()]
-    person_hits = _hits(defn, PERSON_CUES)
-    has_person_date = bool(PERSON_DATE.search(defn))
+    place_cue_hits = _hits(defn, PLACE_CUES)
+    person_cue_hits = _hits(defn, PERSON_CUES)
     myth_hits = _hits(defn, MYTH_CUES)
-    phrase_hits = _hits(defn, PHRASE_CUES) or lemma.startswith(("»", "“", '"'))
 
-    # --- decide type (priority order) ------------------------------------
-    # Strong phrase signal wins first: an explicit language tag "(tysk)" etc.
-    # or a quoted lemma marks a quotation/foreign phrase, not an entity, even
-    # if the gloss happens to mention a "god".
+    # If a place cue fires but no known-place name was distilled, keep the
+    # leading capitalised token of the lemma as a *candidate* place
+    # (reconciliation will confirm or drop it -> noise reduction downstream).
+    if place_cue_hits and not places:
+        head = re.match(r"([A-ZÆØÅ][\wÆØÅæøå'’-]+)", lemma)
+        if head:
+            places = [Entity(head.group(1), "place", "placeCue+lemmaHead")]
+            cues += place_cue_hits
+
+    entities: list[Entity] = []
+    entities += persons
+    entities += places
+
+    # mythological: only when no concrete person/place and a myth cue fires
+    if myth_hits and not entities:
+        entities.append(Entity(lemma, "mythological", "mythCue"))
+        cues += myth_hits
+
+    # --- noise reduction: classify non-entity rows -----------------------
     strong_phrase = (
-        low_def.startswith(("(tysk)", "(latin)", "(fransk)", "(græsk)",
-                            "(italiensk)", "(engelsk)", "(spansk)"))
+        defn.lower().startswith(tuple(c for c in PHRASE_CUES if c.startswith("(")))
         or lemma.startswith(("»", "“", '"'))
     )
-    if strong_phrase and not lemma_is_tagged_place:
-        return Distilled(row, "phrase", 0.6, [], ["strong-phrase"])
+    if not entities:
+        if strong_phrase or _hits(defn, PHRASE_CUES):
+            return Distilled(row, "phrase", 0.5, [], ["phrase"])
+        if _hits(defn, WORK_CUES):
+            return Distilled(row, "work", 0.4, [], ["work"])
+        if len(defn) <= 60 and defn[:1].islower():
+            return Distilled(row, "gloss", 0.5, [], ["short-lowercase"])
+        return Distilled(row, "other", 0.3, [], [])
 
-    # Mythological beats person/place (its definitions often name a "god").
-    if myth_hits and not lemma_is_tagged_place:
-        cues = myth_hits
-        return Distilled(row, "mythological", 0.6, [lemma], cues)
+    # A clear quote/foreign phrase lemma is noise even if a name appears in
+    # the gloss (e.g. a quotation attributed to an author).
+    if strong_phrase and not any(e.evidence == "lemma=knownPlace" for e in entities):
+        return Distilled(row, "phrase", 0.5, [], ["strong-phrase"])
 
-    # Place: tagged-place lemma, or definition/lemma place cues without a
-    # dominating person-date signature.
-    place_score = len(place_hits) + (2 if lemma_is_tagged_place else 0)
-    person_score = len(person_hits) + (2 if has_person_date else 0)
-
-    if phrase_hits and place_score == 0 and person_score == 0:
-        return Distilled(row, "phrase", 0.5, [], list(phrase_hits) if isinstance(phrase_hits, list) else ["phrase"])
-
-    if place_score and place_score >= person_score:
-        conf = 0.9 if lemma_is_tagged_place else 0.55 + 0.1 * min(len(place_hits), 3)
-        # distilled place name: prefer the tagged lemma, else first capitalised
-        # token following a "ved/i/mellem" preposition in the definition.
-        entities = [lemma] if lemma_is_tagged_place else _distill_place_names(lemma, defn)
-        cues = (["lemma=taggedPlace"] if lemma_is_tagged_place else []) + place_hits
-        return Distilled(row, "place", round(conf, 2), entities or [lemma], cues)
-
-    if person_score:
-        conf = 0.55 + 0.1 * min(person_score, 4)
-        entities = _distill_person_names(defn) or [lemma]
-        cues = (["dateSig"] if has_person_date else []) + person_hits
-        return Distilled(row, "person", round(min(conf, 0.95), 2), entities, cues)
-
-    if phrase_hits:
-        return Distilled(row, "phrase", 0.5, [], ["phrase"])
-
-    # Short lowercase synonym gloss, e.g. "haver." / "første, dygtigste."
-    if len(defn) <= 60 and defn[:1].islower():
-        return Distilled(row, "gloss", 0.5, [], ["short-lowercase"])
-
-    return Distilled(row, "other", 0.3, [], [])
-
-
-_PREP_PLACE = re.compile(
-    r"\b(?:ved|i|mellem|nord for|syd for|øst for|vest for|nær)\s+"
-    r"([A-ZÆØÅ][\wÆØÅæøå'’-]+)"
-)
-
-
-def _distill_place_names(lemma: str, definition: str) -> list[str]:
-    out = []
-    m = _PREP_PLACE.search(definition)
-    if m:
-        out.append(m.group(1))
-    # also keep a clean capitalised head of the lemma if present
-    head = re.match(r"([A-ZÆØÅ][\wÆØÅæøå'’-]+)", lemma)
-    if head and head.group(1) not in out:
-        out.append(head.group(1))
-    return out
+    # primary type = highest-priority entity type present
+    primary = max((e.etype for e in entities),
+                  key=lambda t: _TYPE_PRIORITY.get(t, 0))
+    n_ne = len(entities)
+    base = {"person": 0.7, "place": 0.6, "mythological": 0.55}[primary]
+    if any(e.evidence == "lemma=knownPlace" for e in entities):
+        base = max(base, 0.9)
+    conf = round(min(base + 0.05 * (n_ne - 1), 0.95), 2)
+    cues = (["dateSig"] if persons else []) + person_cue_hits + cues
+    return Distilled(row, primary, conf, entities, cues)

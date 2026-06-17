@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="pb-places">
+  <standOff>
+    <listPlace>
+      <place xml:id="geo-1" type="P.PPL">
+        <placeName type="main">Slangerup</placeName>
+        <placeName type="sort">Slangerup</placeName>
+      </place>
+      <place xml:id="geo-2" type="P.PPLA">
+        <placeName type="main">Roskilde</placeName>
+        <placeName type="sort">Roskilde</placeName>
+      </place>
+      <place xml:id="geo-3" type="P.PPL">
+        <placeName type="main">Hillerød</placeName>
+      </place>
+    </listPlace>
+  </standOff>
+</TEI>
