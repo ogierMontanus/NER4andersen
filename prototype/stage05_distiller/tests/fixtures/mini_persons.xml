@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="pb-persons">
+  <standOff>
+    <listPerson>
+      <person xml:id="gnd-118777157">
+        <persName type="main">Thomas Kingo</persName>
+        <persName type="sort">Kingo, Thomas</persName>
+      </person>
+      <person xml:id="SV_14_0134">
+        <persName type="main">Brahe, Tycho</persName>
+      </person>
+    </listPerson>
+  </standOff>
+</TEI>

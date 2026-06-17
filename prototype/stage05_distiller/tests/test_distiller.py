@@ -7,10 +7,16 @@ import unittest
 HERE = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(HERE, ".."))   # make the modules importable
 
-from tei_comments import load_volume, load_place_register, normalize  # noqa: E402
+from tei_comments import (  # noqa: E402
+    load_volume,
+    load_place_register,
+    load_person_register,
+    normalize,
+)
 from classify import classify  # noqa: E402
 from reconcile import (  # noqa: E402
     reconcile_place,
+    reconcile_person,
     reconcile_entity_name,
     candidate_shortlist,
 )
@@ -18,6 +24,7 @@ import reconcile_llm  # noqa: E402
 
 VOL = os.path.join(HERE, "fixtures", "mini_volume.xml")
 REG = os.path.join(HERE, "fixtures", "mini_places.xml")
+PERSONS = os.path.join(HERE, "fixtures", "mini_persons.xml")
 
 
 class ParsingTests(unittest.TestCase):
@@ -102,6 +109,32 @@ class ReconcileTests(unittest.TestCase):
         m = reconcile_place(d, self.reg)
         self.assertIsNotNone(m)
         self.assertIn("geo-1", m.geo_ids)
+
+
+class PersonReconcileTests(unittest.TestCase):
+    def setUp(self):
+        self.persons = load_person_register(PERSONS)
+
+    def test_indexes_gnd_and_sv_ids(self):
+        # both id schemes are accepted as authority keys
+        all_ids = set()
+        for ids in self.persons.values():
+            all_ids |= ids
+        self.assertIn("gnd-118777157", all_ids)
+        self.assertIn("SV_14_0134", all_ids)
+
+    def test_flipped_sort_name_indexed(self):
+        # "Brahe, Tycho" must also be reachable as "Tycho Brahe"
+        self.assertIn(normalize("Tycho Brahe"), self.persons)
+
+    def test_reconcile_person_from_split_entity(self):
+        # "Kingos Fødeby" distils to person "Thomas Kingo" -> gnd id
+        vol = load_volume(VOL)
+        keys = set(vol.place_surface_norm)
+        d = classify(vol.rows[0], keys)
+        m = reconcile_person(d, self.persons)
+        self.assertIsNotNone(m)
+        self.assertIn("gnd-118777157", m.gnd_ids)
 
 
 class LLMOptionalTests(unittest.TestCase):

@@ -19,9 +19,11 @@ import os
 import sys
 from collections import Counter
 
-from tei_comments import load_volume, load_place_register, normalize
+from tei_comments import (
+    load_volume, load_place_register, load_person_register, normalize,
+)
 from classify import classify, NAMED_ENTITY_TYPES
-from reconcile import reconcile_place, candidate_shortlist
+from reconcile import reconcile_place, reconcile_person, candidate_shortlist
 from reconcile_llm import llm_available, llm_link
 
 DEFAULT_VOL = (
@@ -29,10 +31,11 @@ DEFAULT_VOL = (
     "noHiSeg_Andersen 14 - Rejseskildringer I_w_notes_Rebecca.xml"
 )
 DEFAULT_REGISTER = "/home/user/svNames/data/registers/places.xml"
+DEFAULT_PERSONS = "/home/user/svNames/data/registers/persons.xml"
 
 
 def run(vol_path: str, out_path: str | None, register_path: str | None,
-        use_llm: bool = False) -> int:
+        persons_path: str | None = None, use_llm: bool = False) -> int:
     vol = load_volume(vol_path)
     if not vol.rows:
         print(f"No comment rows found in {vol_path}", file=sys.stderr)
@@ -42,6 +45,10 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
     if register_path and os.path.exists(register_path):
         register = load_place_register(register_path)
 
+    persons = None
+    if persons_path and os.path.exists(persons_path):
+        persons = load_person_register(persons_path)
+
     # Known places that anchor classification = body placeName surfaces
     # (running text) plus the internal register's names.
     place_keys = set(vol.place_surface_norm)
@@ -49,6 +56,14 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
         place_keys |= set(register.keys())
 
     distilled = [classify(r, place_keys) for r in vol.rows]
+
+    person_matches: dict[str, object] = {}
+    if persons:
+        for d in distilled:
+            if any(e.etype == "person" for e in d.entities):
+                pm = reconcile_person(d, persons)
+                if pm:
+                    person_matches[d.row.rid] = pm
 
     place_matches: dict[str, object] = {}
     llm_links: dict[str, object] = {}
@@ -107,6 +122,14 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
                 "confidence": link.confidence,
                 "rationale": link.rationale,
             }
+        pm = person_matches.get(d.row.rid)
+        if pm is not None:
+            rec["personReconciliation"] = {
+                "authority": "svNames/persons.xml",
+                "matchedName": pm.entity_name,
+                "gndIds": pm.gnd_ids,
+                "method": pm.method,
+            }
         candidates.append(rec)
 
     if out_path:
@@ -114,12 +137,13 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
         with open(out_path, "w", encoding="utf-8") as fh:
             json.dump(candidates, fh, ensure_ascii=False, indent=2)
 
-    _report(vol, distilled, out_path, register, place_matches, llm_links, llm_on)
+    _report(vol, distilled, out_path, register, place_matches, llm_links, llm_on,
+            persons, person_matches)
     return 0
 
 
 def _report(vol, distilled, out_path, register, place_matches,
-            llm_links=None, llm_on=False):
+            llm_links=None, llm_on=False, persons=None, person_matches=None):
     counts = Counter(d.etype for d in distilled)
     ne = sum(1 for d in distilled if d.is_named_entity)
 
@@ -184,6 +208,18 @@ def _report(vol, distilled, out_path, register, place_matches,
                   f"{len(llm_links or {})}")
         elif llm_links is not None:
             print("   LLM linking: off (no ANTHROPIC_API_KEY/SDK, or --llm not set)")
+
+    if persons is not None:
+        person_rows = [d for d in distilled
+                       if any(e.etype == "person" for e in d.entities)]
+        linked_p = len(person_matches or {})
+        print("-" * 64)
+        print("Person reconciliation vs. svNames persons.xml register:")
+        print(f"   register person-name keys : {len(persons)}")
+        print(f"   person rows linked to gnd : {linked_p} / {len(person_rows)} "
+              f"({100*linked_p/max(len(person_rows),1):.1f}%)")
+        print("   (closes the persName gap — only 4/1,307 persName tags carry a "
+              "ref in the source vol-14 text)")
     if out_path:
         print("-" * 64)
         print(f"candidates written to: {out_path}")
@@ -197,12 +233,14 @@ def main(argv=None):
                     help="output JSON path ('' to skip writing)")
     ap.add_argument("--register", default=DEFAULT_REGISTER,
                     help="path to svNames places.xml ('' to skip reconciliation)")
+    ap.add_argument("--persons", default=DEFAULT_PERSONS,
+                    help="path to svNames persons.xml ('' to skip person linking)")
     ap.add_argument("--llm", action="store_true",
                     help="enable optional LLM linking for hard cases "
                          "(no-op unless ANTHROPIC_API_KEY + anthropic SDK present)")
     args = ap.parse_args(argv)
     return run(args.volume, args.out or None, args.register or None,
-               use_llm=args.llm)
+               persons_path=args.persons or None, use_llm=args.llm)
 
 
 if __name__ == "__main__":

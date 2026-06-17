@@ -56,6 +56,14 @@ class PlaceMatch:
     method: str          # exact | infl | token | fuzzy
 
 
+@dataclass
+class PersonMatch:
+    rid: str
+    entity_name: str
+    gnd_ids: list[str]
+    method: str          # exact | infl | token | fuzzy
+
+
 def reconcile_entity_name(name: str, register: dict[str, set[str]]):
     key = normalize(name)
     if not key:
@@ -86,6 +94,17 @@ def reconcile_place(distilled, register: dict[str, set[str]]) -> PlaceMatch | No
         geo_ids, method = reconcile_entity_name(name, register)
         if geo_ids:
             return PlaceMatch(distilled.row.rid, name, geo_ids, method)
+    return None
+
+
+def reconcile_person(distilled, register: dict[str, set[str]]) -> PersonMatch | None:
+    """Best register match across a row's person entities (gnd-* ids)."""
+    for e in distilled.entities:
+        if e.etype != "person":
+            continue
+        gnd_ids, method = reconcile_entity_name(e.name, register)
+        if gnd_ids:
+            return PersonMatch(distilled.row.rid, e.name, gnd_ids, method)
     return None
 
 

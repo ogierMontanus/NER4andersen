@@ -31,6 +31,12 @@ _PERSON = re.compile(r'<persName\b[^>]*>([^<]*)</persName>')
 _REG_PLACE = re.compile(r'<place\b[^>]*xml:id="(geo-[0-9]+)"[^>]*>(.*?)</place>', re.S)
 _REG_PNAME = re.compile(r"<placeName[^>]*>([^<]*)</placeName>")
 
+# Person register: <person xml:id="gnd-...|SV_..."> ... <persName>Name</persName>.
+# svNames' persons.xml mixes GND authority ids with the SV_* printed-index ids,
+# so accept any xml:id value as the authority key.
+_REG_PERSON = re.compile(r'<person\b[^>]*xml:id="([^"]+)"[^>]*>(.*?)</person>', re.S)
+_REG_PERSNAME = re.compile(r"<persName[^>]*>([^<]*)</persName>")
+
 
 def strip_markup(fragment: str) -> str:
     """Remove inline tags and collapse whitespace."""
@@ -152,3 +158,33 @@ def load_place_register(path: str) -> dict[str, set[str]]:
             if key:
                 index.setdefault(key, set()).add(geo)
     return index
+
+
+def load_person_register(path: str) -> dict[str, set[str]]:
+    """Map normalized person name -> set of gnd-* ids from a TEI person register.
+
+    Indexes every ``persName`` variant (main / sort / variant) of each person in
+    svNames' ``data/registers/persons.xml`` so distilled person mentions can be
+    linked to the internal authority file. A "Surname, Given" sort form is also
+    indexed in natural "Given Surname" order, since editorial glosses use the
+    natural order.
+    """
+    with open(path, encoding="utf-8", errors="replace") as fh:
+        text = fh.read()
+    index: dict[str, set[str]] = {}
+    for gnd, body in _REG_PERSON.findall(text):
+        for name in _REG_PERSNAME.findall(body):
+            for key in _name_keys(strip_markup(name)):
+                if key:
+                    index.setdefault(key, set()).add(gnd)
+    return index
+
+
+def _name_keys(name: str) -> set[str]:
+    """Normalized keys for a person name, incl. flipped 'Surname, Given' form."""
+    keys = {normalize(name)}
+    if "," in name:
+        surname, _, given = name.partition(",")
+        flipped = f"{given.strip()} {surname.strip()}"
+        keys.add(normalize(flipped))
+    return keys

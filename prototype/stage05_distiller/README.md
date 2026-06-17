@@ -95,6 +95,11 @@ the shared instruction is prompt-cached, so a full-corpus run costs cents.
   promoting **165** descriptive/inflected hard-case places (e.g.
   *Marienlyst → Helsingør*, *Stige → Lumby*). The unreconciled remainder is the
   candidate/noise pool the next stage prunes.
+- **Person reconciliation** links **443 / 526** person-candidate rows (84%) to
+  `persons.xml` (`gnd-*` / `SV_*` ids), e.g. *Kingos Fødeby → Thomas Kingo*,
+  *Kongen → Frederik 6.* This directly attacks the headline gap: only **4 / 1,307**
+  `persName` tags in the source vol-14 text carry a `ref`. (The register mixes
+  GND authority ids with the `SV_*` printed-index ids — both are accepted.)
 
 **Volume 3** (Eventyr, no body NER tags, has a Navneregister):
 
