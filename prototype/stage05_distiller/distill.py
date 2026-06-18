@@ -25,6 +25,7 @@ from tei_comments import (
 from classify import classify, NAMED_ENTITY_TYPES
 from reconcile import reconcile_place, reconcile_person, candidate_shortlist
 from reconcile_llm import llm_available, llm_link
+from external_authority import propose_external
 
 DEFAULT_VOL = (
     "/home/user/svNames/data/"
@@ -35,7 +36,8 @@ DEFAULT_PERSONS = "/home/user/svNames/data/registers/persons.xml"
 
 
 def run(vol_path: str, out_path: str | None, register_path: str | None,
-        persons_path: str | None = None, use_llm: bool = False) -> int:
+        persons_path: str | None = None, use_llm: bool = False,
+        use_external: bool = False, external_max: int = 25) -> int:
     vol = load_volume(vol_path)
     if not vol.rows:
         print(f"No comment rows found in {vol_path}", file=sys.stderr)
@@ -84,6 +86,26 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
                 if link and link.authority_id:
                     llm_links[d.row.rid] = link
 
+    # External-authority proposals for entities still unlinked internally.
+    # Opt-in + bounded + offline-safe (a blocked network yields no candidates).
+    external: dict[str, list] = {}
+    if use_external:
+        budget = external_max
+        for d in distilled:
+            if budget <= 0:
+                break
+            if not d.is_named_entity:
+                continue
+            linked = (d.row.rid in person_matches or d.row.rid in place_matches
+                      or d.row.rid in llm_links)
+            if linked:
+                continue
+            ent = d.entities[0]
+            cands = propose_external(ent.name, ent.etype)
+            budget -= 1
+            if cands:
+                external[d.row.rid] = cands
+
     # --- candidate records (the spec's unified shape, provenance kept) ----
     candidates = []
     for d in distilled:
@@ -130,6 +152,13 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
                 "gndIds": pm.gnd_ids,
                 "method": pm.method,
             }
+        ext = external.get(d.row.rid)
+        if ext:
+            rec["externalCandidates"] = [
+                {"source": c.source, "id": c.id, "label": c.label,
+                 "description": c.description, "uri": c.uri}
+                for c in ext
+            ]
         candidates.append(rec)
 
     if out_path:
@@ -138,12 +167,13 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
             json.dump(candidates, fh, ensure_ascii=False, indent=2)
 
     _report(vol, distilled, out_path, register, place_matches, llm_links, llm_on,
-            persons, person_matches)
+            persons, person_matches, use_external, external)
     return 0
 
 
 def _report(vol, distilled, out_path, register, place_matches,
-            llm_links=None, llm_on=False, persons=None, person_matches=None):
+            llm_links=None, llm_on=False, persons=None, person_matches=None,
+            use_external=False, external=None):
     counts = Counter(d.etype for d in distilled)
     ne = sum(1 for d in distilled if d.is_named_entity)
 
@@ -220,6 +250,16 @@ def _report(vol, distilled, out_path, register, place_matches,
               f"({100*linked_p/max(len(person_rows),1):.1f}%)")
         print("   (closes the persName gap — only 4/1,307 persName tags carry a "
               "ref in the source vol-14 text)")
+
+    if use_external:
+        n_ext = len(external or {})
+        print("-" * 64)
+        print("External authority proposals (Wikidata / GND / GeoNames):")
+        if n_ext:
+            print(f"   unlinked rows given external candidates : {n_ext}")
+        else:
+            print("   no external candidates (network blocked, or all entities "
+                  "already linked internally) — connector is offline-safe")
     if out_path:
         print("-" * 64)
         print(f"candidates written to: {out_path}")
@@ -238,9 +278,15 @@ def main(argv=None):
     ap.add_argument("--llm", action="store_true",
                     help="enable optional LLM linking for hard cases "
                          "(no-op unless ANTHROPIC_API_KEY + anthropic SDK present)")
+    ap.add_argument("--external", action="store_true",
+                    help="propose Wikidata/GND/GeoNames candidates for unlinked "
+                         "entities (opt-in, bounded, offline-safe)")
+    ap.add_argument("--external-max", type=int, default=25,
+                    help="cap on external lookups per run (default 25)")
     args = ap.parse_args(argv)
     return run(args.volume, args.out or None, args.register or None,
-               persons_path=args.persons or None, use_llm=args.llm)
+               persons_path=args.persons or None, use_llm=args.llm,
+               use_external=args.external, external_max=args.external_max)
 
 
 if __name__ == "__main__":

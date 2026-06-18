@@ -21,6 +21,7 @@ from reconcile import (  # noqa: E402
     candidate_shortlist,
 )
 import reconcile_llm  # noqa: E402
+import external_authority as ext  # noqa: E402
 
 VOL = os.path.join(HERE, "fixtures", "mini_volume.xml")
 REG = os.path.join(HERE, "fixtures", "mini_places.xml")
@@ -165,6 +166,61 @@ class LLMOptionalTests(unittest.TestCase):
         cands = candidate_shortlist("Roskilds", self.reg)
         ids = {cid for cid, _ in cands}
         self.assertIn("geo-2", ids)
+
+
+class ExternalAuthorityTests(unittest.TestCase):
+    """Parsers are tested with canned JSON — never touch the network."""
+
+    def test_parse_wikidata(self):
+        data = {"search": [
+            {"id": "Q1748", "label": "København",
+             "description": "Denmarks hovedstad", "concepturi": "http://x/Q1748"},
+            {"id": "", "label": "junk"},  # dropped (no id)
+        ]}
+        cands = ext.parse_wikidata(data)
+        self.assertEqual(len(cands), 1)
+        self.assertEqual(cands[0].id, "Q1748")
+        self.assertEqual(cands[0].source, "wikidata")
+
+    def test_parse_gnd(self):
+        data = {"member": [
+            {"gndIdentifier": "118562347", "preferredName": "Kingo, Thomas",
+             "type": ["DifferentiatedPerson", "AuthorityResource"],
+             "id": "https://d-nb.info/gnd/118562347"},
+        ]}
+        cands = ext.parse_gnd(data)
+        self.assertEqual(cands[0].id, "118562347")
+        self.assertIn("DifferentiatedPerson", cands[0].description)
+
+    def test_parse_geonames(self):
+        data = {"geonames": [
+            {"geonameId": 2614481, "name": "Roskilde", "countryName": "Denmark",
+             "fcodeName": "seat of a first-order admin division",
+             "lat": "55.64", "lng": "12.08", "fcode": "PPLA"},
+        ]}
+        cands = ext.parse_geonames(data)
+        self.assertEqual(cands[0].id, "2614481")
+        self.assertEqual(cands[0].extra["fcode"], "PPLA")
+
+    def test_geonames_noop_without_username(self):
+        old = os.environ.pop("GEONAMES_USERNAME", None)
+        try:
+            self.assertEqual(ext.search_geonames("Roskilde"), [])
+        finally:
+            if old is not None:
+                os.environ["GEONAMES_USERNAME"] = old
+
+    def test_fetch_offline_safe(self):
+        # unreachable host -> None, never raises
+        self.assertIsNone(ext._fetch("https://invalid.invalid.example/x"))
+
+    def test_register_stub_place(self):
+        c = ext.ExternalCandidate("geonames", "2614481", "Roskilde",
+                                   "PPLA Denmark", "https://geonames.org/2614481",
+                                   {"lat": "55.64", "lng": "12.08"})
+        stub = ext.to_register_stub(c, "place")
+        self.assertIn('xml:id="geo-2614481"', stub)
+        self.assertIn("<geo>55.64 12.08</geo>", stub)
 
 
 if __name__ == "__main__":

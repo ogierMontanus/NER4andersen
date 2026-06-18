@@ -62,6 +62,7 @@ point at the dev sibling checkout under `/home/user/svNames`.
 | `classify.py` | Rule-based classifier + entity splitting + noise reduction. |
 | `reconcile.py` | Inflection-/fuzzy-aware place ↔ `geo-*` reconciliation + LLM candidate shortlisting. |
 | `reconcile_llm.py` | **Optional** LLM linking for hard cases (no-op without a key). |
+| `external_authority.py` | **Optional** Wikidata/GND/GeoNames connectors (offline-safe). |
 | `distill.py` | Entry point: candidate JSON + evaluation report. |
 | `tests/` | Stdlib `unittest` + tiny TEI fixtures (run in CI, no corpus). |
 
@@ -84,6 +85,27 @@ python3 distill.py --llm
 
 Default model is `claude-haiku-4-5` (override with `NER4ANDERSEN_LLM_MODEL`);
 the shared instruction is prompt-cached, so a full-corpus run costs cents.
+
+### External authorities (`--external`)
+
+For entities still unlinked after internal reconciliation, `--external` proposes
+candidates from public authority APIs and attaches them as `externalCandidates`
+in the output (and can emit a TEI register stub via
+`external_authority.to_register_stub`):
+
+| Provider | Entity types | Key needed |
+| --- | --- | --- |
+| **Wikidata** (`wbsearchentities`) | any | none |
+| **GND** (lobid.org) | person / org | none |
+| **GeoNames** (`searchJSON`) | place | free `GEONAMES_USERNAME` |
+
+It is **opt-in, bounded (`--external-max`, default 25), and offline-safe** —
+stdlib `urllib` only, and every call is wrapped so a blocked egress, timeout, or
+bad response yields *no* candidates rather than an error (the connector reports
+"network blocked … offline-safe"). It needs an environment whose **network
+policy permits these hosts** — configure that per
+<https://code.claude.com/docs/en/claude-code-on-the-web>. Parsers are split from
+fetching and unit-tested with canned JSON, so CI never makes a network call.
 
 ## Results
 
