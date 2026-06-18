@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc><titleStmt><title>Rejseskildringer II</title></titleStmt></fileDesc>
+    <encodingDesc><volumeNumber>14</volumeNumber></encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="works"><p>Some running text.</p></div>
+      <div>
+        <head type="major">Navneregister</head>
+        <p>Ved danske navne nævnes nationaliteten ikke</p>
+        <p>A</p>
+        <p>Abrahams, Nicolai Christian Levin (1798-1870), professor, oversætter. I 640</p>
+        <p>Adam, Adolphe (1803-1856), fransk komponist. I 12; II 607</p>
+        <p>Vogler, se Vogler, Georg Joseph</p>
+        <head type="major">Titelregister</head>
+        <p>En Digters Bazar I 5</p>
+      </div>
+    </body>
+  </text>
+</TEI>

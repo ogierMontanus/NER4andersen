@@ -23,6 +23,9 @@ from reconcile import (  # noqa: E402
 import reconcile_llm  # noqa: E402
 import external_authority as ext  # noqa: E402
 import export  # noqa: E402
+import register_index as rix  # noqa: E402
+
+REGISTER = os.path.join(HERE, "fixtures", "mini_register.xml")
 
 VOL = os.path.join(HERE, "fixtures", "mini_volume.xml")
 REG = os.path.join(HERE, "fixtures", "mini_places.xml")
@@ -269,6 +272,64 @@ class ExportTests(unittest.TestCase):
     def test_quickstatements_for_wikidata(self):
         qs = export.to_quickstatements(self.CANDS)
         self.assertTrue(any(line.startswith("Q123\tLda") for line in qs))
+
+
+class RegisterIndexTests(unittest.TestCase):
+    """Navneregister parser + canonical base+roman-1 volume mapping."""
+
+    def test_roman_to_int(self):
+        self.assertEqual(rix.roman_to_int("I"), 1)
+        self.assertEqual(rix.roman_to_int("IV"), 4)
+        self.assertEqual(rix.roman_to_int("XIV"), 14)
+        self.assertIsNone(rix.roman_to_int("XILV"))
+        self.assertIsNone(rix.roman_to_int("640"))
+
+    def test_refs_use_base_plus_roman_minus_1(self):
+        # Skuespil base 10: III -> 12, IV -> 13 (matches the XSLT formula)
+        occ = rix._parse_refs("III 594; IV 649", base=10)
+        self.assertEqual(occ, [{"vol": 12, "page": 594}, {"vol": 13, "page": 649}])
+
+    def test_parse_entry_name_dates_desc_occurrences(self):
+        e = rix.parse_entry(
+            "Abrahams, Nicolai Christian Levin (1798-1870), professor, "
+            "oversætter. I 640", "Rejseskildringer", base=14, source_vol=15)
+        self.assertEqual(e.dates, "1798-1870")
+        self.assertIn("professor", e.description)
+        self.assertEqual(e.occurrences, [{"vol": 14, "page": 640}])
+
+    def test_cross_reference(self):
+        e = rix.parse_entry("Abbé Vogler, se Vogler, Georg Joseph",
+                            "Skuespil", base=10, source_vol=13)
+        self.assertEqual(e.see_also, "Vogler, Georg Joseph")
+        self.assertEqual(e.occurrences, [])
+
+    def test_parse_volume_uses_teiheader_base_and_stops_at_titelregister(self):
+        smap, vser = {}, {}
+        entries = rix.parse_volume(REGISTER, smap, vser)   # base from teiHeader=14
+        names = [e.name for e in entries]
+        self.assertIn("Abrahams, Nicolai Christian Levin", names)
+        # "Adam, Adolphe ... I 12; II 607" -> vols 14 and 15
+        adam = next(e for e in entries if e.name.startswith("Adam"))
+        self.assertEqual(adam.occurrences, [{"vol": 14, "page": 12},
+                                            {"vol": 15, "page": 607}])
+        # the Titelregister entry after the next major head must NOT be ingested
+        self.assertFalse(any("Digters Bazar" in n for n in names))
+
+    def test_authority_index_has_name_and_flipped_keys(self):
+        entries = rix.parse_volume(REGISTER, {}, {})
+        idx = rix.to_authority_index(entries)
+        self.assertIn(normalize("Abrahams, Nicolai Christian Levin"), idx)
+        self.assertIn(normalize("Nicolai Christian Levin Abrahams"), idx)  # flipped
+
+    def test_build_series_map_from_titles(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            for n, t in [(10, "Skuespil I"), (13, "Skuespil IV"),
+                         (14, "Rejseskildringer I"), (15, "Rejseskildringer II")]:
+                open(os.path.join(d, f"Andersen {n} - {t}_w_notes.xml"), "w").close()
+            smap, vser = rix.build_series_map(d)
+            self.assertEqual(smap["Skuespil"], {1: 10, 4: 13})
+            self.assertEqual(vser[15], "Rejseskildringer")
 
 
 if __name__ == "__main__":

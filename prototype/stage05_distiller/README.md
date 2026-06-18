@@ -66,6 +66,7 @@ point at the dev sibling checkout under `/home/user/svNames`.
 | `distill.py` | Entry point: candidate JSON + evaluation report (one volume). |
 | `corpus_eval.py` | Run all 18 volumes → consolidated Markdown report (`eval/`). |
 | `export.py` | Curation export: CSV + OpenRefine JSONL + QuickStatements. |
+| `register_index.py` | Parse the sub-series **Navneregister** name indexes (`eval/`). |
 | `tests/` | Stdlib `unittest` + tiny TEI fixtures (run in CI, no corpus). |
 
 ### Optional LLM linking (`--llm`)
@@ -141,6 +142,43 @@ fetching and unit-tested with canned JSON, so CI never makes a network call.
 ```bash
 python3 corpus_eval.py --data /path/to/svNames/data --out eval/corpus_report.md
 ```
+
+### Sub-series name indexes (`register_index.py`)
+
+Each sub-series ends, in its final volume, with a cumulative printed
+**Navneregister** (`<head type="major">Navneregister</head>` + `<p>` entries:
+*name (dates), description. vol-refs*). This parser extracts them and resolves
+each Roman-numeral reference to an **absolute volume**, using the same formula as
+svNames' `data/indexExtraction/` XSLT pipeline:
+
+```
+absolute_vol = base + roman − 1
+```
+
+where `base` is the sub-series' first volume — read from `teiHeader/volumeNumber`
+when present (e.g. `<volumeNumber>14` for Rejseskildringer in the extracted index
+files), otherwise derived from the edition's volume titles (they agree). Example:
+*Abrahamson … III 594; IV 649* (Skuespil, base 10) → **vol 12 p594, vol 13 p649**.
+
+```bash
+python3 register_index.py --data /path/to/svNames/data --out eval/navneregister.json
+```
+
+Coverage in the current corpus (`eval/navneregister.json`):
+
+| Sub-series | Source vol | Covers vols | Entries |
+| --- | ---: | --- | ---: |
+| Skuespil | 13 | 10–13 | 695 |
+| Rejseskildringer | 15 | 14–15 | 1,073 |
+| Selvbiografier | 18 | 16–18 | 1,828 |
+
+**Only `Navneregister` (name) indexes** are parsed; the Eventyr/Digte
+"Register" / "Titelregister" are *title* indexes (out of scope). **Romaner**:
+the edition's print has a Romaner index, but it is **not yet encoded** in the
+working vol-6 file (no `Navneregister` section) — the parser will pick it up
+automatically once it is added. The `svnames-index` repo (the canonical
+sub-series→volume mapping) was not reachable from this session; the base-volume
+formula above reproduces it.
 
 ### Curation export (`export.py`)
 
