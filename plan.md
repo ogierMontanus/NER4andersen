@@ -284,3 +284,9 @@ The system should generate reproducible evaluation reports for these questions.
 # Success Criterion
 
 The final repository should demonstrate that contextual information harvested from editorial notes and local indexes can be consolidated into a local authority layer and then used to achieve measurably better reconciliation results than label-only matching against external authority systems.
+
+---
+
+# Scope note — organizations and keywords (out of scope)
+
+Organizations and keywords remain **out of scope for the entire present enrichment process**. The `organizations.xml` and `keywords.xml` registers are not populated, and `orgName` / `term` entities are not recognised, linked, or reconciled. The pipeline covers persons and places only. See `plan-v3.md` §11 for the same exclusion in the implementation plan.

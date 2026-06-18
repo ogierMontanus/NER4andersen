@@ -47,7 +47,7 @@ that:
 | **Registry of indexed names** | `data/indexExtraction/SVindex_15_withID.xml` | **1,048** `<person>` entries keyed `xml:id="SV_14_NNNN"` — the IDs referenced by corpus `note[@type="match"]`. |
 | **Person register** | `data/registers/persons.xml` | **1,053** persons, keyed by GND (`gnd-*`); name variants, gender, birth/death + place, `occupation[@ref]`, `note[@type='bio']`. |
 | **Place register** | `data/registers/places.xml` | **962** places, keyed by GeoNames (`geo-*`); `location/geo`, `country`, `region`, feature-code `@type`, `ptr` → GeoNames/Wikipedia. |
-| **Org / keyword registers** | `data/registers/organizations.xml`, `keywords.xml` | Present but **empty** — enrichment targets. |
+| **Org / keyword registers** | `data/registers/organizations.xml`, `keywords.xml` | Present but **empty** — **out of scope** for this enrichment process (see §11 scope exclusion). |
 | **Templates / gazetteer** | `data/registers/templates/` | `person-default.xml`, `place-default.xml`, 76 KB `place-types.xml` GeoNames feature-code gazetteer. |
 | **NER integration** | `modules/nlp-config.xqm` | Python NER API endpoint `:8001`; maps `persName/author → PER`, `placeName/pubPlace → LOC`. |
 | **Annotation write-back** | `modules/annotation-config.xqm` | Uses `@ref` as the reconciliation/reference key; defines person/place/organization/term merge-back into TEI. |
@@ -283,8 +283,15 @@ linking/reconciliation core.
   places; unified candidate records with provenance (§6).
 - **P2 — Context-aware multi-authority reconciliation** (§7), with confidence scoring.
 - **P3 — Curation & write-back** (§8).
-- **P4 — Orgs/keywords enrichment, cross-volume coreference, and cleanup** of the duplicate
+- **P4 — Cross-volume coreference, and cleanup** of the duplicate
   `indexExtraction/` intermediates.
+
+> **Scope exclusion — organizations & keywords.** `organizations.xml` and
+> `keywords.xml` are **out of scope for the entire present enrichment process**:
+> the empty `listOrg` / keyword registers are *not* populated, `orgName` / `term`
+> mentions are *not* recognised, linked, or reconciled, and no organization/keyword
+> authority work (internal or external) is performed. The pipeline handles persons
+> and places only. (Recorded here and in `plan.md`.)
 
 ---
 

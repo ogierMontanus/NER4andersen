@@ -63,7 +63,9 @@ point at the dev sibling checkout under `/home/user/svNames`.
 | `reconcile.py` | Inflection-/fuzzy-aware place ↔ `geo-*` reconciliation + LLM candidate shortlisting. |
 | `reconcile_llm.py` | **Optional** LLM linking for hard cases (no-op without a key). |
 | `external_authority.py` | **Optional** Wikidata/GND/GeoNames connectors (offline-safe). |
-| `distill.py` | Entry point: candidate JSON + evaluation report. |
+| `distill.py` | Entry point: candidate JSON + evaluation report (one volume). |
+| `corpus_eval.py` | Run all 18 volumes → consolidated Markdown report (`eval/`). |
+| `export.py` | Curation export: CSV + OpenRefine JSONL + QuickStatements. |
 | `tests/` | Stdlib `unittest` + tiny TEI fixtures (run in CI, no corpus). |
 
 ### Optional LLM linking (`--llm`)
@@ -127,6 +129,36 @@ fetching and unit-tested with canned JSON, so CI never makes a network call.
 
 - Only **27%** of rows are named entities — heavy gloss/phrase/work noise is
   correctly demoted; **zero** register/TOC rows leak into the candidates.
+
+**All 18 volumes** (`corpus_eval.py`, snapshot in `eval/corpus_report.md`):
+
+- **30,553** comment rows · **24%** named-entity · **1,287** person mentions and
+  **926** place mentions linked to the internal registers.
+- Person linkage is highest on the travelogues (vol 14 **84%**, vol 15 **78%**)
+  where the editorial apparatus is densest; place recall is 1.00 on vol 14 (the
+  only volume with injected `geo-*` placeName tags).
+
+```bash
+python3 corpus_eval.py --data /path/to/svNames/data --out eval/corpus_report.md
+```
+
+### Curation export (`export.py`)
+
+Turns a `distill.py` candidates JSON into curator-ready formats (spec
+Deliverable D / Stage 3):
+
+```bash
+python3 distill.py --out out/vol14.json
+python3 export.py out/vol14.json --csv out/curation.csv \
+    --openrefine out/curation.openrefine.jsonl
+```
+
+- **CSV** — one row per mention (ref, page, lemma, entity, internal id, method,
+  external candidates, definition); opens in Excel / OpenRefine.
+- **OpenRefine** — JSONL of named-entity mentions with `candidates` in the
+  reconciliation-result shape (`{id, name, score, match}`): internal matches are
+  confirmed (score 100), external proposals unconfirmed for the curator to pick.
+- **QuickStatements** — Wikibase-style stubs for mentions with a Wikidata Q-id.
 
 Run `distill.py` on any volume to reproduce these reports.
 

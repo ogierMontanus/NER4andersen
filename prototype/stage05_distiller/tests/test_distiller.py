@@ -22,6 +22,7 @@ from reconcile import (  # noqa: E402
 )
 import reconcile_llm  # noqa: E402
 import external_authority as ext  # noqa: E402
+import export  # noqa: E402
 
 VOL = os.path.join(HERE, "fixtures", "mini_volume.xml")
 REG = os.path.join(HERE, "fixtures", "mini_places.xml")
@@ -221,6 +222,53 @@ class ExternalAuthorityTests(unittest.TestCase):
         stub = ext.to_register_stub(c, "place")
         self.assertIn('xml:id="geo-2614481"', stub)
         self.assertIn("<geo>55.64 12.08</geo>", stub)
+
+
+class ExportTests(unittest.TestCase):
+    CANDS = [
+        {  # internally linked person
+            "label": "Kingos Fødeby", "entityType": "person",
+            "isNamedEntity": True,
+            "distilledEntities": [{"name": "Thomas Kingo", "type": "person"}],
+            "definition": "salmedigteren ...",
+            "provenance": {"ref": "txtcmnt-048-01", "page": 48, "file": "v14.xml"},
+            "personReconciliation": {"gndIds": ["SV_14_0514"], "method": "exact"},
+        },
+        {  # unlinked place with an external Wikidata candidate
+            "label": "Udby", "entityType": "place", "isNamedEntity": True,
+            "distilledEntities": [{"name": "Udby", "type": "place"}],
+            "definition": "landsby ved Vordingborg",
+            "provenance": {"ref": "txtcmnt-050-02", "page": 50, "file": "v14.xml"},
+            "externalCandidates": [
+                {"source": "wikidata", "id": "Q123", "label": "Udby",
+                 "description": "village", "uri": "http://wd/Q123"},
+            ],
+        },
+        {  # non-entity noise — excluded from OpenRefine output
+            "label": "konstigt", "entityType": "gloss", "isNamedEntity": False,
+            "distilledEntities": [], "definition": "kunstigt",
+            "provenance": {"ref": "txtcmnt-050-03", "page": 50, "file": "v14.xml"},
+        },
+    ]
+
+    def test_rows_flatten_one_per_mention(self):
+        rows = export.to_rows(self.CANDS)
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(rows[0]["internalId"], "SV_14_0514")
+        self.assertEqual(rows[1]["externalCandidates"], "wikidata:Q123")
+
+    def test_openrefine_excludes_noise_and_shapes_candidates(self):
+        objs = export.to_openrefine(self.CANDS)
+        self.assertEqual(len(objs), 2)            # the gloss row dropped
+        person = objs[0]
+        self.assertTrue(person["candidates"][0]["match"])
+        self.assertEqual(person["candidates"][0]["score"], 100)
+        place = objs[1]
+        self.assertFalse(place["candidates"][0]["match"])  # external = unconfirmed
+
+    def test_quickstatements_for_wikidata(self):
+        qs = export.to_quickstatements(self.CANDS)
+        self.assertTrue(any(line.startswith("Q123\tLda") for line in qs))
 
 
 if __name__ == "__main__":
