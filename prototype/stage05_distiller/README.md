@@ -172,6 +172,13 @@ Coverage in the current corpus (`eval/navneregister.json`):
 | Rejseskildringer | 15 | 14–15 | 1,073 |
 | Selvbiografier | 18 | 16–18 | 1,828 |
 
+**Folding these indexes in as an extra person authority** (`corpus_eval.py
+--index-lift`, snapshot `eval/index_lift.md`) lifts corpus person linkage from
+**50% → 66%** (+402 mentions). The biggest gains are exactly the genres whose own
+name index wasn't previously loaded — e.g. Skuespil II (vol 11) **10 → 89**,
+Blandinger **157 → 237** — confirming the per-sub-series indexes are the missing
+authority source.
+
 **Only `Navneregister` (name) indexes** are parsed; the Eventyr/Digte
 "Register" / "Titelregister" are *title* indexes (out of scope). **Romaner**:
 the edition's print has a Romaner index, but it is **not yet encoded** in the

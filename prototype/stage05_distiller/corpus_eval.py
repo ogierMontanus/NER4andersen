@@ -20,6 +20,7 @@ from tei_comments import (
 )
 from classify import classify
 from reconcile import reconcile_place, reconcile_person
+import register_index as rix
 
 DEFAULT_DATA = "/home/user/svNames/data"
 
@@ -149,10 +150,59 @@ def build_report(data_dir: str) -> tuple[str, list[dict]]:
     return "\n".join(lines) + "\n", stats
 
 
+def index_authority_lift(data_dir: str) -> str:
+    """Measure the person-linkage lift from adding the sub-series Navneregister
+    entries as an extra authority (alongside persons.xml)."""
+    base = load_person_register(os.path.join(data_dir, "registers", "persons.xml"))
+    by_series = rix.parse_corpus(data_dir)
+    all_entries = [e for es in by_series.values() for e in es]
+    idx_auth = rix.to_authority_index(all_entries)
+
+    augmented = {k: set(v) for k, v in base.items()}
+    for k, ids in idx_auth.items():
+        augmented.setdefault(k, set()).update(ids)
+
+    smap, vser = rix.build_series_map(data_dir)
+    vols = sorted(glob.glob(os.path.join(data_dir, "Andersen [0-9]* - *_w_notes*.xml")),
+                  key=_vol_no)
+    lines = [
+        "# Person-linkage lift from sub-series Navneregister authority",
+        "",
+        f"persons.xml keys: **{len(base)}**  →  + Navneregister "
+        f"({len(all_entries)} entries): **{len(augmented)}** keys",
+        "",
+        "| Vol | Series | Person rows | linked (persons.xml) | linked (+ index) |",
+        "| ---: | --- | ---: | ---: | ---: |",
+    ]
+    tb = ta = tr = 0
+    for p in vols:
+        vol = load_volume(p)
+        keys = set(vol.place_surface_norm)
+        dist = [classify(r, keys) for r in vol.rows]
+        prows = [d for d in dist if any(e.etype == "person" for e in d.entities)]
+        lb = sum(1 for d in prows if reconcile_person(d, base))
+        la = sum(1 for d in prows if reconcile_person(d, augmented))
+        if not prows:
+            continue
+        n = _vol_no(p)
+        lines.append(f"| {n} | {vser.get(n,'')} | {len(prows)} | {lb} | {la} |")
+        tb += lb
+        ta += la
+        tr += len(prows)
+    lines.append(f"| **all** | | **{tr}** | **{tb}** | **{ta}** |")
+    lines.append("")
+    lines.append(f"Corpus person linkage: **{tb}/{tr}** ({100*tb/tr:.0f}%) with "
+                 f"persons.xml alone → **{ta}/{tr}** ({100*ta/tr:.0f}%) with the "
+                 f"sub-series Navneregister folded in (+{ta-tb} mentions).")
+    return "\n".join(lines) + "\n"
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--data", default=DEFAULT_DATA, help="svNames data directory")
     ap.add_argument("--out", default="eval/corpus_report.md", help="report path")
+    ap.add_argument("--index-lift", default="",
+                    help="also write the Navneregister person-linkage lift report")
     args = ap.parse_args(argv)
 
     report, stats = build_report(args.data)
@@ -161,6 +211,12 @@ def main(argv=None):
         with open(args.out, "w", encoding="utf-8") as fh:
             fh.write(report)
     print(report)
+
+    if args.index_lift:
+        lift = index_authority_lift(args.data)
+        with open(args.index_lift, "w", encoding="utf-8") as fh:
+            fh.write(lift)
+        print(lift)
     return 0
 
 
