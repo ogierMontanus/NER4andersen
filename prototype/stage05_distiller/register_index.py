@@ -222,6 +222,16 @@ def to_authority_index(entries: list[IndexEntry]) -> dict[str, set[str]]:
     return index
 
 
+def build_index_authority(data_dir: str) -> dict[str, set[str]]:
+    """Parse every sub-series Navneregister and return a name -> {svidx-*} map.
+
+    Convenience wrapper used to fold the printed name indexes into the person
+    register as a default authority source. Returns {} if no register is present.
+    """
+    entries = [e for es in parse_corpus(data_dir).values() for e in es]
+    return to_authority_index(entries)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--data", default="/home/user/svNames/data")
