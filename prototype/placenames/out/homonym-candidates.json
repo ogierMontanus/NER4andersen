@@ -1,0 +1,3095 @@
+[
+  {
+    "place": "Portici",
+    "lemma_andersen": "Portici",
+    "explanation": "italiensk by ved foden af Vesuv, sydøst for Napoli. ¶ La muette de Portici, opera, 1828, af D.F.E. Auber; tekst af E. Scribe og G. Delavigne; dansk Den Stumme i Portici, oversat af J.L. Heiberg; opført på Det Kongelige Teater 1830. ¶ østlig forstad til Napoli.",
+    "year": "1836",
+    "years": "1836 1842 1855",
+    "volumes": "7 11 14 17",
+    "work": "Vandring paa Vesuv. Ved Eruptionen om Aftenen den 24 Februar 1834",
+    "page": "496",
+    "occurrences": "4",
+    "references": "v7:496 (1836); v11:208 (1836); v14:347 (1842); v17:152 (1855)",
+    "confidence": "high",
+    "evidence": "in-register+place-type+located",
+    "geo_id": "geo-3170116",
+    "divergence": 0.966,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.17,
+      "head_a": "teater",
+      "head_b": "forstad",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "italiensk by ved foden af Vesuv, sydøst for Napoli.",
+      "La muette de Portici, opera, 1828, af D.F.E. Auber; tekst af E. Scribe og G. Delavigne; dansk Den Stumme i Portici, oversat af J.L. Heiberg; opført på Det Kongelige Teater 1830.",
+      "østlig forstad til Napoli."
+    ]
+  },
+  {
+    "place": "Fredensborg",
+    "lemma_andersen": "Fredensborg",
+    "explanation": "Fredensborg Slot eller by. ¶ Fredensborg Slotskirke. ¶ kongeligt residensslot opført af Frederik 4. (1671-1736, konge fra 1699) i 1720-1726 og udbygget i flere omgange frem til 1770’erne.",
+    "year": "1826",
+    "years": "1826 1860",
+    "volumes": "8 9 14",
+    "work": "Nyeste Skilderie af Kjøbenhavn",
+    "page": "48",
+    "occurrences": "3",
+    "references": "v14:48 (1826); v9:459 (1860); v8:453 ()",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+place-type",
+    "geo_id": "geo-2621956",
+    "divergence": 0.963,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.183,
+      "head_a": "borg",
+      "head_b": "residensslot",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Fredensborg Slot eller by.",
+      "Fredensborg Slotskirke.",
+      "kongeligt residensslot opført af Frederik 4. (1671-1736, konge fra 1699) i 1720-1726 og udbygget i flere omgange frem til 1770’erne."
+    ]
+  },
+  {
+    "place": "Kirken",
+    "lemma_andersen": "Kirken",
+    "explanation": "Roskilde Domkirke. ¶ domkirken Sankt Veit, bygget i gotisk stil fra 1344 på stedet for en romansk kirke.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "8 14",
+    "work": "En Digters Bazar",
+    "page": "574",
+    "occurrences": "2",
+    "references": "v14:574 (1842); v8:505 ()",
+    "confidence": "high",
+    "evidence": "head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.945,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.277,
+      "head_a": "domkirke",
+      "head_b": "kirke",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Roskilde Domkirke.",
+      "domkirken Sankt Veit, bygget i gotisk stil fra 1344 på stedet for en romansk kirke."
+    ]
+  },
+  {
+    "place": "Domkirken",
+    "lemma_andersen": "Domkirken",
+    "explanation": "kirken El Salvador er påbegyndt i 1300-tallet og fik status af domkirke i 1500-tallet, da Orihuela blev bispedømme. ¶ den gotiske katedral Saint André, grundlagt 1096.",
+    "year": "1863",
+    "years": "1863 1869",
+    "volumes": "15 18",
+    "work": "I Spanien",
+    "page": "258",
+    "occurrences": "2",
+    "references": "v15:258 (1863); v18:266 (1869)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.943,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.284,
+      "head_a": "kirken",
+      "head_b": "katedral",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "kirken El Salvador er påbegyndt i 1300-tallet og fik status af domkirke i 1500-tallet, da Orihuela blev bispedømme.",
+      "den gotiske katedral Saint André, grundlagt 1096."
+    ]
+  },
+  {
+    "place": "Tivoli",
+    "lemma_andersen": "Tivoli",
+    "explanation": "forlystelsespark anlagt på initiativ af Georg Carstensen i 1843. ¶ by øst for Rom ved foden af Sabinerbjergene. ¶ lille by 26 km øst for Rom med berømt vandfald og mange springvand (italiensk: cascade). ¶ grundlagt af Georg Carstensen i 1843. ¶ grundlagt 1843 af Georg Carstensen. ¶ forlystelsesetablissementet Tivoli-Vauxhall ved Paris. ¶ se kort. ¶ lille by 26 km øst for Rom med berømt vandfald og mange springvand.",
+    "year": "1831",
+    "years": "1831 1835 1837 1845 1846 1855 1870 1872",
+    "volumes": "3 4 5 8 12 14 15 17",
+    "work": "Skyggebilleder af en Reise til Harzen, det sachsiske Schweitz etc. etc., i Sommeren 1831",
+    "page": "176",
+    "occurrences": "9",
+    "references": "v14:176 (1831); v4:296 (1835); v5:261 (1837); v12:138 (1845); v12:177 (1846); v17:140 (1855); v15:491 (1870); v3:323 (1872); v8:273 ()",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type+se-kort",
+    "geo_id": "geo-3165624",
+    "divergence": 0.936,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.321,
+      "head_a": "forlystelsespark",
+      "head_b": "by",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "forlystelsespark anlagt på initiativ af Georg Carstensen i 1843.",
+      "by øst for Rom ved foden af Sabinerbjergene.",
+      "lille by 26 km øst for Rom med berømt vandfald og mange springvand (italiensk: cascade).",
+      "grundlagt af Georg Carstensen i 1843.",
+      "grundlagt 1843 af Georg Carstensen.",
+      "forlystelsesetablissementet Tivoli-Vauxhall ved Paris.",
+      "se kort.",
+      "lille by 26 km øst for Rom med berømt vandfald og mange springvand."
+    ]
+  },
+  {
+    "place": "Fredericia",
+    "lemma_andersen": "Fredericia",
+    "explanation": "den første danske by, hvortil indvandrede jøder fik adgang (fra 1600-tallet). ¶ slesvigholstenerne indesluttede byen efter slaget ved Kolding, mens rigstropperne forfulgte general Olaf Rye nordpå.",
+    "year": "1837",
+    "years": "1837 1857",
+    "volumes": "5 6",
+    "work": "Kun en Spillemand",
+    "page": "31",
+    "occurrences": "2",
+    "references": "v5:31 (1837); v6:198 (1857)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.932,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.342,
+      "head_a": "by",
+      "head_b": "byen",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "den første danske by, hvortil indvandrede jøder fik adgang (fra 1600-tallet).",
+      "slesvigholstenerne indesluttede byen efter slaget ved Kolding, mens rigstropperne forfulgte general Olaf Rye nordpå."
+    ]
+  },
+  {
+    "place": "Gisselfeld",
+    "lemma_andersen": "Gisselfeldt | Familien Danneskjold paa Gisselfeld",
+    "explanation": "Gisselfeld, hovedgård fra middelalderen 14 km nordøst for Næstved. ¶ Gisselfeld; herregård ved Haslev på Sjælland. ¶ Gisselfeld, hovedgård nordøst for Næstved, testamenteredes 1701 til Gisselfeld Adelige Jomfrukloster; klosterets leder har siden været et medlem af slægten Danneskiold-Samsøe.",
+    "year": "1839",
+    "years": "1839 1855 1863",
+    "volumes": "3 7 8 17",
+    "work": "Sang afsjunget ved Deres kongelige Høiheder Prinds Christians og Prindsesse Caroline Amalies Møde paa Gisselfeldt den 30 August 1839",
+    "page": "561",
+    "occurrences": "4",
+    "references": "v7:561 (1839); v17:233 (1855); v3:372 (1863); v8:31 ()",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.929,
+    "signals": {
+      "jaccard": 0.056,
+      "fuzz": 0.273,
+      "head_a": "herregård",
+      "head_b": "hovedgård",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Gisselfeld, hovedgård fra middelalderen 14 km nordøst for Næstved.",
+      "Gisselfeld; herregård ved Haslev på Sjælland.",
+      "Gisselfeld, hovedgård nordøst for Næstved, testamenteredes 1701 til Gisselfeld Adelige Jomfrukloster; klosterets leder har siden været et medlem af slægten Danneskiold-Samsøe."
+    ]
+  },
+  {
+    "place": "Klosteret",
+    "lemma_andersen": "Klosteret",
+    "explanation": "det gamle Augustinerkloster i Klosterneuburg. ¶ Klosteret, opført første gang på Det Kgl. Teater 1816.",
+    "year": "1837",
+    "years": "1837 1855",
+    "volumes": "5 17",
+    "work": "Kun en Spillemand",
+    "page": "233",
+    "occurrences": "2",
+    "references": "v5:233 (1837); v17:109 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.927,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.364,
+      "head_a": "kloster",
+      "head_b": "klosteret",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "det gamle Augustinerkloster i Klosterneuburg.",
+      "Klosteret, opført første gang på Det Kgl. Teater 1816."
+    ]
+  },
+  {
+    "place": "Kongens Slot",
+    "lemma_andersen": "Kongens Slot",
+    "explanation": "det middelalderlige Københavns Slot, nedrevet 1730-1731 for at give plads til Christiansborg. ¶ kejserborgen blev bygget i 1100-tallet i sammenhæng med den ældre borggreveborg og ombygget frem til midten af 1500-tallet.",
+    "year": "1842",
+    "years": "1842 1870",
+    "volumes": "3 14",
+    "work": "En Digters Bazar",
+    "page": "239",
+    "occurrences": "2",
+    "references": "v14:239 (1842); v3:236 (1870)",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.921,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.393,
+      "head_a": "slot",
+      "head_b": "borg",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "det middelalderlige Københavns Slot, nedrevet 1730-1731 for at give plads til Christiansborg.",
+      "kejserborgen blev bygget i 1100-tallet i sammenhæng med den ældre borggreveborg og ombygget frem til midten af 1500-tallet."
+    ]
+  },
+  {
+    "place": "Euphrat",
+    "lemma_andersen": "Euphrat",
+    "explanation": "floden Eufrat udsprang if. 1. Mosebog 2, 1014 i Edens have, som Adam og Eva efter syndefaldet blev uddrevet af (1. Mosebog 3,16-24); jf. evt. også 2. Krønikebog 35,20-25. ¶ flod i det nuværende Irak, som det vidtstrakte osmanniske rige også omfattede.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "12 14",
+    "work": "En Digters Bazar",
+    "page": "482",
+    "occurrences": "2",
+    "references": "v14:482 (1842); v12:270 ()",
+    "confidence": "high",
+    "evidence": "head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.912,
+    "signals": {
+      "jaccard": 0.05,
+      "fuzz": 0.364,
+      "head_a": "floden",
+      "head_b": "flod",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "floden Eufrat udsprang if. 1. Mosebog 2, 1014 i Edens have, som Adam og Eva efter syndefaldet blev uddrevet af (1. Mosebog 3,16-24); jf. evt. også 2. Krønikebog 35,20-25.",
+      "flod i det nuværende Irak, som det vidtstrakte osmanniske rige også omfattede."
+    ]
+  },
+  {
+    "place": "Scheveningen",
+    "lemma_andersen": "Scheweningen | Scheveningen",
+    "explanation": "Scheveningen, lille fiskerby ved Haag i Nordholland. ¶ landsby i Haags nordlige udkant, berømt kurog badeby.",
+    "year": "1849",
+    "years": "1849 1869",
+    "volumes": "5 18",
+    "work": "De to Baronesser",
+    "page": "422",
+    "occurrences": "2",
+    "references": "v5:422 (1849); v18:29 (1869)",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.912,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.438,
+      "head_a": "by",
+      "head_b": "landsby",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Scheveningen, lille fiskerby ved Haag i Nordholland.",
+      "landsby i Haags nordlige udkant, berømt kurog badeby."
+    ]
+  },
+  {
+    "place": "Bregentved",
+    "lemma_andersen": "Bregentved(s) | Bregentved",
+    "explanation": "herregård ved Haslev. ¶ A.W. Moltkes herregård fra ca. 1650 ved Haslev. ¶ lensgreve A.W. Moltkes herregård fra ca. 1650 ved Haslev. ¶ herregård fra ca. 1650 ved Haslev, ejet af lensgreve A.W. Moltke. ¶ herregård fra ca. 1650 ved Haslev, ejet af lensgreve A.W. Moltke, hvor H.C. Andersen fejrede julen 1848. ¶ hovedgård 5 km sydøst for Haslev. ¶ hovedgård ved Haslev, ejet af lensgreve Adam Wilhelm Moltke og komtesse Marie Elisabeth Moltke. H.C. Andersen var første gang gæst på Bregentved i sommeren 1842 og kom der flittigt op igennem 1840’erne.",
+    "year": "1846",
+    "years": "1846 1849 1855",
+    "volumes": "5 8 16 17",
+    "work": "Mit eget Eventyr uden Digtning",
+    "page": "263",
+    "occurrences": "7",
+    "references": "v16:263 (1846); v5:444 (1849); v17:234 (1855); v8:130 (); v8:256 (); v8:475 (); v8:500 ()",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.907,
+    "signals": {
+      "jaccard": 0.048,
+      "fuzz": 0.25,
+      "head_a": "herregård",
+      "head_b": "hovedgård",
+      "head_disagree": true,
+      "proper_overlap": 0.143
+    },
+    "notes": [
+      "herregård ved Haslev.",
+      "A.W. Moltkes herregård fra ca. 1650 ved Haslev.",
+      "lensgreve A.W. Moltkes herregård fra ca. 1650 ved Haslev.",
+      "herregård fra ca. 1650 ved Haslev, ejet af lensgreve A.W. Moltke.",
+      "herregård fra ca. 1650 ved Haslev, ejet af lensgreve A.W. Moltke, hvor H.C. Andersen fejrede julen 1848.",
+      "hovedgård 5 km sydøst for Haslev.",
+      "hovedgård ved Haslev, ejet af lensgreve Adam Wilhelm Moltke og komtesse Marie Elisabeth Moltke. H.C. Andersen var første gang gæst på Bregentved i sommeren 1842 og kom der flittigt op igennem 1840’erne."
+    ]
+  },
+  {
+    "place": "Slottet",
+    "lemma_andersen": "Slottet",
+    "explanation": "Sorgenfri Slot i Lyngby, opført som adeligt landsted 1705-1706 og blev i 1730 overtaget af kongehuset; Christian 8. og Caroline Amalies sommerresidens. ¶ Odense Slot. Bygget på resterne af Sankt Hans Kloster. I 1575 påbegyndte Frederik 2. en omfattende ombygning med henblik på at omdanne klostret til kongsgård. I 1720 indledte Frederik 4. en udbygning af stedet og omdøbte det til Odense Slot. I 1860 blev der indrettet museum i slottet, og i 1907 blev det overtaget af Odense Kommune. ¶ Frederiksborg Slot. Opført 1602-1625 til Christian 4.",
+    "year": "1832",
+    "years": "1832",
+    "volumes": "8 16",
+    "work": "Levnedsbog",
+    "page": "69",
+    "occurrences": "3",
+    "references": "v16:69 (1832); v16:128 (1832); v8:207 ()",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.89,
+    "signals": {
+      "jaccard": 0.038,
+      "fuzz": 0.369,
+      "head_a": "slot",
+      "head_b": "borg",
+      "head_disagree": true,
+      "proper_overlap": 0.125
+    },
+    "notes": [
+      "Sorgenfri Slot i Lyngby, opført som adeligt landsted 1705-1706 og blev i 1730 overtaget af kongehuset; Christian 8. og Caroline Amalies sommerresidens.",
+      "Odense Slot. Bygget på resterne af Sankt Hans Kloster. I 1575 påbegyndte Frederik 2. en omfattende ombygning med henblik på at omdanne klostret til kongsgård. I 1720 indledte Frederik 4. en udbygning af stedet og omdøbte det til Odense Slot. I 1860 blev der indrettet museum i slottet, og i 1907 blev det overtaget af Odense Kommune.",
+      "Frederiksborg Slot. Opført 1602-1625 til Christian 4."
+    ]
+  },
+  {
+    "place": "Borreby",
+    "lemma_andersen": "gammelt Sagn … Nabogaarde | Borreby",
+    "explanation": "Borreby, herregård syd for Skælskør, ligger kun få km fra Basnæs; sagnet har ikke kunnet identificeres. ¶ hovedgård 2 km syd for Skelskør.",
+    "year": "1869",
+    "years": "1869",
+    "volumes": "8 18",
+    "work": "Mit Livs Eventyr (inklusive Fortsættelse og Tillæg)",
+    "page": "224",
+    "occurrences": "2",
+    "references": "v18:224 (1869); v8:380 ()",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.88,
+    "signals": {
+      "jaccard": 0.083,
+      "fuzz": 0.476,
+      "head_a": "by",
+      "head_b": "hovedgård",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Borreby, herregård syd for Skælskør, ligger kun få km fra Basnæs; sagnet har ikke kunnet identificeres.",
+      "hovedgård 2 km syd for Skelskør."
+    ]
+  },
+  {
+    "place": "Breitenburg",
+    "lemma_andersen": "Breitenburg",
+    "explanation": "gehejmestatsminister Rantzaus borg syd for Itzehoe i Slesvig-Holsten, hvor H.C. Andersens var på besøg i både 1840, 1843 og 1844; Rantzau bevirkede, at Andersen i 1838 tildeltes en årlig offentlig understøttelse på 400 Rdl. ¶ slot ca. 3 km sydøst for Itzehoe (se kort), grundlagt i begyndelsen af 1500-tallet som hovedsæde for adelsfamilien Rantzau. ¶ gehejmestatsminister Andreas Conrad Peter Rantzaus borg syd for Itzehoe i Slesvig-Holsten, hvor H.C. Andersen opholdt sig 2.-19. februar 1843.",
+    "year": "1842",
+    "years": "1842 1855",
+    "volumes": "8 14 17",
+    "work": "En Digters Bazar",
+    "page": "221",
+    "occurrences": "3",
+    "references": "v14:221 (1842); v17:249 (1855); v8:95 ()",
+    "confidence": "high",
+    "evidence": "in-register+located+place-type+se-kort+head-noun",
+    "geo_id": "geo-2944627",
+    "divergence": 0.872,
+    "signals": {
+      "jaccard": 0.043,
+      "fuzz": 0.452,
+      "head_a": "slot",
+      "head_b": "borg",
+      "head_disagree": true,
+      "proper_overlap": 0.125
+    },
+    "notes": [
+      "gehejmestatsminister Rantzaus borg syd for Itzehoe i Slesvig-Holsten, hvor H.C. Andersens var på besøg i både 1840, 1843 og 1844; Rantzau bevirkede, at Andersen i 1838 tildeltes en årlig offentlig understøttelse på 400 Rdl.",
+      "slot ca. 3 km sydøst for Itzehoe (se kort), grundlagt i begyndelsen af 1500-tallet som hovedsæde for adelsfamilien Rantzau.",
+      "gehejmestatsminister Andreas Conrad Peter Rantzaus borg syd for Itzehoe i Slesvig-Holsten, hvor H.C. Andersen opholdt sig 2.-19. februar 1843."
+    ]
+  },
+  {
+    "place": "Halligerne",
+    "lemma_andersen": "Halligerne",
+    "explanation": "ti ganske flade øer med marskland ved Slesvigs vestkyst. ¶ øgruppe på ti uindigede småøer i det Nordfrisiske Vadehav ved Slesvig-Holstens vestkyst.",
+    "year": "1846",
+    "years": "1846 1849",
+    "volumes": "5 16",
+    "work": "Mit eget Eventyr uden Digtning",
+    "page": "290",
+    "occurrences": "2",
+    "references": "v16:290 (1846); v5:355 (1849)",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.863,
+    "signals": {
+      "jaccard": 0.077,
+      "fuzz": 0.569,
+      "head_a": "øer",
+      "head_b": "hav",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "ti ganske flade øer med marskland ved Slesvigs vestkyst.",
+      "øgruppe på ti uindigede småøer i det Nordfrisiske Vadehav ved Slesvig-Holstens vestkyst."
+    ]
+  },
+  {
+    "place": "Tajo",
+    "lemma_andersen": "Tajo(s) | Tajo",
+    "explanation": "floden Tajo udspringer i Spanien og udmunder i Portugal. ¶ flod, der udspringer i Østspanien og munder ud i Atlanterhavet ved Lissabon.",
+    "year": "1863",
+    "years": "1863",
+    "volumes": "8 15",
+    "work": "I Spanien",
+    "page": "393",
+    "occurrences": "2",
+    "references": "v15:393 (1863); v8:342 ()",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.86,
+    "signals": {
+      "jaccard": 0.091,
+      "fuzz": 0.562,
+      "head_a": "floden",
+      "head_b": "flod",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "floden Tajo udspringer i Spanien og udmunder i Portugal.",
+      "flod, der udspringer i Østspanien og munder ud i Atlanterhavet ved Lissabon."
+    ]
+  },
+  {
+    "place": "Jungfernstieg",
+    "lemma_andersen": "Jungfernstieg | Jungfrauenstieg",
+    "explanation": "promenade i Hamborg ved Elb-bifloden Alster. ¶ Jungfernstieg, (tysk) jomfrutrappe; promenade i Hamburg beliggende på sydvest-siden af den kunstige sø Binnen-Alster. Kendt siden 1680. ¶ gade langs bredden af Binnen-Alster. ¶ (tysk) jomfrutrappe; promenade i Hamburg beliggende på sydvest-siden af den kunstige sø Binnen-Alster.",
+    "year": "1831",
+    "years": "1831 1842 1851 1857",
+    "volumes": "6 14 15",
+    "work": "Skyggebilleder af en Reise til Harzen, det sachsiske Schweitz etc. etc., i Sommeren 1831",
+    "page": "78",
+    "occurrences": "4",
+    "references": "v14:78 (1831); v14:578 (1842); v15:56 (1851); v6:81 (1857)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type",
+    "geo_id": "geo-6944304",
+    "divergence": 0.827,
+    "signals": {
+      "jaccard": 0.111,
+      "fuzz": 0.45,
+      "head_a": "promenade",
+      "head_b": "gade",
+      "head_disagree": true,
+      "proper_overlap": 0.25
+    },
+    "notes": [
+      "promenade i Hamborg ved Elb-bifloden Alster.",
+      "Jungfernstieg, (tysk) jomfrutrappe; promenade i Hamburg beliggende på sydvest-siden af den kunstige sø Binnen-Alster. Kendt siden 1680.",
+      "gade langs bredden af Binnen-Alster.",
+      "(tysk) jomfrutrappe; promenade i Hamburg beliggende på sydvest-siden af den kunstige sø Binnen-Alster."
+    ]
+  },
+  {
+    "place": "Rosenborg",
+    "lemma_andersen": "Rosenborg",
+    "explanation": "lystslot, opført 1606-1634. ¶ egentlig lystslottet Rosenborg i Kongens Have i København, opført 1606-1634.",
+    "year": "1868",
+    "years": "1868",
+    "volumes": "3 8",
+    "work": "Gudfaders Billedbog",
+    "page": "178",
+    "occurrences": "2",
+    "references": "v3:178 (1868); v8:423 ()",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.808,
+    "signals": {
+      "jaccard": 0.125,
+      "fuzz": 0.773,
+      "head_a": "slot",
+      "head_b": "borg",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "lystslot, opført 1606-1634.",
+      "egentlig lystslottet Rosenborg i Kongens Have i København, opført 1606-1634."
+    ]
+  },
+  {
+    "place": "Charlottenborg",
+    "lemma_andersen": "Charlottenborg | hans Bolig",
+    "explanation": "slot ved Kongens Nytorv, hvor Kunstakademiet havde til huse, og hvor Thorvaldsen som Kunstakademiets direktør 1833-1844 havde embedsbolig. ¶ slot ved Kongens Nytorv, hvor Kunstakademiet havde til huse. ¶ Charlottenborg, slot ved Kgs. Nytorv, hvor Det kongelige Academie for de Skønne Kunster havde til huse, og hvor Bertel Thorvaldsen som akademiets direktør 1833-1844 havde sin embedsbolig.",
+    "year": "1849",
+    "years": "1849 1855",
+    "volumes": "5 8 17",
+    "work": "De to Baronesser",
+    "page": "491",
+    "occurrences": "3",
+    "references": "v5:491 (1849); v17:237 (1855); v8:479 ()",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.807,
+    "signals": {
+      "jaccard": 0.188,
+      "fuzz": 0.681,
+      "head_a": "slot",
+      "head_b": "borg",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "slot ved Kongens Nytorv, hvor Kunstakademiet havde til huse, og hvor Thorvaldsen som Kunstakademiets direktør 1833-1844 havde embedsbolig.",
+      "slot ved Kongens Nytorv, hvor Kunstakademiet havde til huse.",
+      "Charlottenborg, slot ved Kgs. Nytorv, hvor Det kongelige Academie for de Skønne Kunster havde til huse, og hvor Bertel Thorvaldsen som akademiets direktør 1833-1844 havde sin embedsbolig."
+    ]
+  },
+  {
+    "place": "Lykkesholm",
+    "lemma_andersen": "Lykkesholm",
+    "explanation": "hovedgård i Vindinge Herred ca. 14 km sydvest for Nyborg; ejeren var justitsrådinde Johanne Lindegaard. H.C. Andersen kom der især 1835-1839. ¶ Lykkesholm Slot i Ørbæk, 14 km sydvest for Nyborg, hvor H.C. Andersen var kommet siden 1832 og især 1835-1839 var en flittig gæst.",
+    "year": "1846",
+    "years": "1846 1855",
+    "volumes": "16 17",
+    "work": "Mit eget Eventyr uden Digtning",
+    "page": "245",
+    "occurrences": "2",
+    "references": "v16:245 (1846); v17:187 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.785,
+    "signals": {
+      "jaccard": 0.211,
+      "fuzz": 0.614,
+      "head_a": "hovedgård",
+      "head_b": "slot",
+      "head_disagree": true,
+      "proper_overlap": 0.143
+    },
+    "notes": [
+      "hovedgård i Vindinge Herred ca. 14 km sydvest for Nyborg; ejeren var justitsrådinde Johanne Lindegaard. H.C. Andersen kom der især 1835-1839.",
+      "Lykkesholm Slot i Ørbæk, 14 km sydvest for Nyborg, hvor H.C. Andersen var kommet siden 1832 og især 1835-1839 var en flittig gæst."
+    ]
+  },
+  {
+    "place": "Nürnberg",
+    "lemma_andersen": "Nürnberg",
+    "explanation": "se kort. ¶ H.C. Andersen opholdt sig her 13.-15. november 1840. ¶ H.C. Andersen tog 15. juli fra Einsiedeln til Zürich og nåede via bl.a. Müchen og Augsburg til Nürnberg den 23. juli.",
+    "year": "1842",
+    "years": "1842 1869",
+    "volumes": "14 18",
+    "work": "En Digters Bazar",
+    "page": "237",
+    "occurrences": "3",
+    "references": "v14:237 (1842); v14:238 (1842); v18:241 (1869)",
+    "confidence": "high",
+    "evidence": "in-register+se-kort",
+    "geo_id": "geo-2861650",
+    "divergence": 0.686,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.068,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "se kort.",
+      "H.C. Andersen opholdt sig her 13.-15. november 1840.",
+      "H.C. Andersen tog 15. juli fra Einsiedeln til Zürich og nåede via bl.a. Müchen og Augsburg til Nürnberg den 23. juli."
+    ]
+  },
+  {
+    "place": "Aranjuez",
+    "lemma_andersen": "Aranjuez | Aranjues",
+    "explanation": "se kort. ¶ Aranjuez, spansk by ca. 40 km syd for Madrid, kendt for sit kongelige slot med det smukke haveanlæg, bygget 1561-1567 under Filip 2.",
+    "year": "1863",
+    "years": "1863 1869",
+    "volumes": "15 18",
+    "work": "I Spanien",
+    "page": "379",
+    "occurrences": "2",
+    "references": "v15:379 (1863); v18:263 (1869)",
+    "confidence": "high",
+    "evidence": "se-kort+located+place-type",
+    "geo_id": "",
+    "divergence": 0.682,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.088,
+      "head_a": null,
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "se kort.",
+      "Aranjuez, spansk by ca. 40 km syd for Madrid, kendt for sit kongelige slot med det smukke haveanlæg, bygget 1561-1567 under Filip 2."
+    ]
+  },
+  {
+    "place": "Paris",
+    "lemma_andersen": "Paris",
+    "explanation": "H.C. Andersen opholdt sig her 10. maj-15. august. ¶ H.C. Andersen rejste over Folkestone og Amiens og kom 17. juli til Paris, som han forlod den 20. Via Strassburg, Mannheim, Frankfurt og Leipzig ankom han den 26. til Dresden. 27. juli rejste han med familien Serre til pianisten og komponisten Adolf Henselts gods Gersdorf i Schlesien, hvor major Serres Fødselsdag (den 28.) blev fejret. 30.-31. juli fulgtes han med Serres til Maxen, hvor han blev til 30. august. ¶ 21. januar-20. marts.",
+    "year": "1846",
+    "years": "1846 1869",
+    "volumes": "16 18",
+    "work": "Mit eget Eventyr uden Digtning",
+    "page": "231",
+    "occurrences": "3",
+    "references": "v16:231 (1846); v18:196 (1869); v18:267 (1869)",
+    "confidence": "high",
+    "evidence": "in-register",
+    "geo_id": "geo-2988507",
+    "divergence": 0.681,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.097,
+      "head_a": "gods",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "H.C. Andersen opholdt sig her 10. maj-15. august.",
+      "H.C. Andersen rejste over Folkestone og Amiens og kom 17. juli til Paris, som han forlod den 20. Via Strassburg, Mannheim, Frankfurt og Leipzig ankom han den 26. til Dresden. 27. juli rejste han med familien Serre til pianisten og komponisten Adolf Henselts gods Gersdorf i Schlesien, hvor major Serres Fødselsdag (den 28.) blev fejret. 30.-31. juli fulgtes han med Serres til Maxen, hvor han blev til 30. august.",
+      "21. januar-20. marts."
+    ]
+  },
+  {
+    "place": "Scutari",
+    "lemma_andersen": "Scutari | Scutari(s)",
+    "explanation": "nuværende Üsküdar, bydel på Bosporusstrædets østbred, i Istanbuls asiatiske del. ¶ se kort. ¶ det nuværende Üsküdar, oldtidens Chrysopolis, bydel i Istanbul på den asiatiske side af Bosporus.",
+    "year": "1842",
+    "years": "1842 1855",
+    "volumes": "14 17",
+    "work": "En Digters Bazar",
+    "page": "454",
+    "occurrences": "3",
+    "references": "v14:454 (1842); v14:466 (1842); v17:219 (1855)",
+    "confidence": "high",
+    "evidence": "located+place-type+se-kort",
+    "geo_id": "",
+    "divergence": 0.677,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.114,
+      "head_a": null,
+      "head_b": "bydel",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "nuværende Üsküdar, bydel på Bosporusstrædets østbred, i Istanbuls asiatiske del.",
+      "se kort.",
+      "det nuværende Üsküdar, oldtidens Chrysopolis, bydel i Istanbul på den asiatiske side af Bosporus."
+    ]
+  },
+  {
+    "place": "Verona",
+    "lemma_andersen": "Verona",
+    "explanation": "på den nordlige del af Posletten øst for Gardasøen; byen er kendt for sit romerske amfiteater. ¶ se kort.",
+    "year": "1835",
+    "years": "1835 1842",
+    "volumes": "4 14",
+    "work": "Improvisatoren",
+    "page": "347",
+    "occurrences": "2",
+    "references": "v4:347 (1835); v14:261 (1842)",
+    "confidence": "high",
+    "evidence": "in-register+place-type+se-kort",
+    "geo_id": "geo-3164527",
+    "divergence": 0.676,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.122,
+      "head_a": "byen",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "på den nordlige del af Posletten øst for Gardasøen; byen er kendt for sit romerske amfiteater.",
+      "se kort."
+    ]
+  },
+  {
+    "place": "Pisa",
+    "lemma_andersen": "Pisa",
+    "explanation": "by i Toscana vest for Firenze; se kort. ¶ se kort. ¶ 30. maj.",
+    "year": "1835",
+    "years": "1835 1869 1870",
+    "volumes": "14 15 18",
+    "work": "Søndagsblad. Et æsthetisk Ugeskrift",
+    "page": "202",
+    "occurrences": "3",
+    "references": "v14:202 (1835); v18:239 (1869); v15:490 (1870)",
+    "confidence": "high",
+    "evidence": "in-register+se-kort+head-noun+located+place-type",
+    "geo_id": "geo-3170647",
+    "divergence": 0.674,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.128,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "by i Toscana vest for Firenze; se kort.",
+      "se kort.",
+      "30. maj."
+    ]
+  },
+  {
+    "place": "Madrid",
+    "lemma_andersen": "Madrid",
+    "explanation": "se kort. ¶ Spaniens hovedstad beliggende ca. 215 km syd for Burgos i det centrale højland.",
+    "year": "1863",
+    "years": "1863 1868",
+    "volumes": "15",
+    "work": "I Spanien",
+    "page": "251",
+    "occurrences": "2",
+    "references": "v15:251 (1863); v15:423 (1868)",
+    "confidence": "high",
+    "evidence": "se-kort+located+place-type",
+    "geo_id": "",
+    "divergence": 0.672,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.138,
+      "head_a": null,
+      "head_b": "hovedstad",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "se kort.",
+      "Spaniens hovedstad beliggende ca. 215 km syd for Burgos i det centrale højland."
+    ]
+  },
+  {
+    "place": "Siena",
+    "lemma_andersen": "Siena",
+    "explanation": "se kort. ¶ italiensk by 50 km syd for Firenze, hvortil H.C. Andersen ankom 4. april 1834.",
+    "year": "1842",
+    "years": "1842 1855",
+    "volumes": "14 17",
+    "work": "En Digters Bazar",
+    "page": "281",
+    "occurrences": "2",
+    "references": "v14:281 (1842); v17:154 (1855)",
+    "confidence": "high",
+    "evidence": "se-kort+located+place-type",
+    "geo_id": "",
+    "divergence": 0.672,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.14,
+      "head_a": null,
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "se kort.",
+      "italiensk by 50 km syd for Firenze, hvortil H.C. Andersen ankom 4. april 1834."
+    ]
+  },
+  {
+    "place": "Königstein",
+    "lemma_andersen": "Königstein",
+    "explanation": "bjerg på 312 m. ¶ en middelalderfæstning i Sachsiske Schweiz, sydøst for Dresden.",
+    "year": "1831",
+    "years": "1831 1842",
+    "volumes": "14",
+    "work": "Skyggebilleder af en Reise til Harzen, det sachsiske Schweitz etc. etc., i Sommeren 1831",
+    "page": "155",
+    "occurrences": "2",
+    "references": "v14:155 (1831); v14:576 (1842)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+place-type",
+    "geo_id": "geo-2885764",
+    "divergence": 0.669,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.154,
+      "head_a": "bjerg",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "bjerg på 312 m.",
+      "en middelalderfæstning i Sachsiske Schweiz, sydøst for Dresden."
+    ]
+  },
+  {
+    "place": "Spoleto",
+    "lemma_andersen": "Spoleto",
+    "explanation": "by nord for Rom i Appenninerne. ¶ se kort.",
+    "year": "1835",
+    "years": "1835 1842",
+    "volumes": "4 14",
+    "work": "Improvisatoren",
+    "page": "311",
+    "occurrences": "2",
+    "references": "v4:311 (1835); v14:289 (1842)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type+se-kort",
+    "geo_id": "geo-3166236",
+    "divergence": 0.669,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.154,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "by nord for Rom i Appenninerne.",
+      "se kort."
+    ]
+  },
+  {
+    "place": "Terracina",
+    "lemma_andersen": "Terracina | Terracina(s) | Terrazina",
+    "explanation": "kystby ca. 125 km nord for Napoli. ¶ kystby midtvejs mellem Rom og Napoli ved det Tyrrhenske Hav; se kort. ¶ italiensk by ved kysten syd for Rom; se kort. ¶ se kort. ¶ italiensk kystby syd for Napoli. ¶ Terracina; kystby 90 km sydøst for Rom.",
+    "year": "1835",
+    "years": "1835 1842 1855 1868",
+    "volumes": "4 14 15 17",
+    "work": "Improvisatoren",
+    "page": "196",
+    "occurrences": "6",
+    "references": "v4:196 (1835); v14:200 (1835); v14:228 (1842); v14:339 (1842); v17:151 (1855); v15:423 (1868)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type+se-kort",
+    "geo_id": "geo-3165762",
+    "divergence": 0.662,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.19,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "kystby ca. 125 km nord for Napoli.",
+      "kystby midtvejs mellem Rom og Napoli ved det Tyrrhenske Hav; se kort.",
+      "italiensk by ved kysten syd for Rom; se kort.",
+      "se kort.",
+      "italiensk kystby syd for Napoli.",
+      "Terracina; kystby 90 km sydøst for Rom."
+    ]
+  },
+  {
+    "place": "Dresden",
+    "lemma_andersen": "Dresden",
+    "explanation": "se kort; rummer blandt andet bydelene Neustadt og Altstadt. ¶ se kort. ¶ H.C. Andersen ankommer til Dresden 3. juni.",
+    "year": "1831",
+    "years": "1831 1842 1855",
+    "volumes": "14 17",
+    "work": "Skyggebilleder af en Reise til Harzen, det sachsiske Schweitz etc. etc., i Sommeren 1831",
+    "page": "142",
+    "occurrences": "4",
+    "references": "v14:142 (1831); v14:214 (1842); v14:576 (1842); v17:90 (1855)",
+    "confidence": "high",
+    "evidence": "in-register+se-kort",
+    "geo_id": "geo-2935022",
+    "divergence": 0.661,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.196,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "se kort; rummer blandt andet bydelene Neustadt og Altstadt.",
+      "se kort.",
+      "H.C. Andersen ankommer til Dresden 3. juni."
+    ]
+  },
+  {
+    "place": "Lübeck",
+    "lemma_andersen": "Lübeck",
+    "explanation": "by i det østlige Holsten, nord for Hamburg. ¶ se kort.",
+    "year": "1831",
+    "years": "1831 1842",
+    "volumes": "14",
+    "work": "Skyggebilleder af en Reise til Harzen, det sachsiske Schweitz etc. etc., i Sommeren 1831",
+    "page": "67",
+    "occurrences": "2",
+    "references": "v14:67 (1831); v14:230 (1842)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+place-type+se-kort",
+    "geo_id": "geo-2875601",
+    "divergence": 0.661,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.196,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "by i det østlige Holsten, nord for Hamburg.",
+      "se kort."
+    ]
+  },
+  {
+    "place": "Terni",
+    "lemma_andersen": "Terni",
+    "explanation": "by 50 km nord for Nepi. ¶ se kort.",
+    "year": "1835",
+    "years": "1835 1842",
+    "volumes": "4 14",
+    "work": "Improvisatoren",
+    "page": "309",
+    "occurrences": "2",
+    "references": "v4:309 (1835); v14:281 (1842)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type+se-kort",
+    "geo_id": "geo-3165771",
+    "divergence": 0.661,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.194,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "by 50 km nord for Nepi.",
+      "se kort."
+    ]
+  },
+  {
+    "place": "Leksand",
+    "lemma_andersen": "Leksand | Leksand(s)",
+    "explanation": "se kort 2. ¶ by ved Siljansøen i Sverige.",
+    "year": "1851",
+    "years": "1851 1869",
+    "volumes": "15 18",
+    "work": "I Sverrig",
+    "page": "85",
+    "occurrences": "2",
+    "references": "v15:85 (1851); v18:315 (1869)",
+    "confidence": "high",
+    "evidence": "se-kort+head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.658,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.211,
+      "head_a": null,
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "se kort 2.",
+      "by ved Siljansøen i Sverige."
+    ]
+  },
+  {
+    "place": "Carrara",
+    "lemma_andersen": "Carrara",
+    "explanation": "by nordvest for Firenze, berømt for sine marmorbrud. ¶ se kort.",
+    "year": "1835",
+    "years": "1835 1836 1870",
+    "volumes": "4 15",
+    "work": "Improvisatoren",
+    "page": "229",
+    "occurrences": "4",
+    "references": "v4:229 (1835); v4:349 (1835); v4:382 (1836); v15:490 (1870)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type+se-kort",
+    "geo_id": "",
+    "divergence": 0.657,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.214,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "by nordvest for Firenze, berømt for sine marmorbrud.",
+      "se kort."
+    ]
+  },
+  {
+    "place": "Valencia",
+    "lemma_andersen": "Valencia | Valencia(s)",
+    "explanation": "østspansk region ved Middelhavskysten. ¶ region i Sydspanien. ¶ se kort.",
+    "year": "1839",
+    "years": "1839 1842 1863",
+    "volumes": "11 14 15",
+    "work": "Den Usynlige paa Sprogø",
+    "page": "266",
+    "occurrences": "3",
+    "references": "v11:266 (1839); v14:219 (1842); v15:233 (1863)",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun+se-kort",
+    "geo_id": "",
+    "divergence": 0.657,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.217,
+      "head_a": "region",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "østspansk region ved Middelhavskysten.",
+      "region i Sydspanien.",
+      "se kort."
+    ]
+  },
+  {
+    "place": "Fondi",
+    "lemma_andersen": "Fondi",
+    "explanation": "mindre by syd for Terracina. ¶ se kort.",
+    "year": "1835",
+    "years": "1835 1842",
+    "volumes": "4 14",
+    "work": "Improvisatoren",
+    "page": "206",
+    "occurrences": "2",
+    "references": "v4:206 (1835); v14:340 (1842)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type+se-kort",
+    "geo_id": "geo-3176843",
+    "divergence": 0.656,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.222,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "mindre by syd for Terracina.",
+      "se kort."
+    ]
+  },
+  {
+    "place": "Lago Maggiore",
+    "lemma_andersen": "Lago Maggiore | Lago magiore",
+    "explanation": "sø i Norditalien. ¶ Lago Maggiore; se kort. ¶ lang, smal sø i De Italienske Alper.",
+    "year": "1836",
+    "years": "1836 1855 1870",
+    "volumes": "4 15 17",
+    "work": "O. T.",
+    "page": "624",
+    "occurrences": "3",
+    "references": "v4:624 (1836); v17:127 (1855); v15:490 (1870)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type+se-kort",
+    "geo_id": "geo-2659792",
+    "divergence": 0.653,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.237,
+      "head_a": null,
+      "head_b": "sø",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "sø i Norditalien.",
+      "Lago Maggiore; se kort.",
+      "lang, smal sø i De Italienske Alper."
+    ]
+  },
+  {
+    "place": "Piræus",
+    "lemma_andersen": "Piræus",
+    "explanation": "Athens forstad og havneby; se kort. ¶ (Pireas) Athens havneby; se kort.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "14",
+    "work": "En Digters Bazar",
+    "page": "351",
+    "occurrences": "2",
+    "references": "v14:351 (1842); v14:378 (1842)",
+    "confidence": "high",
+    "evidence": "se-kort",
+    "geo_id": "",
+    "divergence": 0.652,
+    "signals": {
+      "jaccard": 0.6,
+      "fuzz": 0.842,
+      "head_a": "forstad",
+      "head_b": "by",
+      "head_disagree": true,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Athens forstad og havneby; se kort.",
+      "(Pireas) Athens havneby; se kort."
+    ]
+  },
+  {
+    "place": "Campagnen",
+    "lemma_andersen": "Campagnen",
+    "explanation": "landskabet omkring Rom. ¶ flodslette uden for Rom og Tiberens nedre løb. ¶ den store slette, der omgiver Rom. ¶ sletten, der omgiver Rom.",
+    "year": "1837",
+    "years": "1837 1846 1849 1853 1862 1870",
+    "volumes": "2 5 6 8 16",
+    "work": "Kun en Spillemand",
+    "page": "251",
+    "occurrences": "7",
+    "references": "v5:251 (1837); v16:320 (1846); v5:462 (1849); v2:73 (1853); v2:441 (1862); v6:333 (1870); v8:124 ()",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.649,
+    "signals": {
+      "jaccard": 0.2,
+      "fuzz": 0.456,
+      "head_a": "landskabet",
+      "head_b": "slette",
+      "head_disagree": true,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "landskabet omkring Rom.",
+      "flodslette uden for Rom og Tiberens nedre løb.",
+      "den store slette, der omgiver Rom.",
+      "sletten, der omgiver Rom."
+    ]
+  },
+  {
+    "place": "det gamle Slot",
+    "lemma_andersen": "det gamle Slot",
+    "explanation": "kongeslottet Paço Real, nu kaldt Palácio Nacional de Sintra, bygget af João 1. i slutningen af 1300-tallet, tilbygninger i maurisk stil fra begyndelsen af 1500-tallet, residens til 1880’erne. ¶ det nuværende slot er opført 1498 af Ludvig 12.",
+    "year": "1868",
+    "years": "1868 1869",
+    "volumes": "15 18",
+    "work": "Et Besøg i Portugal 1866",
+    "page": "431",
+    "occurrences": "2",
+    "references": "v15:431 (1868); v18:267 (1869)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.646,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.27,
+      "head_a": null,
+      "head_b": "slot",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "kongeslottet Paço Real, nu kaldt Palácio Nacional de Sintra, bygget af João 1. i slutningen af 1300-tallet, tilbygninger i maurisk stil fra begyndelsen af 1500-tallet, residens til 1880’erne.",
+      "det nuværende slot er opført 1498 af Ludvig 12."
+    ]
+  },
+  {
+    "place": "Orsova",
+    "lemma_andersen": "Orsova | (Gammel-)Orsova",
+    "explanation": "Or¸sova; se kort. ¶ Ors¸ova; rumænsk by på Donaus venstre bred (Ny Orsova lå på Donaus højre, serbiske bred).",
+    "year": "1842",
+    "years": "1842 1855",
+    "volumes": "14 17",
+    "work": "En Digters Bazar",
+    "page": "509",
+    "occurrences": "2",
+    "references": "v14:509 (1842); v17:221 (1855)",
+    "confidence": "high",
+    "evidence": "se-kort+located+place-type",
+    "geo_id": "",
+    "divergence": 0.646,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.271,
+      "head_a": null,
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Or¸sova; se kort.",
+      "Ors¸ova; rumænsk by på Donaus venstre bred (Ny Orsova lå på Donaus højre, serbiske bred)."
+    ]
+  },
+  {
+    "place": "Civita Vecchia",
+    "lemma_andersen": "Civita Vecchia",
+    "explanation": "havneby i Pavestaten; se kort. ¶ kystby nordøst for Rom.",
+    "year": "1861",
+    "years": "1861 1868",
+    "volumes": "15",
+    "work": "Dagbladet",
+    "page": "215",
+    "occurrences": "2",
+    "references": "v15:215 (1861); v15:427 (1868)",
+    "confidence": "high",
+    "evidence": "se-kort+head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.64,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.302,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "havneby i Pavestaten; se kort.",
+      "kystby nordøst for Rom."
+    ]
+  },
+  {
+    "place": "Kirsten Piil",
+    "lemma_andersen": "Kirsten Piil(s) | Kirsten Piil",
+    "explanation": "bondepige, som i 1500tallet opdagede en kilde i Dyrehaven. Omkring denne voksede Dyrehavsbakken op. ¶ if. traditionen navnet på den kvinde, der 1583 fandt den hellige kilde i Jægersborg Dyrehave. Kilden skal være istandsat 1732 af de to venner Brinchmann og Greve, der sandsynligvis har opdigtet navnet; »Kirsten« er kendt fra folkeviserne; tilnavnet »Pil« skal angive, at kvinden hørte til de folk, der ifølge folketroen kunne »vise vand«. Kendt som figur i Oehlenschlägers »Sanct Hansaften-Spil«, Digte, 1803.",
+    "year": "1807",
+    "years": "1807 1836",
+    "volumes": "4 12",
+    "work": "Lykkens Blomst",
+    "page": "56",
+    "occurrences": "2",
+    "references": "v12:56 (1807); v4:391 (1836)",
+    "confidence": "medium",
+    "evidence": "located+place-type",
+    "geo_id": "",
+    "divergence": 0.632,
+    "signals": {
+      "jaccard": 0.023,
+      "fuzz": 0.306,
+      "head_a": "kilde",
+      "head_b": "kilde",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "bondepige, som i 1500tallet opdagede en kilde i Dyrehaven. Omkring denne voksede Dyrehavsbakken op.",
+      "if. traditionen navnet på den kvinde, der 1583 fandt den hellige kilde i Jægersborg Dyrehave. Kilden skal være istandsat 1732 af de to venner Brinchmann og Greve, der sandsynligvis har opdigtet navnet; »Kirsten« er kendt fra folkeviserne; tilnavnet »Pil« skal angive, at kvinden hørte til de folk, der ifølge folketroen kunne »vise vand«. Kendt som figur i Oehlenschlägers »Sanct Hansaften-Spil«, Digte, 1803."
+    ]
+  },
+  {
+    "place": "Kullen",
+    "lemma_andersen": "Kullen | Kullen(s)",
+    "explanation": "halvø mellem Skälderviken og Øresund. ¶ Kullaberg på halvøen Kullen i Skåne, hvis højeste punkt (Håkull) er 188 m. ¶ halvø beliggende mellem Skälderviken og Øresund. ¶ halvø mellem Skälderviken på den svenske Kattegatkyst og Øresund.",
+    "year": "1830",
+    "years": "1830 1832 1842 1855",
+    "volumes": "7 8 14 16 17",
+    "work": "Digte",
+    "page": "102",
+    "occurrences": "6",
+    "references": "v7:102 (1830); v16:132 (1832); v14:573 (1842); v17:71 (1855); v17:302 (1855); v8:67 ()",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type",
+    "geo_id": "geo-2698848",
+    "divergence": 0.632,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.342,
+      "head_a": "halvø",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "halvø mellem Skälderviken og Øresund.",
+      "Kullaberg på halvøen Kullen i Skåne, hvis højeste punkt (Håkull) er 188 m.",
+      "halvø beliggende mellem Skälderviken og Øresund.",
+      "halvø mellem Skälderviken på den svenske Kattegatkyst og Øresund."
+    ]
+  },
+  {
+    "place": "Livorno",
+    "lemma_andersen": "Livorno",
+    "explanation": "kystby syd for Pisa; se kort. ¶ se kort. ¶ hvortil turen gik den 6. oktober med hjemkomst dagen efter.",
+    "year": "1835",
+    "years": "1835 1855 1861 1870",
+    "volumes": "14 15 17",
+    "work": "Søndagsblad. Et æsthetisk Ugeskrift",
+    "page": "202",
+    "occurrences": "4",
+    "references": "v14:202 (1835); v17:130 (1855); v15:216 (1861); v15:490 (1870)",
+    "confidence": "high",
+    "evidence": "in-register+se-kort+head-noun+located+place-type",
+    "geo_id": "geo-3174659",
+    "divergence": 0.632,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.341,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "kystby syd for Pisa; se kort.",
+      "se kort.",
+      "hvortil turen gik den 6. oktober med hjemkomst dagen efter."
+    ]
+  },
+  {
+    "place": "Ariccia",
+    "lemma_andersen": "Ariccia",
+    "explanation": "by i Albanerbjergene. ¶ by 11 km syd for Grottaferrata.",
+    "year": "1835",
+    "years": "1835 1855",
+    "volumes": "4 17",
+    "work": "Improvisatoren",
+    "page": "194",
+    "occurrences": "2",
+    "references": "v4:194 (1835); v17:138 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.631,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.346,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "by i Albanerbjergene.",
+      "by 11 km syd for Grottaferrata."
+    ]
+  },
+  {
+    "place": "Peterskirken",
+    "lemma_andersen": "Roms 7 hellige Kirker | Peterskirken(s) | St. Peter(s) | Peterskirken",
+    "explanation": "Peterskirken, San Giovanni in Laterano, San Paolo fuori le Mura, Santa Maria Maggiore, Santa Croce in Gerusalemme, San Lorenzo fuori le Mura og San Sebastiano. ¶ den romersk-katolske kirkes hovedsæde i Vatikan-staten i Rom, indviet til apostelen Peter. ¶ Peterskirken, bygget over apostlen Peters formodede grav. Den nuværende kirke blev påbegyndt i 1500-tallet og erstattede en tidligere kirkebygning fra 300-tallet. ¶ den romersk-katolske kirkes hovedsæde i Vatikanstaten i Rom, indviet til apostelen Peter.",
+    "year": "1835",
+    "years": "1835 1840 1842 1855",
+    "volumes": "4 9 14 17",
+    "work": "Improvisatoren",
+    "page": "167",
+    "occurrences": "4",
+    "references": "v4:167 (1835); v9:383 (1840); v14:295 (1842); v17:134 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.628,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.359,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Peterskirken, San Giovanni in Laterano, San Paolo fuori le Mura, Santa Maria Maggiore, Santa Croce in Gerusalemme, San Lorenzo fuori le Mura og San Sebastiano.",
+      "den romersk-katolske kirkes hovedsæde i Vatikan-staten i Rom, indviet til apostelen Peter.",
+      "Peterskirken, bygget over apostlen Peters formodede grav. Den nuværende kirke blev påbegyndt i 1500-tallet og erstattede en tidligere kirkebygning fra 300-tallet.",
+      "den romersk-katolske kirkes hovedsæde i Vatikanstaten i Rom, indviet til apostelen Peter."
+    ]
+  },
+  {
+    "place": "Arno",
+    "lemma_andersen": "Arno",
+    "explanation": "flod, der udspringer i Appenninerne, flyder igennem Firenze og videre ud mod Middelhavet. ¶ flod i Norditalien.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "14",
+    "work": "En Digters Bazar",
+    "page": "271",
+    "occurrences": "2",
+    "references": "v14:271 (1842); v14:522 (1842)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.626,
+    "signals": {
+      "jaccard": 0.1,
+      "fuzz": 0.222,
+      "head_a": "flod",
+      "head_b": "flod",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "flod, der udspringer i Appenninerne, flyder igennem Firenze og videre ud mod Middelhavet.",
+      "flod i Norditalien."
+    ]
+  },
+  {
+    "place": "Le Locle",
+    "lemma_andersen": "Le Locle | Locle",
+    "explanation": "schweizisk by, kendt som urmagerby, tæt på grænsen til Frankrig vest for Neuchâtel. ¶ Le Locle; lille bjergby, hvor H.C. Andersen boede hos urmager Jules Jürgensen fra 14. til 27. maj 1867. ¶ Le Locle, by i Jurabjergene lidt nordvest for Neuchâtel; se kort.",
+    "year": "1836",
+    "years": "1836 1869",
+    "volumes": "4 8 15",
+    "work": "O. T.",
+    "page": "450",
+    "occurrences": "3",
+    "references": "v4:450 (1836); v15:483 (1869); v8:379 ()",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun+se-kort",
+    "geo_id": "",
+    "divergence": 0.625,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.376,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "schweizisk by, kendt som urmagerby, tæt på grænsen til Frankrig vest for Neuchâtel.",
+      "Le Locle; lille bjergby, hvor H.C. Andersen boede hos urmager Jules Jürgensen fra 14. til 27. maj 1867.",
+      "Le Locle, by i Jurabjergene lidt nordvest for Neuchâtel; se kort."
+    ]
+  },
+  {
+    "place": "Kirke",
+    "lemma_andersen": "Circe(s) | Kirke",
+    "explanation": "Kirke, troldkvinde i Odysseens 10. sang, der forvandlede Odysseus’ (Ulysses’) mænd til svin. ¶ Lima kyrka; stenkirke fra middelalderen, der nedbrændte i 1852.",
+    "year": "1835",
+    "years": "1835 1851",
+    "volumes": "4 15",
+    "work": "Improvisatoren",
+    "page": "200",
+    "occurrences": "2",
+    "references": "v4:200 (1835); v15:94 (1851)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.62,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.4,
+      "head_a": "kirke",
+      "head_b": "kirke",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Kirke, troldkvinde i Odysseens 10. sang, der forvandlede Odysseus’ (Ulysses’) mænd til svin.",
+      "Lima kyrka; stenkirke fra middelalderen, der nedbrændte i 1852."
+    ]
+  },
+  {
+    "place": "Pantheon",
+    "lemma_andersen": "Pantheon",
+    "explanation": "antikt rundtempel i Rom, senere indrettet til kirke; kirke i Paris, oprindeligt Sainte-Geneviève, bygget 1757-1789, som efter den franske revolution blev omdannet til begravelsessted for betydningsfulde franske personligheder. ¶ Panthéon des Français i Paris, bygget 1757-1789, oprindeligt Sainte-Geneviève, kirke for byens skytshelgeninde Genoveva, fra 1791 begravelsessted for betydningsfulde franske personligheder. ¶ (af græsk pantheion) viet til alle guderne; antikt tempel på Marsmarken i Rom viet til alle guder og oprindelig tænkt som helligdom for kejser Augustus egl. Gajus Julius Caesar Octavian (63 f.Kr.14). Det nuværende kompleks er rejst i 120’erne, men grundlæggelsen fandt allerede sted i 27 f.Kr. I 609 indviet til kirke for Jomfru Maria og martyrer. Her brugt i betydningen helligdom. ¶ (af græsk pantheion) viet til alle guderne; antikt tempel på Marsmarken i Rom viet til alle guder og oprindelig tænkt som helligdom for kejser Augustus – egl. Gajus Julius Caesar Octavian – (63 f.Kr.-14). Det nuværende kompleks er rejst i 120’erne, men grundlæggelsen fandt allerede sted i 27 f.Kr. I 609 indviet til kirke for Jomfru Maria og martyrer. ¶ antikt rundtempel på Marskmarken i Rom, senere indrettet til kirke.",
+    "year": "1831",
+    "years": "1831 1836 1837 1855 1870",
+    "volumes": "4 5 14 15 17",
+    "work": "Skyggebilleder af en Reise til Harzen, det sachsiske Schweitz etc. etc., i Sommeren 1831",
+    "page": "118",
+    "occurrences": "5",
+    "references": "v14:118 (1831); v4:530 (1836); v5:204 (1837); v17:135 (1855); v15:491 (1870)",
+    "confidence": "high",
+    "evidence": "in-register+located+place-type",
+    "geo_id": "geo-6619450",
+    "divergence": 0.619,
+    "signals": {
+      "jaccard": 0.02,
+      "fuzz": 0.377,
+      "head_a": "kirke",
+      "head_b": "kirke",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "antikt rundtempel i Rom, senere indrettet til kirke; kirke i Paris, oprindeligt Sainte-Geneviève, bygget 1757-1789, som efter den franske revolution blev omdannet til begravelsessted for betydningsfulde franske personligheder.",
+      "Panthéon des Français i Paris, bygget 1757-1789, oprindeligt Sainte-Geneviève, kirke for byens skytshelgeninde Genoveva, fra 1791 begravelsessted for betydningsfulde franske personligheder.",
+      "(af græsk pantheion) viet til alle guderne; antikt tempel på Marsmarken i Rom viet til alle guder og oprindelig tænkt som helligdom for kejser Augustus egl. Gajus Julius Caesar Octavian (63 f.Kr.14). Det nuværende kompleks er rejst i 120’erne, men grundlæggelsen fandt allerede sted i 27 f.Kr. I 609 indviet til kirke for Jomfru Maria og martyrer. Her brugt i betydningen helligdom.",
+      "(af græsk pantheion) viet til alle guderne; antikt tempel på Marsmarken i Rom viet til alle guder og oprindelig tænkt som helligdom for kejser Augustus – egl. Gajus Julius Caesar Octavian – (63 f.Kr.-14). Det nuværende kompleks er rejst i 120’erne, men grundlæggelsen fandt allerede sted i 27 f.Kr. I 609 indviet til kirke for Jomfru Maria og martyrer.",
+      "antikt rundtempel på Marskmarken i Rom, senere indrettet til kirke."
+    ]
+  },
+  {
+    "place": "Holsteinborg",
+    "lemma_andersen": "Holsteinborg",
+    "explanation": "herregård 13 km øst for Skælskør. ¶ hovedgård og gods ved Skælskør.",
+    "year": "1867",
+    "years": "1867 1868",
+    "volumes": "3",
+    "work": "Vænø og Glænø",
+    "page": "146",
+    "occurrences": "2",
+    "references": "v3:146 (1867); v3:389 (1868)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.615,
+    "signals": {
+      "jaccard": 0.2,
+      "fuzz": 0.625,
+      "head_a": "herregård",
+      "head_b": "hovedgård",
+      "head_disagree": true,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "herregård 13 km øst for Skælskør.",
+      "hovedgård og gods ved Skælskør."
+    ]
+  },
+  {
+    "place": "Sparta",
+    "lemma_andersen": "Sparta",
+    "explanation": "græsk by, i oldtiden det politiske centrum i bystaten af samme navn. ¶ græsk bystat, rivaliserede med Athen. Erobrede ca. 700 f.Kr. Lakedaimon og Messenien. Spartas magtposition ophørte med to nederlag til Theben i 371 og 362 f.Kr.",
+    "year": "1842",
+    "years": "1842 1862",
+    "volumes": "3 14",
+    "work": "En Digters Bazar",
+    "page": "376",
+    "occurrences": "2",
+    "references": "v14:376 (1842); v3:27 (1862)",
+    "confidence": "high",
+    "evidence": "in-register+place-type",
+    "geo_id": "geo-253394",
+    "divergence": 0.614,
+    "signals": {
+      "jaccard": 0.056,
+      "fuzz": 0.347,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "græsk by, i oldtiden det politiske centrum i bystaten af samme navn.",
+      "græsk bystat, rivaliserede med Athen. Erobrede ca. 700 f.Kr. Lakedaimon og Messenien. Spartas magtposition ophørte med to nederlag til Theben i 371 og 362 f.Kr."
+    ]
+  },
+  {
+    "place": "Rhinen",
+    "lemma_andersen": "Rhinen(s) | Rhinen",
+    "explanation": "Europas tredjestørste flod, der løber fra Schweiz igennem Tyskland og Holland. ¶ 1320 km lang flod i Mellem- og Nordvesteuropa.",
+    "year": "1842",
+    "years": "1842 1851",
+    "volumes": "14 15",
+    "work": "En Digters Bazar",
+    "page": "536",
+    "occurrences": "2",
+    "references": "v14:536 (1842); v15:118 (1851)",
+    "confidence": "medium",
+    "evidence": "located+place-type",
+    "geo_id": "",
+    "divergence": 0.602,
+    "signals": {
+      "jaccard": 0.1,
+      "fuzz": 0.339,
+      "head_a": "flod",
+      "head_b": "flod",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Europas tredjestørste flod, der løber fra Schweiz igennem Tyskland og Holland.",
+      "1320 km lang flod i Mellem- og Nordvesteuropa."
+    ]
+  },
+  {
+    "place": "Marienlyst",
+    "lemma_andersen": "Marienlyst",
+    "explanation": "slot nord for Helsingør, nu bymuseum. ¶ Marienlyst Slot. Tidligere lystslot beliggende i Helsingør. Opført ca. 1588 for Frederik 2., udbygget 1759-1763. Indtil 1766, hvor enkedronning (efter Frederik 5.) Juliane Marie overtog slottet, hed det Lundehave. I 1851 overtog Helsingør Kommune slottet, der siden 1930 har været museum.",
+    "year": "1826",
+    "years": "1826 1832",
+    "volumes": "14 16",
+    "work": "Nyeste Skilderie af Kjøbenhavn",
+    "page": "49",
+    "occurrences": "2",
+    "references": "v14:49 (1826); v16:129 (1832)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.596,
+    "signals": {
+      "jaccard": 0.087,
+      "fuzz": 0.221,
+      "head_a": "slot",
+      "head_b": "slot",
+      "head_disagree": false,
+      "proper_overlap": 0.167
+    },
+    "notes": [
+      "slot nord for Helsingør, nu bymuseum.",
+      "Marienlyst Slot. Tidligere lystslot beliggende i Helsingør. Opført ca. 1588 for Frederik 2., udbygget 1759-1763. Indtil 1766, hvor enkedronning (efter Frederik 5.) Juliane Marie overtog slottet, hed det Lundehave. I 1851 overtog Helsingør Kommune slottet, der siden 1930 har været museum."
+    ]
+  },
+  {
+    "place": "Spitsbergen",
+    "lemma_andersen": "Spitsberg(s) | Spitsbergen",
+    "explanation": "Spitsbergen; den største ø i øgruppen Svalbard i Barentshavet. ¶ øgruppe beliggende i Hvidehavet nord for Norge.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "8 14",
+    "work": "En Digters Bazar",
+    "page": "498",
+    "occurrences": "2",
+    "references": "v14:498 (1842); v8:20 ()",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.595,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.523,
+      "head_a": "ø",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Spitsbergen; den største ø i øgruppen Svalbard i Barentshavet.",
+      "øgruppe beliggende i Hvidehavet nord for Norge."
+    ]
+  },
+  {
+    "place": "Nepi",
+    "lemma_andersen": "Nepi",
+    "explanation": "lille by ved monte Soracte. ¶ lille by ca. 35 km nord for Rom; se kort. ¶ lille by ved bjerget monte Soracte, ca. 40 km nord for Rom.",
+    "year": "1835",
+    "years": "1835 1842 1855",
+    "volumes": "4 14 17",
+    "work": "Improvisatoren",
+    "page": "308",
+    "occurrences": "3",
+    "references": "v4:308 (1835); v14:290 (1842); v17:134 (1855)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+place-type+se-kort+located",
+    "geo_id": "geo-3172322",
+    "divergence": 0.594,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.529,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "lille by ved monte Soracte.",
+      "lille by ca. 35 km nord for Rom; se kort.",
+      "lille by ved bjerget monte Soracte, ca. 40 km nord for Rom."
+    ]
+  },
+  {
+    "place": "Antvorskov Kloster",
+    "lemma_andersen": "Antvorskov Kloster | Antvorskou-Slot",
+    "explanation": "johanitterkloster fra ca. 1164, ombygget til kongeslot 1580-1584. Nord- og vestfløjen blev nedrevet 1814-1816 og østfløjen i 1830’erne. ¶ Antvorskov Kloster, 1 km syd for Slagelse, blev nedrevet 1816.",
+    "year": "1846",
+    "years": "1846 1859",
+    "volumes": "2 16",
+    "work": "Mit eget Eventyr uden Digtning",
+    "page": "213",
+    "occurrences": "2",
+    "references": "v16:213 (1846); v2:281 (1859)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.588,
+    "signals": {
+      "jaccard": 0.083,
+      "fuzz": 0.433,
+      "head_a": "kloster",
+      "head_b": "kloster",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "johanitterkloster fra ca. 1164, ombygget til kongeslot 1580-1584. Nord- og vestfløjen blev nedrevet 1814-1816 og østfløjen i 1830’erne.",
+      "Antvorskov Kloster, 1 km syd for Slagelse, blev nedrevet 1816."
+    ]
+  },
+  {
+    "place": "Ischia",
+    "lemma_andersen": "Ischia",
+    "explanation": "ø sydvest for Napoli. ¶ ø i Napolibugten; se kort.",
+    "year": "1835",
+    "years": "1835 1836 1855",
+    "volumes": "4 7 14 17",
+    "work": "Improvisatoren",
+    "page": "282",
+    "occurrences": "4",
+    "references": "v4:282 (1835); v14:199 (1835); v7:496 (1836); v17:151 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type+se-kort",
+    "geo_id": "",
+    "divergence": 0.581,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.596,
+      "head_a": "ø",
+      "head_b": "ø",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "ø sydvest for Napoli.",
+      "ø i Napolibugten; se kort."
+    ]
+  },
+  {
+    "place": "Rammelsberg",
+    "lemma_andersen": "Rammelsberg | Rammelsbjerg",
+    "explanation": "bjerg med sølvmine. ¶ Rammelsberg, bjerg syd for Goslar, som H.C. Andersen så 25. maj 1831.",
+    "year": "1851",
+    "years": "1851 1869",
+    "volumes": "15 18",
+    "work": "I Sverrig",
+    "page": "124",
+    "occurrences": "2",
+    "references": "v15:124 (1851); v18:93 (1869)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.574,
+    "signals": {
+      "jaccard": 0.143,
+      "fuzz": 0.417,
+      "head_a": "bjerg",
+      "head_b": "bjerg",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "bjerg med sølvmine.",
+      "Rammelsberg, bjerg syd for Goslar, som H.C. Andersen så 25. maj 1831."
+    ]
+  },
+  {
+    "place": "Colosseum",
+    "lemma_andersen": "Colosseum",
+    "explanation": "ruinen af det mægtige amfiteater i Rom (opført i det 1. århundrede e.Kr.). ¶ romersk amfiteater, indviet 80 e.Kr. ¶ amfiteater bygget 72-80 e.Kr.",
+    "year": "1835",
+    "years": "1835 1842",
+    "volumes": "4 12 14",
+    "work": "Improvisatoren",
+    "page": "66",
+    "occurrences": "4",
+    "references": "v4:66 (1835); v14:331 (1842); v12:46 (); v12:275 ()",
+    "confidence": "high",
+    "evidence": "in-register",
+    "geo_id": "geo-6269248",
+    "divergence": 0.566,
+    "signals": {
+      "jaccard": 0.125,
+      "fuzz": 0.481,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "ruinen af det mægtige amfiteater i Rom (opført i det 1. århundrede e.Kr.).",
+      "romersk amfiteater, indviet 80 e.Kr.",
+      "amfiteater bygget 72-80 e.Kr."
+    ]
+  },
+  {
+    "place": "Västergötland",
+    "lemma_andersen": "Vestgothland | Westergötland",
+    "explanation": "Västergötland, landskab i Sydsverige mellem Göteborg og Vättern. ¶ Västergötland; se kort.",
+    "year": "1822",
+    "years": "1822 1851",
+    "volumes": "9 15",
+    "work": "Ungdoms-Forsøg",
+    "page": "90",
+    "occurrences": "2",
+    "references": "v9:90 (1822); v15:37 (1851)",
+    "confidence": "high",
+    "evidence": "located+place-type+se-kort",
+    "geo_id": "",
+    "divergence": 0.563,
+    "signals": {
+      "jaccard": 0.167,
+      "fuzz": 0.437,
+      "head_a": "landskab",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Västergötland, landskab i Sydsverige mellem Göteborg og Vättern.",
+      "Västergötland; se kort."
+    ]
+  },
+  {
+    "place": "Jægersborg Dyrehave",
+    "lemma_andersen": "Dyrehaven",
+    "explanation": "Jægersborg Dyrehave, yndet udflugtsmål for københavnerne. If. et sagn opdagede bondepigen Kirsten Piil i 1500-tallet en kilde i Dyrehaven. Kilden blev i 1700-tallet et valfartssted; omkring det udviklede Dyrehavsbakkens forlystelser sig. ¶ Jægersborg Dyrehave, stor park nord for København, der går tilbage til den dyrehave Frederik 3. indrettede 1699 og som efterfølgeren Christian 5. udvidede året efter.",
+    "year": "1831",
+    "years": "1831 1845",
+    "volumes": "12 14",
+    "work": "Skyggebilleder af en Reise til Harzen, det sachsiske Schweitz etc. etc., i Sommeren 1831",
+    "page": "89",
+    "occurrences": "2",
+    "references": "v14:89 (1831); v12:138 (1845)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.559,
+    "signals": {
+      "jaccard": 0.062,
+      "fuzz": 0.485,
+      "head_a": "borg",
+      "head_b": "borg",
+      "head_disagree": false,
+      "proper_overlap": 0.125
+    },
+    "notes": [
+      "Jægersborg Dyrehave, yndet udflugtsmål for københavnerne. If. et sagn opdagede bondepigen Kirsten Piil i 1500-tallet en kilde i Dyrehaven. Kilden blev i 1700-tallet et valfartssted; omkring det udviklede Dyrehavsbakkens forlystelser sig.",
+      "Jægersborg Dyrehave, stor park nord for København, der går tilbage til den dyrehave Frederik 3. indrettede 1699 og som efterfølgeren Christian 5. udvidede året efter."
+    ]
+  },
+  {
+    "place": "Olympen",
+    "lemma_andersen": "Olympen(s) | Olympen",
+    "explanation": "bjergmassiv i Thessalien; i græsk mytologi gudernes bolig. ¶ (Olimbos) Olympos, Grækenlands højeste bjerg, i antikkens mytologi regnet for gudernes tilholdssted; se kort.",
+    "year": "1836",
+    "years": "1836 1842 1843 1853",
+    "volumes": "2 4 10 14",
+    "work": "O. T.",
+    "page": "413",
+    "occurrences": "4",
+    "references": "v4:413 (1836); v14:423 (1842); v10:385 (1843); v2:73 (1853)",
+    "confidence": "high",
+    "evidence": "located+se-kort+place-type",
+    "geo_id": "",
+    "divergence": 0.559,
+    "signals": {
+      "jaccard": 0.133,
+      "fuzz": 0.507,
+      "head_a": null,
+      "head_b": "bjerg",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "bjergmassiv i Thessalien; i græsk mytologi gudernes bolig.",
+      "(Olimbos) Olympos, Grækenlands højeste bjerg, i antikkens mytologi regnet for gudernes tilholdssted; se kort."
+    ]
+  },
+  {
+    "place": "Frederiksborg Slot",
+    "lemma_andersen": "Frederiksborg | Frederiksborg Slot",
+    "explanation": "Frederiksborg Slot, tidligere konge- og jagtslot ved Hillerød nord for København; erhvervet af Frederik 2. (1534-1588; konge fra 1559), 1602-1625 lod Christian 4. de gamle bygninger nedrive og det nuværende slot opføre. ¶ Frederiksborg Slot brændte natten mellem den 16. og 17. december 1859.",
+    "year": "1829",
+    "years": "1829 1869",
+    "volumes": "9 18",
+    "work": "Fodreise fra Holmens Canal til Østpynten af Amager i Aarene 1828 og 1829",
+    "page": "182",
+    "occurrences": "2",
+    "references": "v9:182 (1829); v18:223 (1869)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type+in-register",
+    "geo_id": "geo-2621938",
+    "divergence": 0.554,
+    "signals": {
+      "jaccard": 0.105,
+      "fuzz": 0.372,
+      "head_a": "borg",
+      "head_b": "borg",
+      "head_disagree": false,
+      "proper_overlap": 0.2
+    },
+    "notes": [
+      "Frederiksborg Slot, tidligere konge- og jagtslot ved Hillerød nord for København; erhvervet af Frederik 2. (1534-1588; konge fra 1559), 1602-1625 lod Christian 4. de gamle bygninger nedrive og det nuværende slot opføre.",
+      "Frederiksborg Slot brændte natten mellem den 16. og 17. december 1859."
+    ]
+  },
+  {
+    "place": "Garnisonspladsen",
+    "lemma_andersen": "Garnisonspladsen",
+    "explanation": "nu Skt. Annæ Plads (ved Garnisonskirken, Den Herre Zebaoths Kirke). Pladsen var planlagt sammen med den øvrige Frederiksstad (omkring Amalienborg) 1750, men blev først beplantet 1852; skildringen må sigte til forholdene kort forinden. ¶ Sankt Annæ Plads i København.",
+    "year": "1857",
+    "years": "1857",
+    "volumes": "6 8",
+    "work": "»At være eller ikke være«",
+    "page": "131",
+    "occurrences": "2",
+    "references": "v6:131 (1857); v8:534 ()",
+    "confidence": "medium",
+    "evidence": "located+place-type",
+    "geo_id": "",
+    "divergence": 0.553,
+    "signals": {
+      "jaccard": 0.087,
+      "fuzz": 0.513,
+      "head_a": "plads",
+      "head_b": "plads",
+      "head_disagree": false,
+      "proper_overlap": 0.091
+    },
+    "notes": [
+      "nu Skt. Annæ Plads (ved Garnisonskirken, Den Herre Zebaoths Kirke). Pladsen var planlagt sammen med den øvrige Frederiksstad (omkring Amalienborg) 1750, men blev først beplantet 1852; skildringen må sigte til forholdene kort forinden.",
+      "Sankt Annæ Plads i København."
+    ]
+  },
+  {
+    "place": "Vidin",
+    "lemma_andersen": "Widdin",
+    "explanation": "Vidin; se kort. ¶ Vidin; by ved Donau i det nordvestlige Bulgarien, den anden af landets to grænseovergange over Donau.",
+    "year": "1842",
+    "years": "1842 1855",
+    "volumes": "14 17",
+    "work": "En Digters Bazar",
+    "page": "516",
+    "occurrences": "2",
+    "references": "v14:516 (1842); v17:221 (1855)",
+    "confidence": "high",
+    "evidence": "se-kort+head-noun+located+place-type",
+    "geo_id": "geo-725905",
+    "divergence": 0.548,
+    "signals": {
+      "jaccard": 0.125,
+      "fuzz": 0.571,
+      "head_a": null,
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Vidin; se kort.",
+      "Vidin; by ved Donau i det nordvestlige Bulgarien, den anden af landets to grænseovergange over Donau."
+    ]
+  },
+  {
+    "place": "Gisselfeldt",
+    "lemma_andersen": "Gisselfeldt",
+    "explanation": "herregård ved Haslev på Sjælland. ¶ hovedgård på Sjælland 14 km nordøst for Haslev.",
+    "year": "1846",
+    "years": "1846 1849",
+    "volumes": "5 16",
+    "work": "Mit eget Eventyr uden Digtning",
+    "page": "261",
+    "occurrences": "2",
+    "references": "v16:261 (1846); v5:444 (1849)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.545,
+    "signals": {
+      "jaccard": 0.4,
+      "fuzz": 0.675,
+      "head_a": "herregård",
+      "head_b": "hovedgård",
+      "head_disagree": true,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "herregård ved Haslev på Sjælland.",
+      "hovedgård på Sjælland 14 km nordøst for Haslev."
+    ]
+  },
+  {
+    "place": "Ingeborg",
+    "lemma_andersen": "hvis Børn | Collins … Datter | hans Børn",
+    "explanation": "Ingeborg, gift 1826 med auditør, Adolph Drewsen; Gottlieb, senere registrator ved pensionskassen; Edvard, senere departementschef og sparekassedirektør; Louise, gift 1840 med auditør Wilkens Lind, og Theodor, senere teaterlæge. ¶ Ingeborg, gift Drewsen. ¶ Ingeborg, Gottlieb, Edvard, Louise og Theodor.",
+    "year": "1846",
+    "years": "1846 1855",
+    "volumes": "16 17",
+    "work": "Mit eget Eventyr uden Digtning",
+    "page": "207",
+    "occurrences": "3",
+    "references": "v16:207 (1846); v16:246 (1846); v17:168 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.545,
+    "signals": {
+      "jaccard": 0.143,
+      "fuzz": 0.562,
+      "head_a": "borg",
+      "head_b": "borg",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Ingeborg, gift 1826 med auditør, Adolph Drewsen; Gottlieb, senere registrator ved pensionskassen; Edvard, senere departementschef og sparekassedirektør; Louise, gift 1840 med auditør Wilkens Lind, og Theodor, senere teaterlæge.",
+      "Ingeborg, gift Drewsen.",
+      "Ingeborg, Gottlieb, Edvard, Louise og Theodor."
+    ]
+  },
+  {
+    "place": "Nicolai Taarn",
+    "lemma_andersen": "Nicolai Taarn",
+    "explanation": "Sankt Nicolai Kirke på Nicolai Plads er første gang nævnt 1261, men er formentlig betydelig ældre. Tårnet opførtes 1582-1591.Ved branden 1795 blev kirken ødelagt og lå hen som ruin; tårnet blev siden indrettet til brug for brandvæsenet, der ejede det 1808-1882. Fra 1820 anvendtes det til brandvagt og signalstation. Den nuværende kirkebygning er opført 1914-1917. Tårnet blev istandsat og fik nyt spir 1908-1910. Om helgenen Sankt Nicolai: se note til s. 87. ¶ tårnet på Nikolaj Kirke, en middelalderkirke, der kendes fra 1261. Kirken nedbrændte sammen med store dele af København i 1795, men tårnet overlevede. Efter branden besluttede Frederik 6., at sognet skulle nedlægges, hvilket skete i 1805. 1915-1917 blev kirken genopbygget med det gamle tårn som en naturlig del. Kirken har dog efter genopførelsen ikke været brugt som kirke, men til en række andre formål, fx hovedbibliotek.",
+    "year": "1829",
+    "years": "1829 1832",
+    "volumes": "10 16",
+    "work": "Kjærlighed paa Nicolai TaarnSankt Nicolai Kirke på Nicolai Plads er første gang nævnt 1261, men er formentlig betydelig ældre. Tårnet opførtes 1582-1591.Ved branden 1795 blev kirken ødelagt og lå hen som ruin; tårnet blev siden indrettet til brug for brandvæsenet, der ejede det 1808-1882. Fra 1820 anvendtes det til brandvagt og signalstation. Den nuværende kirkebygning er opført 1914-1917. Tårnet blev istandsat og fik nyt spir 1908-1910. Om helgenen Sankt Nicolai: se note til s. 87.Nicolai Taarn eller Hvad siger Parterretstå- og siddepladser på teatrets gulv; blev benyttet af bl.a. borgere og studenter og var billigere end logerne, hvor det fine publikum sad. Ofte gav tilskuerne i parterret deres bifald eller mishag stærkt til kende.Parterret",
+    "page": "71",
+    "occurrences": "2",
+    "references": "v10:71 (1829); v16:143 (1832)",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.544,
+    "signals": {
+      "jaccard": 0.067,
+      "fuzz": 0.536,
+      "head_a": "kirke",
+      "head_b": "kirke",
+      "head_disagree": false,
+      "proper_overlap": 0.143
+    },
+    "notes": [
+      "Sankt Nicolai Kirke på Nicolai Plads er første gang nævnt 1261, men er formentlig betydelig ældre. Tårnet opførtes 1582-1591.Ved branden 1795 blev kirken ødelagt og lå hen som ruin; tårnet blev siden indrettet til brug for brandvæsenet, der ejede det 1808-1882. Fra 1820 anvendtes det til brandvagt og signalstation. Den nuværende kirkebygning er opført 1914-1917. Tårnet blev istandsat og fik nyt spir 1908-1910. Om helgenen Sankt Nicolai: se note til s. 87.",
+      "tårnet på Nikolaj Kirke, en middelalderkirke, der kendes fra 1261. Kirken nedbrændte sammen med store dele af København i 1795, men tårnet overlevede. Efter branden besluttede Frederik 6., at sognet skulle nedlægges, hvilket skete i 1805. 1915-1917 blev kirken genopbygget med det gamle tårn som en naturlig del. Kirken har dog efter genopførelsen ikke været brugt som kirke, men til en række andre formål, fx hovedbibliotek."
+    ]
+  },
+  {
+    "place": "Tolderlund",
+    "lemma_andersen": "Tolderlund",
+    "explanation": "herregård nord for Odense, som oprindeligt tilhørte Oluf Bagger, ejedes af Kirstine Marie Iversen, f. Nielsen (1767-1837), enke efter bogtrykker, boghandler og udgiver af Fyens Stifts Journal Christian Henrik Iversen (1748-1827). Nyerup citerer Frederiks 2.s gavebrev på Tolderlund (oprindelig Tollelund) med tilliggende jorder. ¶ landstedet Marieshøj (Tolderlund) ved kanalen nord for Odense. Tolderlund betegnede tidligere et større landområde, der 13. december 1564 blev skænket Oluf Bager af Frederik 2. Efter Oluf Bagers død 1602 solgtes hans landområder, og den sidste, der ejede det oprindelige Tolderlund udelt, var forfatteren Elias Naur. Siden opsplittedes ejendommen og solgtes stykvist. Landstedet Marieshøj opførtes 1786 (ombygget 1802-1803) på disse jorder.",
+    "year": "1829",
+    "years": "1829 1832",
+    "volumes": "14 16",
+    "work": "Brudstykke af en Udflugt i Sommeren 1829",
+    "page": "60",
+    "occurrences": "3",
+    "references": "v14:60 (1829); v16:115 (1832); v16:160 (1832)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.541,
+    "signals": {
+      "jaccard": 0.085,
+      "fuzz": 0.517,
+      "head_a": "herregård",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.15
+    },
+    "notes": [
+      "herregård nord for Odense, som oprindeligt tilhørte Oluf Bagger, ejedes af Kirstine Marie Iversen, f. Nielsen (1767-1837), enke efter bogtrykker, boghandler og udgiver af Fyens Stifts Journal Christian Henrik Iversen (1748-1827). Nyerup citerer Frederiks 2.s gavebrev på Tolderlund (oprindelig Tollelund) med tilliggende jorder.",
+      "landstedet Marieshøj (Tolderlund) ved kanalen nord for Odense. Tolderlund betegnede tidligere et større landområde, der 13. december 1564 blev skænket Oluf Bager af Frederik 2. Efter Oluf Bagers død 1602 solgtes hans landområder, og den sidste, der ejede det oprindelige Tolderlund udelt, var forfatteren Elias Naur. Siden opsplittedes ejendommen og solgtes stykvist. Landstedet Marieshøj opførtes 1786 (ombygget 1802-1803) på disse jorder."
+    ]
+  },
+  {
+    "place": "Frijsenborg",
+    "lemma_andersen": "Frijsenborg",
+    "explanation": "hovedgård og gods ved Hammel, nordvest for Århus. ¶ hovedgård 2 km nordøst for Hammel ejet af konseilspræsident, lensgreve C.E. Krag-Juel-Vind-Frijs. H.C. Andersen opholdt sig her 12.-30. juni og igen 8.-15. juli.",
+    "year": "1868",
+    "years": "1868 1869",
+    "volumes": "3 18",
+    "work": "Bemærkninger",
+    "page": "389",
+    "occurrences": "2",
+    "references": "v3:389 (1868); v18:282 (1869)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.53,
+    "signals": {
+      "jaccard": 0.105,
+      "fuzz": 0.492,
+      "head_a": "hovedgård",
+      "head_b": "hovedgård",
+      "head_disagree": false,
+      "proper_overlap": 0.2
+    },
+    "notes": [
+      "hovedgård og gods ved Hammel, nordvest for Århus.",
+      "hovedgård 2 km nordøst for Hammel ejet af konseilspræsident, lensgreve C.E. Krag-Juel-Vind-Frijs. H.C. Andersen opholdt sig her 12.-30. juni og igen 8.-15. juli."
+    ]
+  },
+  {
+    "place": "Roms Campagne",
+    "lemma_andersen": "Roms Campagne",
+    "explanation": "flodsletten omkring Rom og Tiberens nedre løb. Den blev afvandet i antikken og brugt som kornkammer, men dræningssystemerne brød senere sammen, og området forsumpede. ¶ sletten omkring Rom. ¶ den store slette, der omgiver Rom.",
+    "year": "1842",
+    "years": "1842 1855 1868",
+    "volumes": "14 15 17",
+    "work": "En Digters Bazar",
+    "page": "295",
+    "occurrences": "3",
+    "references": "v14:295 (1842); v17:134 (1855); v15:427 (1868)",
+    "confidence": "high",
+    "evidence": "located+head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.528,
+    "signals": {
+      "jaccard": 0.056,
+      "fuzz": 0.278,
+      "head_a": null,
+      "head_b": "slette",
+      "head_disagree": false,
+      "proper_overlap": 0.5
+    },
+    "notes": [
+      "flodsletten omkring Rom og Tiberens nedre løb. Den blev afvandet i antikken og brugt som kornkammer, men dræningssystemerne brød senere sammen, og området forsumpede.",
+      "sletten omkring Rom.",
+      "den store slette, der omgiver Rom."
+    ]
+  },
+  {
+    "place": "Patras",
+    "lemma_andersen": "Patras",
+    "explanation": "græsk havneby på Peloponnes; se kort. ¶ (Patra); se kort.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "14",
+    "work": "En Digters Bazar",
+    "page": "351",
+    "occurrences": "2",
+    "references": "v14:351 (1842); v14:393 (1842)",
+    "confidence": "high",
+    "evidence": "se-kort+located+place-type",
+    "geo_id": "",
+    "divergence": 0.512,
+    "signals": {
+      "jaccard": 0.2,
+      "fuzz": 0.64,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "græsk havneby på Peloponnes; se kort.",
+      "(Patra); se kort."
+    ]
+  },
+  {
+    "place": "Cap Mysenum",
+    "lemma_andersen": "Cap Mysenum",
+    "explanation": "forbjerget Capo di Miseno ved Napoli. ¶ halvø nordvest for Napoli; se kort.",
+    "year": "1835",
+    "years": "1835 1837",
+    "volumes": "5 14",
+    "work": "Søndagsblad. Et æsthetisk Ugeskrift",
+    "page": "199",
+    "occurrences": "2",
+    "references": "v14:199 (1835); v5:15 (1837)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+se-kort+located",
+    "geo_id": "",
+    "divergence": 0.502,
+    "signals": {
+      "jaccard": 0.143,
+      "fuzz": 0.444,
+      "head_a": null,
+      "head_b": "halvø",
+      "head_disagree": false,
+      "proper_overlap": 0.333
+    },
+    "notes": [
+      "forbjerget Capo di Miseno ved Napoli.",
+      "halvø nordvest for Napoli; se kort."
+    ]
+  },
+  {
+    "place": "Nicolaitaarn",
+    "lemma_andersen": "Nicolaitaarn",
+    "explanation": "tårnet på Nicolai Kirke {E4}. ¶ Sankt Nicolai Kirke på Nicolai Plads er formentlig Københavns ældste. Tårnet opførtes 1591. Ved branden 1795 blev kirken ødelagt og lå hen som ruin; tårnet blev siden indrettet til brug for brandvæsenet, der ejede det 1808-1882. Fra 1820 anvendtes det til brandvagt og signalstation. ¶ tårnet på Sankt Nikolaj Kirke overlevede branden i 1795, hvor kirken og spiret blev ødelagt; i 1814-1817 blev alt undtagen tårnet revet ned.",
+    "year": "1844",
+    "years": "1844 1846 1855",
+    "volumes": "9 16 17",
+    "work": "Berlingske politiske og Avertissements-Tidende",
+    "page": "429",
+    "occurrences": "3",
+    "references": "v9:429 (1844); v16:220 (1846); v17:76 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.498,
+    "signals": {
+      "jaccard": 0.207,
+      "fuzz": 0.535,
+      "head_a": "kirke",
+      "head_b": "kirke",
+      "head_disagree": false,
+      "proper_overlap": 0.167
+    },
+    "notes": [
+      "tårnet på Nicolai Kirke {E4}.",
+      "Sankt Nicolai Kirke på Nicolai Plads er formentlig Københavns ældste. Tårnet opførtes 1591. Ved branden 1795 blev kirken ødelagt og lå hen som ruin; tårnet blev siden indrettet til brug for brandvæsenet, der ejede det 1808-1882. Fra 1820 anvendtes det til brandvagt og signalstation.",
+      "tårnet på Sankt Nikolaj Kirke overlevede branden i 1795, hvor kirken og spiret blev ødelagt; i 1814-1817 blev alt undtagen tårnet revet ned."
+    ]
+  },
+  {
+    "place": "Vesuv",
+    "lemma_andersen": "Vesuv | Vesuv(s)",
+    "explanation": "vulkan 10 km sydøst for Napoli; se kort. ¶ vulkan ved Napoli, hvis udbrud 79 e.Kr. ødelagde de to romerske byer Pompeji og Herculanum.",
+    "year": "1842",
+    "years": "1842 1855",
+    "volumes": "14 17",
+    "work": "En Digters Bazar",
+    "page": "228",
+    "occurrences": "2",
+    "references": "v14:228 (1842); v17:292 (1855)",
+    "confidence": "high",
+    "evidence": "se-kort+head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.491,
+    "signals": {
+      "jaccard": 0.2,
+      "fuzz": 0.412,
+      "head_a": "vulkan",
+      "head_b": "vulkan",
+      "head_disagree": false,
+      "proper_overlap": 0.333
+    },
+    "notes": [
+      "vulkan 10 km sydøst for Napoli; se kort.",
+      "vulkan ved Napoli, hvis udbrud 79 e.Kr. ødelagde de to romerske byer Pompeji og Herculanum."
+    ]
+  },
+  {
+    "place": "Pompeji",
+    "lemma_andersen": "Pompeji | Pompeji(s)",
+    "explanation": "antik havneby ved Napolibugten, som blev begravet af aske og pimpsten under Vesuvs udbrud i 79 e.Kr. De første spredte udgravninger af byen påbegyndtes i 1748, men en systematisk udgravning tog først fart i 1861 under ledelse af den italienske arkæolog Giuseppe Fiorelli (1823-1896). ¶ antik romersk by, begravet ved Vesuvs udbrud i 79 e.Kr. ¶ den romerske by syd for Napoli, der blev ødelagt og begravet i aske ved Vesuvs udbrud 79. e.Kr. ¶ antik havneby ved Napolibugten, som blev begravet af aske og pimpsten under Vesuvs udbrud i 79 e.Kr.; de første spredte udgravninger af byen påbegyndtes i 1748, men en systematisk udgravning tog først fart i 1861. ¶ oldtidsby ved Napolibugten, som blev begravet af aske og pimpsten under Vesuvs udbrud i 79 e.Kr.; de første spredte udgravninger af byen påbegyndtes i 1748, men en systematisk udgravning tog først fart i 1861. ¶ antik romersk by, begravet ved Vesuvs udbrud 79 e.Kr., genfundet 1748 og siden udgravet.",
+    "year": "1840",
+    "years": "1840 1846 1855 1860 1868 1869",
+    "volumes": "9 15 16 17 18",
+    "work": "Billedbog uden Billederjf. den tyske komponist Felix Mendelssohn-Bartholdys (1809-1847) klaverstykker <i>Lieder ohne Worte</i>, 1829-1845 (sange uden ord).Billedbog uden Billeder",
+    "page": "375",
+    "occurrences": "7",
+    "references": "v9:375 (1840); v16:213 (1846); v17:66 (1855); v17:153 (1855); v15:187 (1860); v15:456 (1868); v18:218 (1869)",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.485,
+    "signals": {
+      "jaccard": 0.148,
+      "fuzz": 0.603,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.25
+    },
+    "notes": [
+      "antik havneby ved Napolibugten, som blev begravet af aske og pimpsten under Vesuvs udbrud i 79 e.Kr. De første spredte udgravninger af byen påbegyndtes i 1748, men en systematisk udgravning tog først fart i 1861 under ledelse af den italienske arkæolog Giuseppe Fiorelli (1823-1896).",
+      "antik romersk by, begravet ved Vesuvs udbrud i 79 e.Kr.",
+      "den romerske by syd for Napoli, der blev ødelagt og begravet i aske ved Vesuvs udbrud 79. e.Kr.",
+      "antik havneby ved Napolibugten, som blev begravet af aske og pimpsten under Vesuvs udbrud i 79 e.Kr.; de første spredte udgravninger af byen påbegyndtes i 1748, men en systematisk udgravning tog først fart i 1861.",
+      "oldtidsby ved Napolibugten, som blev begravet af aske og pimpsten under Vesuvs udbrud i 79 e.Kr.; de første spredte udgravninger af byen påbegyndtes i 1748, men en systematisk udgravning tog først fart i 1861.",
+      "antik romersk by, begravet ved Vesuvs udbrud 79 e.Kr., genfundet 1748 og siden udgravet."
+    ]
+  },
+  {
+    "place": "Syra",
+    "lemma_andersen": "Syra | Syra(s)",
+    "explanation": "Siros (Syros), en del af øgruppen Kykladerne i det Ægæiske Hav; se kort. ¶ Syros (Siros); se kort. ¶ Syros (Siros), en del af øgruppen Kykladerne i det Ægæiske Hav; se kort.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "14",
+    "work": "En Digters Bazar",
+    "page": "351",
+    "occurrences": "3",
+    "references": "v14:351 (1842); v14:378 (1842); v14:438 (1842)",
+    "confidence": "high",
+    "evidence": "se-kort+place-type",
+    "geo_id": "",
+    "divergence": 0.484,
+    "signals": {
+      "jaccard": 0.375,
+      "fuzz": 0.516,
+      "head_a": "hav",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Siros (Syros), en del af øgruppen Kykladerne i det Ægæiske Hav; se kort.",
+      "Syros (Siros); se kort.",
+      "Syros (Siros), en del af øgruppen Kykladerne i det Ægæiske Hav; se kort."
+    ]
+  },
+  {
+    "place": "Cartagena",
+    "lemma_andersen": "Cartagena",
+    "explanation": "havneby på den spanske sydkyst, hvor H.C. Andersen opholdt sig fra 16. til 19. september 1862. ¶ se kort.",
+    "year": "1863",
+    "years": "1863",
+    "volumes": "8 15",
+    "work": "I Spanien",
+    "page": "256",
+    "occurrences": "2",
+    "references": "v15:256 (1863); v8:340 ()",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+se-kort",
+    "geo_id": "",
+    "divergence": 0.476,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.118,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "havneby på den spanske sydkyst, hvor H.C. Andersen opholdt sig fra 16. til 19. september 1862.",
+      "se kort."
+    ]
+  },
+  {
+    "place": "Malta",
+    "lemma_andersen": "Malta",
+    "explanation": "se kort. ¶ H.C. Andersen opholdt sig her 17.-18. marts 1841.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "14",
+    "work": "En Digters Bazar",
+    "page": "351",
+    "occurrences": "2",
+    "references": "v14:351 (1842); v14:361 (1842)",
+    "confidence": "high",
+    "evidence": "in-register+se-kort",
+    "geo_id": "geo-2562772",
+    "divergence": 0.472,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.14,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "se kort.",
+      "H.C. Andersen opholdt sig her 17.-18. marts 1841."
+    ]
+  },
+  {
+    "place": "Halle",
+    "lemma_andersen": "Halle",
+    "explanation": "se kort. ¶ hal.",
+    "year": "1831",
+    "years": "1831 1863",
+    "volumes": "14 15",
+    "work": "Skyggebilleder af en Reise til Harzen, det sachsiske Schweitz etc. etc., i Sommeren 1831",
+    "page": "131",
+    "occurrences": "2",
+    "references": "v14:131 (1831); v15:286 (1863)",
+    "confidence": "high",
+    "evidence": "in-register+se-kort",
+    "geo_id": "geo-2911522",
+    "divergence": 0.467,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.167,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "se kort.",
+      "hal."
+    ]
+  },
+  {
+    "place": "Lorelei",
+    "lemma_andersen": "Loreley | Lore-Ley",
+    "explanation": "Lorelei; 132 m højt, næsten lodret klippeparti ved Rhinen; personificeret som en fortryllende og forførende kvinde, der if. sagnet lokkede sejlende (mænd) i døden. ¶ Lorelei; 132 m højt, næsten lodret klippeparti ved Rhinen. Gennem kunsteventyr og sagn er Lorelei blevet personificeret som en fortryllende og forførende kvinde, der lokkede sejlende (mænd) i døden. Fremtrædende behandlinger af Lorelei-figuren findes i Clemens Maria Brentanos (1778-1842) digt »Zu Bacharach am Rheine« fra den anonymt udgivne roman Godwi oder Das steinerne Bild der Mutter. Ein verwilderter Roman, 1801-1802 (2. del, 36. kapitel) og Heinrich Heines (1797-1856) digt »Ich weiß nicht, was soll es bedeuten«, der blev trykt i Der Gesellschafter oder Blätter für Geist und Herz, 26. marts 1824. ¶ Lorelei; 132 m højt, næsten lodret klippeparti ved Rhinen.",
+    "year": "1851",
+    "years": "1851 1855",
+    "volumes": "8 15 17",
+    "work": "I Sverrig",
+    "page": "123",
+    "occurrences": "3",
+    "references": "v15:123 (1851); v17:110 (1855); v8:515 ()",
+    "confidence": "medium",
+    "evidence": "located",
+    "geo_id": "",
+    "divergence": 0.458,
+    "signals": {
+      "jaccard": 0.105,
+      "fuzz": 1.0,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.05
+    },
+    "notes": [
+      "Lorelei; 132 m højt, næsten lodret klippeparti ved Rhinen; personificeret som en fortryllende og forførende kvinde, der if. sagnet lokkede sejlende (mænd) i døden.",
+      "Lorelei; 132 m højt, næsten lodret klippeparti ved Rhinen. Gennem kunsteventyr og sagn er Lorelei blevet personificeret som en fortryllende og forførende kvinde, der lokkede sejlende (mænd) i døden. Fremtrædende behandlinger af Lorelei-figuren findes i Clemens Maria Brentanos (1778-1842) digt »Zu Bacharach am Rheine« fra den anonymt udgivne roman Godwi oder Das steinerne Bild der Mutter. Ein verwilderter Roman, 1801-1802 (2. del, 36. kapitel) og Heinrich Heines (1797-1856) digt »Ich weiß nicht, was soll es bedeuten«, der blev trykt i Der Gesellschafter oder Blätter für Geist und Herz, 26. marts 1824.",
+      "Lorelei; 132 m højt, næsten lodret klippeparti ved Rhinen."
+    ]
+  },
+  {
+    "place": "Marie Bunkeflod",
+    "lemma_andersen": "hans Enke og Søster | Madam Bunkeflod | Madam Bunkeflod og hendes Mands Søster",
+    "explanation": "Marie Bunkeflod, som var enke efter digterpræsten Hans Christian Bunkeflod, boede sammen med sin svigerinde i de såkaldte Eilschous Boliger, en stiftelse for borgerskabets enlige, trængende kvinder. Stiftelsen lå i Munkemøllestræde over for H.C. Andersens barndomshjem. ¶ Marie Bunkeflod, f. Petersen, enke efter sognepræsten ved St. Hans Kirke, digteren Hans Christian Bunkeflod. Hun boede sammen med sin mands søster Anna Margrethe Bunkeflod. ¶ Marie Bunkeflod, som var enke efter digterpræsten Hans Christian Bunkeflod, boede sammen med sin svigerinde i de såkaldte Eilschous Boliger, en stiftelse oprettet 1776-1781 for borgerskabets enlige, trængende kvinder; stiftelsen lå i Munkemøllestræde over for H.C. Andersens barndomshjem.",
+    "year": "1832",
+    "years": "1832 1846 1855",
+    "volumes": "16 17",
+    "work": "Levnedsbog",
+    "page": "63",
+    "occurrences": "3",
+    "references": "v16:63 (1832); v16:187 (1846); v17:25 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.456,
+    "signals": {
+      "jaccard": 0.207,
+      "fuzz": 0.575,
+      "head_a": "flod",
+      "head_b": "flod",
+      "head_disagree": false,
+      "proper_overlap": 0.333
+    },
+    "notes": [
+      "Marie Bunkeflod, som var enke efter digterpræsten Hans Christian Bunkeflod, boede sammen med sin svigerinde i de såkaldte Eilschous Boliger, en stiftelse for borgerskabets enlige, trængende kvinder. Stiftelsen lå i Munkemøllestræde over for H.C. Andersens barndomshjem.",
+      "Marie Bunkeflod, f. Petersen, enke efter sognepræsten ved St. Hans Kirke, digteren Hans Christian Bunkeflod. Hun boede sammen med sin mands søster Anna Margrethe Bunkeflod.",
+      "Marie Bunkeflod, som var enke efter digterpræsten Hans Christian Bunkeflod, boede sammen med sin svigerinde i de såkaldte Eilschous Boliger, en stiftelse oprettet 1776-1781 for borgerskabets enlige, trængende kvinder; stiftelsen lå i Munkemøllestræde over for H.C. Andersens barndomshjem."
+    ]
+  },
+  {
+    "place": "Nonnebakken",
+    "lemma_andersen": "Nonnebakken",
+    "explanation": "bakke syd for Odense Å. ¶ bakke syd for Odense å, tæt på Skt. Knuds Kirke, hvor der i middelalderen lå et nonnekloster; Nonnebakken var de endnu synlige rester af et borganlæg fra vikingetiden af Trelleborg-typen. ¶ bakke syd for Odense Å tæt ved Skt. Knuds Kirke. ¶ bakke syd for Odense Å, tæt ved Skt. Knuds Kirke; oprindelig lå her en ringborg eller trelleborg (Burgh), der i middelalderen tilhørte Skt. Knuds Kloster og deraf fik navnet Nundeborrig, dvs. nonneborg. ¶ bakke syd for Odense Å, tæt ved Sankt Knuds Kirke. Oprindelig lå her en ringborg eller trelleborg (Burgh), der i middelalderen tilhørte Sankt Knuds Kloster og deraf fik navnet Nundeborrig, dvs. nonneborg.",
+    "year": "1822",
+    "years": "1822 1832 1837 1858",
+    "volumes": "2 5 8 9 16",
+    "work": "Ungdoms-Forsøg",
+    "page": "53",
+    "occurrences": "6",
+    "references": "v9:53 (1822); v16:61 (1832); v16:104 (1832); v5:145 (1837); v2:240 (1858); v8:442 ()",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type",
+    "geo_id": "place-000005",
+    "divergence": 0.452,
+    "signals": {
+      "jaccard": 0.286,
+      "fuzz": 0.59,
+      "head_a": "bakke",
+      "head_b": "bakke",
+      "head_disagree": false,
+      "proper_overlap": 0.222
+    },
+    "notes": [
+      "bakke syd for Odense Å.",
+      "bakke syd for Odense å, tæt på Skt. Knuds Kirke, hvor der i middelalderen lå et nonnekloster; Nonnebakken var de endnu synlige rester af et borganlæg fra vikingetiden af Trelleborg-typen.",
+      "bakke syd for Odense Å tæt ved Skt. Knuds Kirke.",
+      "bakke syd for Odense Å, tæt ved Skt. Knuds Kirke; oprindelig lå her en ringborg eller trelleborg (Burgh), der i middelalderen tilhørte Skt. Knuds Kloster og deraf fik navnet Nundeborrig, dvs. nonneborg.",
+      "bakke syd for Odense Å, tæt ved Sankt Knuds Kirke. Oprindelig lå her en ringborg eller trelleborg (Burgh), der i middelalderen tilhørte Sankt Knuds Kloster og deraf fik navnet Nundeborrig, dvs. nonneborg."
+    ]
+  },
+  {
+    "place": "Augsburg",
+    "lemma_andersen": "Augsborg | Augsburg",
+    "explanation": "Augsburg; se kort. ¶ H.C. Andersen opholdt sig her 16.-17. november 1840.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "14",
+    "work": "En Digters Bazar",
+    "page": "237",
+    "occurrences": "2",
+    "references": "v14:237 (1842); v14:243 (1842)",
+    "confidence": "high",
+    "evidence": "se-kort+in-register",
+    "geo_id": "geo-2954172",
+    "divergence": 0.449,
+    "signals": {
+      "jaccard": 0.0,
+      "fuzz": 0.257,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "Augsburg; se kort.",
+      "H.C. Andersen opholdt sig her 16.-17. november 1840."
+    ]
+  },
+  {
+    "place": "Roxen",
+    "lemma_andersen": "Roxen(s) | Roxen",
+    "explanation": "sø ved Linköping i Östergötland. ¶ sø ved Linköping i Östergötland; Göta kanal munder ud i Roxen ved Bergs sluser mod vest, hvor Vreta Kloster ligger.",
+    "year": "1840",
+    "years": "1840 1869",
+    "volumes": "9 18",
+    "work": "Billedbog uden Billederjf. den tyske komponist Felix Mendelssohn-Bartholdys (1809-1847) klaverstykker <i>Lieder ohne Worte</i>, 1829-1845 (sange uden ord).Billedbog uden Billeder",
+    "page": "394",
+    "occurrences": "2",
+    "references": "v9:394 (1840); v18:97 (1869)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.443,
+    "signals": {
+      "jaccard": 0.154,
+      "fuzz": 0.72,
+      "head_a": "sø",
+      "head_b": "sø",
+      "head_disagree": false,
+      "proper_overlap": 0.333
+    },
+    "notes": [
+      "sø ved Linköping i Östergötland.",
+      "sø ved Linköping i Östergötland; Göta kanal munder ud i Roxen ved Bergs sluser mod vest, hvor Vreta Kloster ligger."
+    ]
+  },
+  {
+    "place": "Hellig Anders Kors",
+    "lemma_andersen": "Hellig Anders Kors",
+    "explanation": "Anders var if. traditionen præst ved St. Peders Kirke i Slagelse ca. 1200; hans kors står paa Hvilehøj 3,5 km sydvest for Slagelse, tæt ved landevejen til Korsør. ¶ krucifiks til minde om Hellig Anders, præst ved Skt. Peders Kirke i Slagelse, rejst på Hvilehøj vest for Slagelse, hvor en legende fortæller, at han vågnede påskedag, efter at være faldet i søvn i Jerusalem.",
+    "year": "1846",
+    "years": "1846 1855",
+    "volumes": "16 17",
+    "work": "Mit eget Eventyr uden Digtning",
+    "page": "213",
+    "occurrences": "2",
+    "references": "v16:213 (1846); v17:67 (1855)",
+    "confidence": "medium",
+    "evidence": "located+place-type",
+    "geo_id": "",
+    "divergence": 0.442,
+    "signals": {
+      "jaccard": 0.214,
+      "fuzz": 0.592,
+      "head_a": "kirke",
+      "head_b": "kirke",
+      "head_disagree": false,
+      "proper_overlap": 0.375
+    },
+    "notes": [
+      "Anders var if. traditionen præst ved St. Peders Kirke i Slagelse ca. 1200; hans kors står paa Hvilehøj 3,5 km sydvest for Slagelse, tæt ved landevejen til Korsør.",
+      "krucifiks til minde om Hellig Anders, præst ved Skt. Peders Kirke i Slagelse, rejst på Hvilehøj vest for Slagelse, hvor en legende fortæller, at han vågnede påskedag, efter at være faldet i søvn i Jerusalem."
+    ]
+  },
+  {
+    "place": "Tinos",
+    "lemma_andersen": "Tenos, Delos, Naxos og Toppen af Andros | Tenos",
+    "explanation": "Tinos, Dilos, Naxos, Andros se kort. ¶ Tinos; se kort.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "14",
+    "work": "En Digters Bazar",
+    "page": "380",
+    "occurrences": "2",
+    "references": "v14:380 (1842); v14:438 (1842)",
+    "confidence": "high",
+    "evidence": "se-kort",
+    "geo_id": "",
+    "divergence": 0.441,
+    "signals": {
+      "jaccard": 0.4,
+      "fuzz": 0.696,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "Tinos, Dilos, Naxos, Andros se kort.",
+      "Tinos; se kort."
+    ]
+  },
+  {
+    "place": "Basnæs",
+    "lemma_andersen": "Basnæs",
+    "explanation": "hovedgård og gods ved Skælskør. ¶ hovedgård og gods sydøst for Skælskør; ejet af familien Scavenius, hvor specielt Henriette Scavenius (1819-1989) var en nær veninde af H.C. Andersen. ¶ familien Scavenius’ hovedgård og gods sydøst for Skælskør, hvor specielt Henriette Scavenius, Lucies mor, var en nær veninde af H.C. Andersen. ¶ familien Scavenius’ hovedgård og gods sydøst for Skælskør, hvor specielt Henriette Scavenius var en nær veninde af H.C. Andersen.",
+    "year": "1868",
+    "years": "1868 1874",
+    "volumes": "3 8",
+    "work": "Bemærkninger",
+    "page": "387",
+    "occurrences": "4",
+    "references": "v3:387 (1868); v3:396 (1874); v8:380 (); v8:492 ()",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.439,
+    "signals": {
+      "jaccard": 0.231,
+      "fuzz": 0.708,
+      "head_a": "hovedgård",
+      "head_b": "hovedgård",
+      "head_disagree": false,
+      "proper_overlap": 0.25
+    },
+    "notes": [
+      "hovedgård og gods ved Skælskør.",
+      "hovedgård og gods sydøst for Skælskør; ejet af familien Scavenius, hvor specielt Henriette Scavenius (1819-1989) var en nær veninde af H.C. Andersen.",
+      "familien Scavenius’ hovedgård og gods sydøst for Skælskør, hvor specielt Henriette Scavenius, Lucies mor, var en nær veninde af H.C. Andersen.",
+      "familien Scavenius’ hovedgård og gods sydøst for Skælskør, hvor specielt Henriette Scavenius var en nær veninde af H.C. Andersen."
+    ]
+  },
+  {
+    "place": "Palazzo degli Uffizi",
+    "lemma_andersen": "palazzo degli Uffizi | Palazzo degli Uffizi",
+    "explanation": "opført som administrationsbygning 1560-1574, senere indrettet til kunstsamling. ¶ opført 1560-1581 som administrationsbygning på den anden side af Loggia dei Lanzi, senere indrettet til kunstsamling og omdannet til museum i 1700-tallet.",
+    "year": "1842",
+    "years": "1842 1862",
+    "volumes": "3 14",
+    "work": "En Digters Bazar",
+    "page": "272",
+    "occurrences": "2",
+    "references": "v14:272 (1842); v3:15 (1862)",
+    "confidence": "high",
+    "evidence": "in-register",
+    "geo_id": "place-000067",
+    "divergence": 0.422,
+    "signals": {
+      "jaccard": 0.385,
+      "fuzz": 0.812,
+      "head_a": null,
+      "head_b": "museum",
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "opført som administrationsbygning 1560-1574, senere indrettet til kunstsamling.",
+      "opført 1560-1581 som administrationsbygning på den anden side af Loggia dei Lanzi, senere indrettet til kunstsamling og omdannet til museum i 1700-tallet."
+    ]
+  },
+  {
+    "place": "Graabrødre Kirke",
+    "lemma_andersen": "Kirke og Klostergaard | gammel … Kirke",
+    "explanation": "Graabrødre Kirke, delvis nedrevet i 1828, var oprindelig klosterkirke i det gamle Gråbrødrekloster (ca. 1236-1533). En tofløjet bygning lidt nord for kirken blev på romanens tid i folkemunde kaldt Klostergaarden. ¶ Graabrødre Kirke, nedrevet 1817-1819.",
+    "year": "1837",
+    "years": "1837 1846",
+    "volumes": "5 16",
+    "work": "Kun en Spillemand",
+    "page": "44",
+    "occurrences": "2",
+    "references": "v5:44 (1837); v16:183 (1846)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.415,
+    "signals": {
+      "jaccard": 0.176,
+      "fuzz": 0.825,
+      "head_a": "kirke",
+      "head_b": "kirke",
+      "head_disagree": false,
+      "proper_overlap": 0.333
+    },
+    "notes": [
+      "Graabrødre Kirke, delvis nedrevet i 1828, var oprindelig klosterkirke i det gamle Gråbrødrekloster (ca. 1236-1533). En tofløjet bygning lidt nord for kirken blev på romanens tid i folkemunde kaldt Klostergaarden.",
+      "Graabrødre Kirke, nedrevet 1817-1819."
+    ]
+  },
+  {
+    "place": "Nysø",
+    "lemma_andersen": "Nysø | Nysøe",
+    "explanation": "hovedgård og gods fra 1670 ved Præstø. På H.C. Andersens tid ejet af baron Henrik Stampe (1794-1876). ¶ hovedgård og gods fra 1670 ved Præstø, som på H.C. Andersens tid var ejet af baron Hendrik Stampe; billedhuggeren Thorvaldsen boede efter sin hjemkomst fra Italien 1838 indtil sin død 1844 ofte på Nysø, hvor han fik indrettet et atelier. ¶ Nysø; hovedgård og gods fra 1670 ved Præstø, som på H.C. Andersens tid var ejet af baron Hendrik Stampe; billedhuggeren Thorvaldsen boede efter sin hjemkomst fra Italien 1838 indtil sin død 1844 ofte på Nysø, hvor han fik indrettet et atelier. ¶ hovedgård og gods fra 1670 ved Præstø, som på H.C. Andersens tid var ejet af baron Hendrik Stampe. ¶ hovedgård og gods fra 1670 ved Præstø; på denne tid ejet af baron Hendrik Stampe (1794-1876) og baronesse Christine Stampe; efter sin hjemkomst fra Rom i 1838 var Thorvaldsen en hyppig gæst på Nysø, hvor også H.C. Andersen ofte kom. ¶ hovedgård og gods fra 1670 ved Præstø; på H.C. Andersens tid ejet af baron Hendrik Stampe (1794-1876) og hans hustru Christine Stampe, født Dalgas (1797-1868); i sine sidste leveår boede Bertel Thorvaldsen ofte på Nysø, hvor man lod bygge et atelier til Thorvaldsen, som indviedes 24. juli 1839. ¶ Nysø, hovedgård og gods fra 1670 ved Præstø, ejet af baron Hendrik Stampe og baronesse Christine Stampe.",
+    "year": "1839",
+    "years": "1839 1844 1855 1863",
+    "volumes": "3 7 8 9 17",
+    "work": "Inpromtu til Thorvaldsen, da han paa Nysø havde fuldendt i Leer Holbergs Buste",
+    "page": "562",
+    "occurrences": "8",
+    "references": "v7:562 (1839); v9:414 (1844); v9:431 (1844); v17:206 (1855); v17:233 (1855); v3:373 (1863); v8:28 (); v8:32 ()",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type",
+    "geo_id": "geo-2615912",
+    "divergence": 0.41,
+    "signals": {
+      "jaccard": 0.304,
+      "fuzz": 0.745,
+      "head_a": "hovedgård",
+      "head_b": "hovedgård",
+      "head_disagree": false,
+      "proper_overlap": 0.25
+    },
+    "notes": [
+      "hovedgård og gods fra 1670 ved Præstø. På H.C. Andersens tid ejet af baron Henrik Stampe (1794-1876).",
+      "hovedgård og gods fra 1670 ved Præstø, som på H.C. Andersens tid var ejet af baron Hendrik Stampe; billedhuggeren Thorvaldsen boede efter sin hjemkomst fra Italien 1838 indtil sin død 1844 ofte på Nysø, hvor han fik indrettet et atelier.",
+      "Nysø; hovedgård og gods fra 1670 ved Præstø, som på H.C. Andersens tid var ejet af baron Hendrik Stampe; billedhuggeren Thorvaldsen boede efter sin hjemkomst fra Italien 1838 indtil sin død 1844 ofte på Nysø, hvor han fik indrettet et atelier.",
+      "hovedgård og gods fra 1670 ved Præstø, som på H.C. Andersens tid var ejet af baron Hendrik Stampe.",
+      "hovedgård og gods fra 1670 ved Præstø; på denne tid ejet af baron Hendrik Stampe (1794-1876) og baronesse Christine Stampe; efter sin hjemkomst fra Rom i 1838 var Thorvaldsen en hyppig gæst på Nysø, hvor også H.C. Andersen ofte kom.",
+      "hovedgård og gods fra 1670 ved Præstø; på H.C. Andersens tid ejet af baron Hendrik Stampe (1794-1876) og hans hustru Christine Stampe, født Dalgas (1797-1868); i sine sidste leveår boede Bertel Thorvaldsen ofte på Nysø, hvor man lod bygge et atelier til Thorvaldsen, som indviedes 24. juli 1839.",
+      "Nysø, hovedgård og gods fra 1670 ved Præstø, ejet af baron Hendrik Stampe og baronesse Christine Stampe."
+    ]
+  },
+  {
+    "place": "Oberammergau",
+    "lemma_andersen": "Oberammergau",
+    "explanation": "landsby i Voralpen i Bayern sydvest for München (se kort), hvor der siden 1634 med enkelte undtagelser hvert tiende år har været opført spil over Jesu lidelseshistorie fra maj til september. Hver af de ca. 100 opførelser varer fra morgen til aften og varetages af lokale amatører. ¶ by i Voralpen i Bayern sydvest for München, hvor der siden 1634 med enkelte undtagelser hvert tiende år har været opført spil over Jesu lidelseshistorie fra maj til september. Hver af de ca. 100 opførelser varer fra morgen til aften og varetages af lokale amatører. ¶ landsby i Voralpen i Bayern sydvest for München, hvor der siden 1634 med enkelte undtagelser hvert tiende år har været opført spil over Jesu lidelseshistorie fra maj til september. Hver af de ca. 100 opførelser varer fra morgen til aften og varetages af lokale amatører; udflugten til Oberammergau varede 30. juni-3. juli.",
+    "year": "1860",
+    "years": "1860 1861 1869",
+    "volumes": "15 18",
+    "work": "Illustreret Tidende",
+    "page": "200",
+    "occurrences": "3",
+    "references": "v15:200 (1860); v15:209 (1861); v18:228 (1869)",
+    "confidence": "high",
+    "evidence": "se-kort+head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.405,
+    "signals": {
+      "jaccard": 0.8,
+      "fuzz": 0.974,
+      "head_a": "by",
+      "head_b": "landsby",
+      "head_disagree": true,
+      "proper_overlap": 0.8
+    },
+    "notes": [
+      "landsby i Voralpen i Bayern sydvest for München (se kort), hvor der siden 1634 med enkelte undtagelser hvert tiende år har været opført spil over Jesu lidelseshistorie fra maj til september. Hver af de ca. 100 opførelser varer fra morgen til aften og varetages af lokale amatører.",
+      "by i Voralpen i Bayern sydvest for München, hvor der siden 1634 med enkelte undtagelser hvert tiende år har været opført spil over Jesu lidelseshistorie fra maj til september. Hver af de ca. 100 opførelser varer fra morgen til aften og varetages af lokale amatører.",
+      "landsby i Voralpen i Bayern sydvest for München, hvor der siden 1634 med enkelte undtagelser hvert tiende år har været opført spil over Jesu lidelseshistorie fra maj til september. Hver af de ca. 100 opførelser varer fra morgen til aften og varetages af lokale amatører; udflugten til Oberammergau varede 30. juni-3. juli."
+    ]
+  },
+  {
+    "place": "Smyrna",
+    "lemma_andersen": "Smyrna",
+    "explanation": "det græske navn for Izmir; se kort. ¶ (Smirni) nu Izmir på den tyrkiske Ægæerhavskyst; se kort.",
+    "year": "1842",
+    "years": "1842",
+    "volumes": "14",
+    "work": "En Digters Bazar",
+    "page": "351",
+    "occurrences": "3",
+    "references": "v14:351 (1842); v14:395 (1842); v14:438 (1842)",
+    "confidence": "high",
+    "evidence": "se-kort",
+    "geo_id": "",
+    "divergence": 0.401,
+    "signals": {
+      "jaccard": 0.286,
+      "fuzz": 0.565,
+      "head_a": null,
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.5
+    },
+    "notes": [
+      "det græske navn for Izmir; se kort.",
+      "(Smirni) nu Izmir på den tyrkiske Ægæerhavskyst; se kort."
+    ]
+  },
+  {
+    "place": "Amalfi",
+    "lemma_andersen": "Amalfi",
+    "explanation": "kystby i Salernobugten syd for Napoli. ¶ kystby i Salernobugten syd for Napoli; se kort ¶ kystby i Salernobugten 25 km vest for Salerno.",
+    "year": "1835",
+    "years": "1835 1855",
+    "volumes": "4 14 17",
+    "work": "Improvisatoren",
+    "page": "254",
+    "occurrences": "3",
+    "references": "v4:254 (1835); v14:201 (1835); v17:153 (1855)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type+se-kort",
+    "geo_id": "geo-3183130",
+    "divergence": 0.4,
+    "signals": {
+      "jaccard": 0.286,
+      "fuzz": 0.739,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.333
+    },
+    "notes": [
+      "kystby i Salernobugten syd for Napoli.",
+      "kystby i Salernobugten syd for Napoli; se kort",
+      "kystby i Salernobugten 25 km vest for Salerno."
+    ]
+  },
+  {
+    "place": "Sintra",
+    "lemma_andersen": "Cintra",
+    "explanation": "Sintra, gammel kongeby 32 km nordvest for Lissabon. ¶ Sintra, gammel kongeby i bjergene nordvest for Lissabon. Her besøgte H.C. Andersen 26. juli-8. august José O’Neill, der levede ugift som rentier, i Santa Maria, en lille forstad lige over Sintra.",
+    "year": "1868",
+    "years": "1868 1869",
+    "volumes": "15 18",
+    "work": "Et Besøg i Portugal 1866",
+    "page": "429",
+    "occurrences": "2",
+    "references": "v15:429 (1868); v18:315 (1869)",
+    "confidence": "medium",
+    "evidence": "located+place-type",
+    "geo_id": "",
+    "divergence": 0.4,
+    "signals": {
+      "jaccard": 0.263,
+      "fuzz": 0.938,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.167
+    },
+    "notes": [
+      "Sintra, gammel kongeby 32 km nordvest for Lissabon.",
+      "Sintra, gammel kongeby i bjergene nordvest for Lissabon. Her besøgte H.C. Andersen 26. juli-8. august José O’Neill, der levede ugift som rentier, i Santa Maria, en lille forstad lige over Sintra."
+    ]
+  },
+  {
+    "place": "Herat",
+    "lemma_andersen": "Herat | (Perser fra) Herat",
+    "explanation": "oaseby, da under Persien og siden indlemmet i Afghanistan. ¶ oaseby i Persien (Iran), siden indlemmet i Afghanistan. ¶ oaseby i det vestlige Afghanistan.",
+    "year": "1842",
+    "years": "1842 1855",
+    "volumes": "14 17",
+    "work": "En Digters Bazar",
+    "page": "351",
+    "occurrences": "3",
+    "references": "v14:351 (1842); v14:392 (1842); v17:216 (1855)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type+located",
+    "geo_id": "",
+    "divergence": 0.395,
+    "signals": {
+      "jaccard": 0.286,
+      "fuzz": 0.764,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.333
+    },
+    "notes": [
+      "oaseby, da under Persien og siden indlemmet i Afghanistan.",
+      "oaseby i Persien (Iran), siden indlemmet i Afghanistan.",
+      "oaseby i det vestlige Afghanistan."
+    ]
+  },
+  {
+    "place": "Årsta",
+    "lemma_andersen": "Godset Aosta | Aosta",
+    "explanation": "Årsta, gods i Österhaninge, ca. 25 km fra Stockholm; godset købtes 1805 af Carl Fredrik Bremer, Fredrika Bremers far. ¶ Årsta; gods 25 km fra Stockholm ved Horsfjorden. Det var 1805 blevet købt af Fredrika Bremers far, og her døde hun selv.",
+    "year": "1869",
+    "years": "1869",
+    "volumes": "18",
+    "work": "Mit Livs Eventyr (inklusive Fortsættelse og Tillæg)",
+    "page": "95",
+    "occurrences": "2",
+    "references": "v18:95 (1869); v18:289 (1869)",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.393,
+    "signals": {
+      "jaccard": 0.353,
+      "fuzz": 0.633,
+      "head_a": "gods",
+      "head_b": "gods",
+      "head_disagree": false,
+      "proper_overlap": 0.375
+    },
+    "notes": [
+      "Årsta, gods i Österhaninge, ca. 25 km fra Stockholm; godset købtes 1805 af Carl Fredrik Bremer, Fredrika Bremers far.",
+      "Årsta; gods 25 km fra Stockholm ved Horsfjorden. Det var 1805 blevet købt af Fredrika Bremers far, og her døde hun selv."
+    ]
+  },
+  {
+    "place": "Monte Cavo",
+    "lemma_andersen": "monte cave | Monte cavo | monte cavo",
+    "explanation": "Monte Cavo, det højeste bjerg i Albanerbjergene. ¶ egentlig det højeste bjerg i Albanerbjergene; her nok vin fra dette område. ¶ Monte Cavo; det højeste bjerg i Albanerbjergene.",
+    "year": "1835",
+    "years": "1835 1836",
+    "volumes": "4 7 8",
+    "work": "Improvisatoren",
+    "page": "80",
+    "occurrences": "3",
+    "references": "v4:80 (1835); v7:500 (1836); v8:124 ()",
+    "confidence": "high",
+    "evidence": "located+place-type+head-noun",
+    "geo_id": "",
+    "divergence": 0.377,
+    "signals": {
+      "jaccard": 0.3,
+      "fuzz": 0.667,
+      "head_a": "bjerg",
+      "head_b": "bjerg",
+      "head_disagree": false,
+      "proper_overlap": 0.5
+    },
+    "notes": [
+      "Monte Cavo, det højeste bjerg i Albanerbjergene.",
+      "egentlig det højeste bjerg i Albanerbjergene; her nok vin fra dette område.",
+      "Monte Cavo; det højeste bjerg i Albanerbjergene."
+    ]
+  },
+  {
+    "place": "Alhambra",
+    "lemma_andersen": "Alhambra | Alhambra(s)",
+    "explanation": "slot i Granada. ¶ Maurerkongernes slot uden for Granada i Spanien. ¶ maurerkongernes slot uden for Granada; det omtalte besøg fandt sted den 7.",
+    "year": "1837",
+    "years": "1837 1853 1869",
+    "volumes": "2 5 18",
+    "work": "Kun en Spillemand",
+    "page": "219",
+    "occurrences": "3",
+    "references": "v5:219 (1837); v2:72 (1853); v18:257 (1869)",
+    "confidence": "high",
+    "evidence": "head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.366,
+    "signals": {
+      "jaccard": 0.4,
+      "fuzz": 0.571,
+      "head_a": "slot",
+      "head_b": "slot",
+      "head_disagree": false,
+      "proper_overlap": 0.5
+    },
+    "notes": [
+      "slot i Granada.",
+      "Maurerkongernes slot uden for Granada i Spanien.",
+      "maurerkongernes slot uden for Granada; det omtalte besøg fandt sted den 7."
+    ]
+  },
+  {
+    "place": "Cultusminister",
+    "lemma_andersen": "Cultusminister",
+    "explanation": "dækkede både kirke- og undervisningsministeriet, indtil de blev adskilt i 1916. ¶ kirke- og undervisningsminister; Monrad var kultusminister maj-december 1859 og fra februar 1860.",
+    "year": "1857",
+    "years": "1857 1869",
+    "volumes": "6 18",
+    "work": "»At være eller ikke være«",
+    "page": "131",
+    "occurrences": "2",
+    "references": "v6:131 (1857); v18:224 (1869)",
+    "confidence": "high",
+    "evidence": "head-noun+place-type",
+    "geo_id": "",
+    "divergence": 0.362,
+    "signals": {
+      "jaccard": 0.083,
+      "fuzz": 0.566,
+      "head_a": "kirke",
+      "head_b": "kirke",
+      "head_disagree": false,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "dækkede både kirke- og undervisningsministeriet, indtil de blev adskilt i 1916.",
+      "kirke- og undervisningsminister; Monrad var kultusminister maj-december 1859 og fra februar 1860."
+    ]
+  },
+  {
+    "place": "La Storta",
+    "lemma_andersen": "La Storta",
+    "explanation": "by nord for Rom. ¶ lille by ca. 8 km nordøst for Rom. ¶ sidste station på diligencerejsen til Rom, knap 30 km nord for Rom.",
+    "year": "1842",
+    "years": "1842 1855 1869",
+    "volumes": "13 14 17",
+    "work": "En Digters Bazar",
+    "page": "293",
+    "occurrences": "3",
+    "references": "v14:293 (1842); v17:134 (1855); v13:550 (1869)",
+    "confidence": "high",
+    "evidence": "in-register+head-noun+located+place-type",
+    "geo_id": "geo-3175075",
+    "divergence": 0.359,
+    "signals": {
+      "jaccard": 0.143,
+      "fuzz": 0.489,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 1.0
+    },
+    "notes": [
+      "by nord for Rom.",
+      "lille by ca. 8 km nordøst for Rom.",
+      "sidste station på diligencerejsen til Rom, knap 30 km nord for Rom."
+    ]
+  },
+  {
+    "place": "Bayonne",
+    "lemma_andersen": "Bayonne | Bajonne",
+    "explanation": "fransk by ved grænsen til Spanien. ¶ Bayonne, by ved Golfe de Gascogne ca. 25 km fra grænsen til Spanien.",
+    "year": "1863",
+    "years": "1863 1868",
+    "volumes": "15",
+    "work": "I Spanien",
+    "page": "350",
+    "occurrences": "2",
+    "references": "v15:350 (1863); v15:422 (1868)",
+    "confidence": "medium",
+    "evidence": "located+place-type",
+    "geo_id": "",
+    "divergence": 0.356,
+    "signals": {
+      "jaccard": 0.333,
+      "fuzz": 0.885,
+      "head_a": "by",
+      "head_b": "by",
+      "head_disagree": false,
+      "proper_overlap": 0.333
+    },
+    "notes": [
+      "fransk by ved grænsen til Spanien.",
+      "Bayonne, by ved Golfe de Gascogne ca. 25 km fra grænsen til Spanien."
+    ]
+  },
+  {
+    "place": "St. Gallen",
+    "lemma_andersen": "St. Gallen",
+    "explanation": "by i Schweiz; se kort. ¶ se kort.",
+    "year": "1842",
+    "years": "1842 1858",
+    "volumes": "14 15",
+    "work": "En Digters Bazar",
+    "page": "243",
+    "occurrences": "2",
+    "references": "v14:243 (1842); v15:154 (1858)",
+    "confidence": "high",
+    "evidence": "se-kort+head-noun+located+place-type",
+    "geo_id": "",
+    "divergence": 0.35,
+    "signals": {
+      "jaccard": 0.5,
+      "fuzz": 1.0,
+      "head_a": "by",
+      "head_b": null,
+      "head_disagree": false,
+      "proper_overlap": 0.0
+    },
+    "notes": [
+      "by i Schweiz; se kort.",
+      "se kort."
+    ]
+  }
+]

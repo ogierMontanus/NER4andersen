@@ -281,8 +281,50 @@ The main entry is the **earliest** reference (1846, vol 16, p. 213), while
 > town east of Rome (“by øst for Rom ved foden af Sabinerbjergene”) — 9
 > occurrences across 8 volumes. The `explanation` column makes this visible,
 > because the conflicting definitions sit side by side separated by ` ¶ `. Splitting
-> them is an editorial decision, so the pipeline does not guess: scan merged rows
-> whose explanations disagree and split those entries by hand.
+> them is an editorial decision, so the pipeline does not guess — but `homonym_eval.py`
+> (§4c) finds the candidates for you and can ask an LLM to adjudicate them.
+
+---
+
+## 4c. Finding homonym candidates — `homonym_eval.py`
+
+Scanning 150 merged rows by eye for cases like Tivoli does not scale. Two-stage
+triage instead, over the merged `explanation` column (split on ` ¶ `):
+
+**Stage A — rule/NLP divergence estimate, always free, stdlib-only.** For every
+pair of merged notes on a row it scores disagreement from four signals:
+token Jaccard overlap, fuzzy string similarity (`rapidfuzz` if installed, else
+`difflib`), whether the two notes' geographic head-nouns disagree (`kirke` vs.
+`domkirke`, weighted heaviest — this is what actually catches Tivoli:
+*forlystelsespark* vs. *by*), and how little proper-noun context the notes
+share. The worst pair's weighted score is the row's divergence (0–1); rows
+≥ 0.35 are flagged and printed worst-first.
+
+```bash
+python homonym_eval.py out/placenames-ALL.tsv
+```
+
+Against the full-edition index (1 365 rows, 150 with merged notes) this flags
+108 rows. Tivoli comes out at 0.94 with `heads=forlystelsespark/by`; the top of
+the list is dominated by genuine head-noun clashes (`Fredensborg` slot/by,
+`Kirken` domkirke/kirke, `Portici` teater/forstad — an opera title colliding
+with the town).
+
+**Stage B — optional LLM adjudication (haiku).** For flagged rows, ask a cheap
+model to read the actual notes and decide `one_place` / `multiple_places` /
+`unclear`, with a rationale and (if split) which notes go with which place.
+Same opt-in-only pattern as `reconcile_llm.py`: no-ops with a clear message if
+`ANTHROPIC_API_KEY` is unset or `anthropic` isn't installed, never errors.
+
+```bash
+pip install -r requirements-llm.txt   # optional: rapidfuzz, anthropic
+export ANTHROPIC_API_KEY=sk-ant-...
+python homonym_eval.py out/placenames-ALL.tsv --llm --out out/homonym-candidates.json
+```
+
+`--dry-run` prints the prompts without calling the API; `--limit N` caps how
+many rows go to the LLM; `--threshold` adjusts the Stage-A cutoff (default
+0.35); `--out` writes flagged rows + signals + verdicts as JSON for review.
 
 ---
 
