@@ -82,8 +82,20 @@ zero comments for six volumes:
 //table[@rend='textcomments']//row[cell[@type='data-term'] or cell[@type='data-definition']]
 ```
 
-For the same reason the page is taken from **`@xml:id`** (`txtcmnt-045-01` → 45),
-which survives every nesting; the `<cell type="page">` is only a fallback.
+For the same reason the page is taken from **`@xml:id`**, which survives every
+nesting; the `<cell type="page">` is only a fallback.
+
+But the id itself comes in **two schemes**:
+
+| scheme | example | volumes |
+| --- | --- | --- |
+| `txtcmnt-PAGE-SEQ` | `txtcmnt-045-01` → p. 45 | 1–16 |
+| `txtcmnt-VOL-PAGE-SEQ` | `txtcmnt-17-013-01` → p. 13 | 17–18 |
+
+Taking “the first number after `txtcmnt-`” silently yields the *volume* as the
+page for vols 17–18 — every comment in vol 17 comes out as page 17. In both
+schemes the page is the **second-to-last numeric part**, so that is what
+`f:page-from-id()` returns.
 
 ### 2.3 Two different places to find the year
 
@@ -174,8 +186,10 @@ punctuation stripped, case folded, so `Halland(s)` → `halland`).
 | `explanation` | **the editorial explanation(s)** — the `data-definition` prose. When several notes merge into one row they are joined with ` ¶ ` |
 | `year` | **year of the reference** — the publication year of the work the comment sits in, from `docImprint`/`sourceDate`. Earliest, when a place recurs |
 | `years` | every distinct year, when a place is referenced in more than one work |
-| `work`, `page` | of the earliest reference |
+| `volumes` | every volume the place occurs in (only interesting for a merged index) |
+| `work`, `page` | of the **main entry** — the earliest reference, ordered by year, then volume, then page |
 | `occurrences` | how many comments were merged into the row |
+| `references` | every occurrence as `v<vol>:<page> (<year>)`, earliest first — the accumulated citation list |
 | `confidence`, `evidence` | for review |
 | `geo_id` | `geo-…` if the name is in `places.xml` |
 
@@ -199,6 +213,49 @@ both of Andersen’s spellings are kept, and both editorial explanations are
 carried through. The headword is the modern form, so the index sorts and
 deduplicates on *Kalmar* / *Skåne* while still recording that Andersen wrote
 *Calmar* / *Skaane*.
+
+---
+
+## 4b. Merging several volumes into one index
+
+Pass extra `comments.xml` files in `sources` (semicolon-separated). The index is
+then built over the union: a place already present keeps its **single main
+entry** and simply accumulates the new occurrences, years, volumes and
+spellings — it is not duplicated.
+
+```bash
+java -cp "$CP" net.sf.saxon.Transform \
+  -s:out/comments-vol15.xml -xsl:placename-index.xsl \
+  -o:out/placenames-vol15-18.tsv \
+  sources="out/comments-vol16.xml;out/comments-vol17.xml;out/comments-vol18.xml" \
+  categorized=comments-vol15-18-categorized.xml
+```
+
+Volumes 15–18 (Rejseskildringer II + Selvbiografier I–III):
+
+| | vol 15 | vol 16 | vol 17 | vol 18 | merged |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| comments | 2 626 | 2 204 | 2 303 | 2 086 | 9 219 |
+| place notes (high+med) | 295 | 94 | 142 | 95 | 626 |
+| **index rows** | 286 | 87 | 138 | 91 | **570** |
+
+602 per-volume rows collapse to 570 — **30 places are shared between volumes**
+and merge into one entry each. The fullest example:
+
+```
+place          Pompeji
+lemma_andersen Pompeji(s) | Pompeji
+years          1846 1855 1860 1868 1869
+volumes        15 16 17 18
+work           Mit eget Eventyr uden Digtning     page 213     occurrences 6
+references     v16:213 (1846); v17:66 (1855); v17:153 (1855);
+               v15:187 (1860); v15:456 (1868); v18:218 (1869)
+explanation    antik romersk by, begravet ved Vesuvs udbrud i 79 e.Kr. ¶ den
+               romerske by syd for Napoli, der blev ødelagt … ved Vesuvs udbrud 79
+```
+
+The main entry is the **earliest** reference (1846, vol 16, p. 213), while
+`references` preserves every later occurrence with its own volume, page and year.
 
 ---
 

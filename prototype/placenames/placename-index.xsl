@@ -59,6 +59,11 @@
     <xsl:param name="register" as="xs:string"
                select="'/home/user/svNames/data/registers/places.xml'"/>
     <xsl:param name="categorized" as="xs:string" select="'comments-categorized.xml'"/>
+    <!-- Optional: semicolon-separated list of further comments.xml files. When
+         given, the index is built over the union of the principal input and
+         these, so one place occurring in several volumes stays a single entry
+         and simply accumulates occurrences, years, volumes and spellings. -->
+    <xsl:param name="sources" as="xs:string" select="''"/>
     <!-- how far into the definition a head-noun still describes the lemma -->
     <xsl:param name="head-window" as="xs:integer" select="80"/>
 
@@ -191,11 +196,16 @@
     <!-- ============ main ============ -->
 
     <xsl:template match="/">
-        <xsl:variable name="vol" select="string(/comments/@volume)"/>
+        <!-- principal input plus any extra volumes named in $sources -->
+        <xsl:variable name="docs" as="document-node()*"
+                      select="(/, for $p in tokenize($sources, '\s*;\s*')[. ne '']
+                                  return doc($p))"/>
+        <xsl:variable name="vol"
+                      select="string-join(distinct-values($docs/comments/@volume), ' ')"/>
 
         <!-- annotate every comment -->
         <xsl:variable name="tagged" as="element(c)*">
-            <xsl:for-each select="/comments/comment">
+            <xsl:for-each select="$docs/comments/comment">
                 <xsl:variable name="lemma" select="string(lemma)"/>
                 <xsl:variable name="def"   select="string(definition)"/>
                 <xsl:variable name="person" select="matches(substring($def,1,110), $RE-PERSON)"/>
@@ -207,7 +217,8 @@
                      seg/data-term ("Halland(s)", "Calmar"); @variant is the
                      cleaned form used for comparison. The element content is the
                      editorial explanation. -->
-                <c id="{@id}" page="{@page}" year="{@year}" work="{@work}"
+                <c id="{@id}" vol="{ancestor::comments/@volume}"
+                   page="{@page}" year="{@year}" work="{@work}"
                    conf="{$conf}" evidence="{string-join($ev, '+')}"
                    person="{$person}" place="{$head}"
                    lemma="{$lemma}" variant="{f:clean($lemma)}"
@@ -230,13 +241,15 @@
 
         <!-- (b) STEP 3 deliverable: deduplicated index, TSV -->
         <xsl:variable name="idx" select="$tagged[@conf = ('high','medium')][@key ne '']"/>
-        <xsl:text>place&#9;lemma_andersen&#9;explanation&#9;year&#9;years&#9;work&#9;page&#9;occurrences&#9;confidence&#9;evidence&#9;geo_id&#10;</xsl:text>
+        <xsl:text>place&#9;lemma_andersen&#9;explanation&#9;year&#9;years&#9;volumes&#9;work&#9;page&#9;occurrences&#9;references&#9;confidence&#9;evidence&#9;geo_id&#10;</xsl:text>
         <xsl:for-each-group select="$idx" group-by="@key">
             <xsl:sort select="f:norm(current-group()[1]/@place)"/>
             <!-- earliest reference wins the headline year/work/page -->
+            <!-- the main entry is the earliest reference: year, then volume, then page -->
             <xsl:variable name="first" as="element(c)">
                 <xsl:sequence select="sort(current-group(), (), function($c) {
-                    (if ($c/@year ne '') then xs:integer($c/@year) else 9999) * 100000
+                    (if ($c/@year ne '') then xs:integer($c/@year) else 9999) * 10000000
+                    + (if ($c/@vol  ne '') then xs:integer($c/@vol)  else 99) * 100000
                     + (if ($c/@page ne '') then xs:integer($c/@page) else 99999)
                 })[1]"/>
             </xsl:variable>
@@ -247,15 +260,23 @@
             <!-- the editorial explanation(s) behind the entry -->
             <xsl:variable name="expl"
                           select="distinct-values(current-group()!f:tsv(string(.))[. ne ''])"/>
+            <!-- every occurrence as vol:page (year), earliest first -->
+            <xsl:variable name="refs" select="sort(current-group(), (), function($c) {
+                    (if ($c/@year ne '') then xs:integer($c/@year) else 9999) * 10000000
+                    + (if ($c/@vol  ne '') then xs:integer($c/@vol)  else 99) * 100000
+                    + (if ($c/@page ne '') then xs:integer($c/@page) else 99999)
+                })!concat('v', @vol, ':', @page, ' (', @year, ')')"/>
             <xsl:value-of select="string-join((
                 f:tsv($first/@place),
                 string-join($lemmas!f:tsv(.), ' | '),
                 string-join($expl, ' ¶ '),
                 $first/@year,
                 string-join(sort($years), ' '),
+                string-join(sort(distinct-values(current-group()/@vol[. ne ''])), ' '),
                 f:tsv($first/@work),
                 $first/@page,
                 string(count(current-group())),
+                string-join($refs, '; '),
                 (if (current-group()/@conf = 'high') then 'high' else 'medium'),
                 string-join(distinct-values(tokenize(string-join(current-group()/@evidence,'+'),'\+')[. ne '']), '+'),
                 $first/@geo), '&#9;')"/>

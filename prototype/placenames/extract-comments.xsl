@@ -60,12 +60,18 @@
         <xsl:sequence select="normalize-space(string-join($n//text(), ''))"/>
     </xsl:function>
 
-    <!-- page encoded in a comment id: txtcmnt-012-01 -> 12 -->
+    <!-- Page encoded in a comment id. Two schemes are in use:
+           txtcmnt-012-01      page-seq          (vols 1-16)
+           txtcmnt-17-013-01   volume-page-seq   (vols 17-18)
+         In both the page is the second-to-last numeric part, so take that
+         rather than the first number (which is the volume in the long form). -->
     <xsl:function name="f:page-from-id" as="xs:string">
         <xsl:param name="id" as="xs:string"/>
+        <xsl:variable name="nums"
+                      select="tokenize(replace($id, '^.*txtcmnt-', ''), '-')[matches(., '^\d+$')]"/>
         <xsl:sequence select="
-            if (matches($id, 'txtcmnt-(\d+)'))
-            then string(xs:integer(replace($id, '^.*txtcmnt-(\d+).*$', '$1')))
+            if (count($nums) ge 2) then string(xs:integer($nums[last() - 1]))
+            else if (count($nums) eq 1) then string(xs:integer($nums[1]))
             else ''"/>
     </xsl:function>
 
