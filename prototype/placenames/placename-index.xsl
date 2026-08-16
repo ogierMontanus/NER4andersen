@@ -248,9 +248,9 @@
             <!-- the main entry is the earliest reference: year, then volume, then page -->
             <xsl:variable name="first" as="element(c)">
                 <xsl:sequence select="sort(current-group(), (), function($c) {
-                    (if ($c/@year ne '') then xs:integer($c/@year) else 9999) * 10000000
-                    + (if ($c/@vol  ne '') then xs:integer($c/@vol)  else 99) * 100000
-                    + (if ($c/@page ne '') then xs:integer($c/@page) else 99999)
+                    (if ($c/@year castable as xs:integer) then xs:integer($c/@year) else 9999) * 10000000
+                    + (if ($c/@vol  castable as xs:integer) then xs:integer($c/@vol)  else 99) * 100000
+                    + (if ($c/@page castable as xs:integer) then xs:integer($c/@page) else 99999)
                 })[1]"/>
             </xsl:variable>
             <xsl:variable name="years" select="distinct-values(current-group()/@year[. ne ''])"/>
@@ -262,9 +262,9 @@
                           select="distinct-values(current-group()!f:tsv(string(.))[. ne ''])"/>
             <!-- every occurrence as vol:page (year), earliest first -->
             <xsl:variable name="refs" select="sort(current-group(), (), function($c) {
-                    (if ($c/@year ne '') then xs:integer($c/@year) else 9999) * 10000000
-                    + (if ($c/@vol  ne '') then xs:integer($c/@vol)  else 99) * 100000
-                    + (if ($c/@page ne '') then xs:integer($c/@page) else 99999)
+                    (if ($c/@year castable as xs:integer) then xs:integer($c/@year) else 9999) * 10000000
+                    + (if ($c/@vol  castable as xs:integer) then xs:integer($c/@vol)  else 99) * 100000
+                    + (if ($c/@page castable as xs:integer) then xs:integer($c/@page) else 99999)
                 })!concat('v', @vol, ':', @page, ' (', @year, ')')"/>
             <xsl:value-of select="string-join((
                 f:tsv($first/@place),
@@ -272,7 +272,9 @@
                 string-join($expl, ' ¶ '),
                 $first/@year,
                 string-join(sort($years), ' '),
-                string-join(sort(distinct-values(current-group()/@vol[. ne ''])), ' '),
+                string-join(sort(distinct-values(current-group()/@vol[. ne '']), (),
+                                 function($v) { if ($v castable as xs:integer)
+                                                then xs:integer($v) else 999 }), ' '),
                 f:tsv($first/@work),
                 $first/@page,
                 string(count(current-group())),

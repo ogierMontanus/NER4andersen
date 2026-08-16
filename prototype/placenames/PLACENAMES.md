@@ -231,7 +231,26 @@ java -cp "$CP" net.sf.saxon.Transform \
   categorized=comments-vol15-18-categorized.xml
 ```
 
-Volumes 15–18 (Rejseskildringer II + Selvbiografier I–III):
+### The whole edition
+
+```bash
+SRC=$(for n in $(seq 2 18); do printf "out/comments-vol%s.xml;" $n; done | sed 's/;$//')
+java -Xmx2g -cp "$CP" net.sf.saxon.Transform \
+  -s:out/comments-vol1.xml -xsl:placename-index.xsl \
+  -o:out/placenames-ALL.tsv sources="$SRC" categorized=comments-ALL-categorized.xml
+```
+
+All 18 volumes — 30 571 comments, 1 671 place notes (1 159 high + 512 medium),
+1 407 more held back for review:
+
+| | per-volume rows | master index |
+| --- | ---: | ---: |
+| all 18 volumes | 1 583 | **1 365** |
+
+**218 places are shared between volumes** and collapse into one entry each; 147
+of them span more than one volume. Takes ~17 s.
+
+Volumes 15–18 alone (Rejseskildringer II + Selvbiografier I–III):
 
 | | vol 15 | vol 16 | vol 17 | vol 18 | merged |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -239,8 +258,7 @@ Volumes 15–18 (Rejseskildringer II + Selvbiografier I–III):
 | place notes (high+med) | 295 | 94 | 142 | 95 | 626 |
 | **index rows** | 286 | 87 | 138 | 91 | **570** |
 
-602 per-volume rows collapse to 570 — **30 places are shared between volumes**
-and merge into one entry each. The fullest example:
+602 per-volume rows collapse to 570 — 30 places shared. A fully merged example:
 
 ```
 place          Pompeji
@@ -257,22 +275,35 @@ explanation    antik romersk by, begravet ved Vesuvs udbrud i 79 e.Kr. ¶ den
 The main entry is the **earliest** reference (1846, vol 16, p. 213), while
 `references` preserves every later occurrence with its own volume, page and year.
 
+> ⚠️ **Homonyms merge.** Deduplication is by name, so two different places that
+> share one collapse into a single row. In the full-edition index *Tivoli* merges
+> the Copenhagen pleasure garden (“forlystelsespark anlagt … i 1843”) with the
+> town east of Rome (“by øst for Rom ved foden af Sabinerbjergene”) — 9
+> occurrences across 8 volumes. The `explanation` column makes this visible,
+> because the conflicting definitions sit side by side separated by ` ¶ `. Splitting
+> them is an editorial decision, so the pipeline does not guess: scan merged rows
+> whose explanations disagree and split those entries by hand.
+
 ---
 
 ## 5. Coverage across the 18 volumes
 
 Run as-is, no per-volume tuning:
 
-| vol | title | comments | dated |
-| ---: | --- | ---: | ---: |
-| 1–3 | Eventyr og Historier I–III | 3 437 | 100 / 92 / 100 % |
-| 4–6 | Romaner I–III | 3 892 | 100 % |
-| 7–8 | Digte I–II | 3 905 | 92 % / **3 %** |
-| 9 | Blandinger | 2 212 | 98 % |
-| 10–13 | Skuespil I–IV | 4 797 | 100 / 98 / 69 / 100 % |
-| 14–15 | Rejseskildringer I–II | 5 735 | 100 % |
-| 16–18 | Selvbiografier I–III | 6 593 | 100 % |
-| | **total** | **30 571** | **91 %** |
+| vol | title | comments | dated | index rows |
+| ---: | --- | ---: | ---: | ---: |
+| 1–3 | Eventyr og Historier I–III | 3 437 | 100 / 92 / 100 % | 7 / 38 / 33 |
+| 4–6 | Romaner I–III | 3 892 | 100 % | 104 / 64 / 24 |
+| 7–8 | Digte I–II | 3 905 | 92 % / **3 %** | 39 / 84 |
+| 9 | Blandinger | 2 212 | 98 % | 59 |
+| 10–13 | Skuespil I–IV | 4 797 | 100 / 98 / 69 / 100 % | 14 / 27 / 29 / 22 |
+| 14–15 | Rejseskildringer I–II | 5 735 | 100 % | 437 / 286 |
+| 16–18 | Selvbiografier I–III | 6 593 | 100 % | 87 / 138 / 91 |
+| | **total** | **30 571** | **91 %** | **1 583 → 1 365 merged** |
+
+The travel writing dominates, as expected: vols 14–15 alone supply 723 of the
+1 583 per-volume rows, because those are the volumes whose commentary is
+systematically topographic (and the only ones with map cross-references).
 
 ### Known gaps
 

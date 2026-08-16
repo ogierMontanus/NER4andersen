@@ -108,8 +108,11 @@
             f:text(($work//docImprint)[1])[. ne ''],
             f:text(($work//sourceDate)[1])[. ne ''],
             '')[1]"/>
-        <xsl:sequence select="
-            if (matches($raw, '\d{4}')) then replace($raw, '^\D*(\d{4}).*$', '$1') else ''"/>
+        <!-- The date field is not always a bare year: the Skuespil volumes write
+             prose such as "Opført første gang 5. maj 1832". Take the first
+             maximal run of exactly four digits rather than regex-replacing, which
+             silently returns the whole sentence when the pattern does not match. -->
+        <xsl:sequence select="(tokenize($raw, '\D+')[matches(., '^\d{4}$')], '')[1]"/>
     </xsl:function>
 
     <!-- a human label for the work -->
@@ -127,10 +130,17 @@
 
     <xsl:template match="/">
         <xsl:variable name="title" select="f:text((//teiHeader//titleStmt/title)[1])"/>
-        <xsl:variable name="vol" select="
-            if ($volume ne '') then $volume
-            else if (matches($title, '\d+')) then replace($title, '^\D*(\d+).*$', '$1')
-            else ''"/>
+        <!-- Volume number: the explicit parameter, else the header title, else the
+             file name. Vols 2 and 4 carry an empty <title> </title>, so without the
+             file-name fallback their comments would be emitted with no volume and
+             would not group correctly in a merged index. -->
+        <xsl:variable name="uri" select="string((document-uri(/), base-uri(/))[1])"/>
+        <xsl:variable name="vol" as="xs:string" select="(
+            $volume[. ne ''],
+            tokenize($title, '\D+')[. ne ''][1],
+            (if (matches($uri, 'Andersen(%20|[\s_])+\d+'))
+             then replace($uri, '^.*Andersen(?:%20|[\s_])+(\d+).*$', '$1') else ()),
+            '')[1]"/>
 
         <!-- Apparatus rows carrying an actual comment.
              Descendant axis, not a child step: some volumes (8-13) wrap every
