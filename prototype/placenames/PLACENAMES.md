@@ -170,25 +170,35 @@ punctuation stripped, case folded, so `Halland(s)` → `halland`).
 | column | notes |
 | --- | --- |
 | `place` | headword. If the note opens with a modern normalised spelling (`Calmar` → “**Kalmar**; se kort 1.”) that becomes the headword |
+| `lemma_andersen` | **Andersen’s own spelling(s)**, taken verbatim from the `seg`/`data-term` lemma — inflection markers and all (`Fahlun(s)`, `Skaane`, `Bajonne`). Multiple spellings are joined with ` \| ` |
+| `explanation` | **the editorial explanation(s)** — the `data-definition` prose. When several notes merge into one row they are joined with ` ¶ ` |
 | `year` | **year of the reference** — the publication year of the work the comment sits in, from `docImprint`/`sourceDate`. Earliest, when a place recurs |
 | `years` | every distinct year, when a place is referenced in more than one work |
 | `work`, `page` | of the earliest reference |
 | `occurrences` | how many comments were merged into the row |
-| `variants` | Andersen’s spellings that differ from the headword (`Bajonne`, `Fahlun`, `Palmella`) |
 | `confidence`, `evidence` | for review |
 | `geo_id` | `geo-…` if the name is in `places.xml` |
+
+Every field is passed through `f:tsv()`, which flattens tabs and newlines, so the
+explanation prose can never break the column structure.
 
 Vol 15: **2 626 comments → 295 place notes → 286 unique places.**
 
 ```
-place      year  years      work        page  n  variants  conf    evidence
-Bayonne    1863  1863 1868  I Spanien   350   2  Bajonne   medium  located+place-type
-Falun      1851  1851       I Sverrig   22    2  Fahlun    high    se-kort
+place    lemma_andersen      explanation                                      year  years      n
+Bayonne  Bayonne | Bajonne   fransk by ved grænsen til Spanien. ¶ Bayonne,    1863  1863 1868  2
+                             by ved Golfe de Gascogne ca. 25 km fra …
+Falun    Fahlun(s) | Fahlun  Falun; se kort 1-2.                              1851  1851       2
+Kalmar   Calmar              Kalmar; se kort 1.                               1851  1851       1
+Skåne    Skaane              Skåne; det sydligste landskab i Sverige.         1851  1851       1
 ```
 
 *Bayonne* is commented once in **I Spanien** (1863) and again in **Et Besøg i
-Portugal** (1868); the two notes collapse to one row, the earlier year leads, and
-Andersen’s spelling *Bajonne* is preserved as a variant.
+Portugal** (1868); the two notes collapse to one row, the earlier year leads,
+both of Andersen’s spellings are kept, and both editorial explanations are
+carried through. The headword is the modern form, so the index sorts and
+deduplicates on *Kalmar* / *Skåne* while still recording that Andersen wrote
+*Calmar* / *Skaane*.
 
 ---
 

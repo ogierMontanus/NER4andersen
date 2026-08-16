@@ -102,6 +102,12 @@
             lower-case(replace(replace($s, '\([^)]*\)', ''), '[.,;:!?«»&quot;''’\[\]]', ' ')))"/>
     </xsl:function>
 
+    <!-- make a value safe to drop into a tab-separated field -->
+    <xsl:function name="f:tsv" as="xs:string">
+        <xsl:param name="s" as="xs:string?"/>
+        <xsl:sequence select="normalize-space(translate(string($s), '&#9;&#10;&#13;', '   '))"/>
+    </xsl:function>
+
     <!-- display form: "Halland(s)" -> "Halland" -->
     <xsl:function name="f:clean" as="xs:string">
         <xsl:param name="s" as="xs:string?"/>
@@ -197,9 +203,14 @@
                 <xsl:variable name="conf" select="f:confidence($ev, $person)"/>
                 <xsl:variable name="modern" select="f:normalised-name($def)"/>
                 <xsl:variable name="head"   select="if ($modern ne '') then $modern else f:clean($lemma)"/>
+                <!-- @lemma keeps Andersen's spelling exactly as printed in the
+                     seg/data-term ("Halland(s)", "Calmar"); @variant is the
+                     cleaned form used for comparison. The element content is the
+                     editorial explanation. -->
                 <c id="{@id}" page="{@page}" year="{@year}" work="{@work}"
                    conf="{$conf}" evidence="{string-join($ev, '+')}"
-                   person="{$person}" place="{$head}" variant="{f:clean($lemma)}"
+                   person="{$person}" place="{$head}"
+                   lemma="{$lemma}" variant="{f:clean($lemma)}"
                    key="{f:norm($head)}" geo="{f:geo(f:norm($head))}">
                     <xsl:value-of select="$def"/>
                 </c>
@@ -219,7 +230,7 @@
 
         <!-- (b) STEP 3 deliverable: deduplicated index, TSV -->
         <xsl:variable name="idx" select="$tagged[@conf = ('high','medium')][@key ne '']"/>
-        <xsl:text>place&#9;year&#9;years&#9;work&#9;page&#9;occurrences&#9;variants&#9;confidence&#9;evidence&#9;geo_id&#10;</xsl:text>
+        <xsl:text>place&#9;lemma_andersen&#9;explanation&#9;year&#9;years&#9;work&#9;page&#9;occurrences&#9;confidence&#9;evidence&#9;geo_id&#10;</xsl:text>
         <xsl:for-each-group select="$idx" group-by="@key">
             <xsl:sort select="f:norm(current-group()[1]/@place)"/>
             <!-- earliest reference wins the headline year/work/page -->
@@ -230,16 +241,21 @@
                 })[1]"/>
             </xsl:variable>
             <xsl:variable name="years" select="distinct-values(current-group()/@year[. ne ''])"/>
-            <xsl:variable name="vars"
-                          select="distinct-values(current-group()/@variant[f:norm(.) ne current-grouping-key()])"/>
+            <!-- every distinct spelling Andersen actually uses, earliest note first -->
+            <xsl:variable name="lemmas"
+                          select="distinct-values(current-group()/@lemma[. ne ''])"/>
+            <!-- the editorial explanation(s) behind the entry -->
+            <xsl:variable name="expl"
+                          select="distinct-values(current-group()!f:tsv(string(.))[. ne ''])"/>
             <xsl:value-of select="string-join((
-                $first/@place,
+                f:tsv($first/@place),
+                string-join($lemmas!f:tsv(.), ' | '),
+                string-join($expl, ' ¶ '),
                 $first/@year,
                 string-join(sort($years), ' '),
-                $first/@work,
+                f:tsv($first/@work),
                 $first/@page,
                 string(count(current-group())),
-                string-join($vars, '; '),
                 (if (current-group()/@conf = 'high') then 'high' else 'medium'),
                 string-join(distinct-values(tokenize(string-join(current-group()/@evidence,'+'),'\+')[. ne '']), '+'),
                 $first/@geo), '&#9;')"/>

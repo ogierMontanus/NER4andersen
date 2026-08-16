@@ -13,6 +13,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Skåne"
+      lemma="Skaane"
       variant="Skaane"
       key="skåne"
       geo="">Skåne; det sydligste landskab i Sverige.</c>
@@ -24,6 +25,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Halland"
+      lemma="Halland(s)"
       variant="Halland"
       key="halland"
       geo="">landskab i det vestlige Sydsverige langs Kattegatkysten mellem Skåne og Göteborg.</c>
@@ -35,6 +37,7 @@
       evidence="place-type"
       person="false"
       place="Skjærgaard"
+      lemma="Skjærgaard(ene)"
       variant="Skjærgaard"
       key="skjærgaard"
       geo="">farvand ud for en kyst med skær, holme eller små øer.</c>
@@ -46,6 +49,7 @@
       evidence="se-kort"
       person="false"
       place="Sulitelma, Øens Øie"
+      lemma="Sulitelma, Øens Øie"
       variant="Sulitelma, Øens Øie"
       key="sulitelma øens øie"
       geo="">højfjeldsmassiv i Lappland ved grænsen mellem Sverige og Norge. Det samiske navn er blevet oversat med såvel øens øje som øens tærskel og solens øje. Se kort 1.</c>
@@ -57,6 +61,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Nordhavet"
+      lemma="Nordhavet"
       variant="Nordhavet"
       key="nordhavet"
       geo="">Norskehavet.</c>
@@ -68,6 +73,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Trollhättan"
+      lemma="Trollhättan"
       variant="Trollhättan"
       key="trollhättan"
       geo="">se kort 1-2. Byens attraktion var Göta älvs vandfald og et omfattende slusesystem, som gjorde elven farbar mellem Kattegat og Vänern. Arbejdet blev indledt 1749, Trollhätte kanal åbnedes 1800, og sammen med Göta kanal, der blev udgravet fra 1810 til 1832, dannede den en vandvej gennem Sverige.</c>
@@ -79,6 +85,7 @@
       evidence="se-kort"
       person="false"
       place="Vänern"
+      lemma="Sverrigs største Indsøe"
       variant="Sverrigs største Indsøe"
       key="vänern"
       geo="">Vänern; se kort 1-2.</c>
@@ -90,6 +97,7 @@
       evidence="place-type"
       person="false"
       place="Vildt Göta …"
+      lemma="Vildt Göta …"
       variant="Vildt Göta …"
       key="vildt göta …"
       geo="">(svensk) Vildt styrtede Göta [elv] fra fjeldene, / Fælt brølede trolden fra sit Topfald! / Men det menneskelige snilde kom og sprængt stod klippen, / Med skibene i sit skød! H.C. Andersen har noteret sig dette og de følgende citater fra Trollhätta gæstebog i sin dagbog 6.9. august 1849 (Dagbøger III, s. 377-380). Tegnérs digt er formodentlig fra et besøg i 1815, men gæstebogen fra dette år er ikke bevaret. Digtet blev trykt under titlen »I boken ved Trollhättan« i Esaias Tegnérs samlade skrifter, bd. 4, udgivet af Carl Wilhelm Böttiger, 1848, s. 166.</c>
@@ -101,6 +109,7 @@
       evidence="se-kort"
       person="false"
       place="Motala"
+      lemma="Motala"
       variant="Motala"
       key="motala"
       geo="">se kort 1-2.</c>
@@ -112,6 +121,7 @@
       evidence="place-type"
       person="false"
       place="Götha kom …"
+      lemma="Götha kom …"
       variant="Götha kom …"
       key="götha kom …"
       geo="">(svensk) Götha kom i dans fra Seves fjelde, / Køle spillede på dens rolige flod; / Pludselig fra en borg af klipper / Stod Trollhättan hende i vejen. / Skum og rædsel spyede trolden omkring sig, / Sejleren så, og bævede og flygtede. / Det menneskelige snilde kom – med mægtig hånd / Slog det klippen, der faldt ned og adlød. / Og knyttede således sammen, i evigt bånd / Ocean og fjeldboens land. Af Tegnér indført i gæstebogen 28. juni 1804. Digtet var, da I Sverrig udkom, endnu ikke publiceret, så der er reelt tale om et førstetryk. Digtet blev efterfølgende optaget i Esaias Tegnérs samlade dikter, bd. 1, 1964, s. 131 under titlen »I en minnesbok vid Trollhättan«.</c>
@@ -123,6 +133,7 @@
       evidence="se-kort"
       person="false"
       place="Siljan"
+      lemma="Siljan(s)"
       variant="Siljan"
       key="siljan"
       geo="">se kort 1-2.</c>
@@ -134,6 +145,7 @@
       evidence="se-kort"
       person="false"
       place="Hjälmaren"
+      lemma="Hjelmaren"
       variant="Hjelmaren"
       key="hjälmaren"
       geo="">Hjälmaren; se kort 2.</c>
@@ -145,6 +157,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Lappland"
+      lemma="Lapland(s)"
       variant="Lapland"
       key="lappland"
       geo="">Lappland; landskab i Nordsverige.</c>
@@ -156,6 +169,7 @@
       evidence="se-kort"
       person="false"
       place="Falun"
+      lemma="Fahlun(s)"
       variant="Fahlun"
       key="falun"
       geo="">Falun; se kort 1-2.</c>
@@ -167,6 +181,7 @@
       evidence="place-type"
       person="false"
       place="Ganges"
+      lemma="Ganges"
       variant="Ganges"
       key="ganges"
       geo="">hellig indisk flod.</c>
@@ -178,6 +193,7 @@
       evidence="located+place-type"
       person="false"
       place="Sangerfesten … Riddersal"
+      lemma="Sangerfesten … Riddersal"
       variant="Sangerfesten … Riddersal"
       key="sangerfesten … riddersal"
       geo="">en digterkappestrid, der ifølge sagnet fandt sted på Wartburg Slot i Tyskland 1207.</c>
@@ -189,6 +205,7 @@
       evidence="se-kort"
       person="false"
       place="Kinnekulle"
+      lemma="Kinnekulle"
       variant="Kinnekulle"
       key="kinnekulle"
       geo="">se kort 2.</c>
@@ -200,6 +217,7 @@
       evidence="place-type"
       person="false"
       place="Den ældgamle Landsbykirke"
+      lemma="Den ældgamle Landsbykirke"
       variant="Den ældgamle Landsbykirke"
       key="den ældgamle landsbykirke"
       geo="">det er uklart, hvilken kirke, der sigtes til, da området ved Kinnekulle rummer flere kirker fra middelalderen.</c>
@@ -211,6 +229,7 @@
       evidence="se-kort"
       person="false"
       place="Mariestad"
+      lemma="Mariestad(s)"
       variant="Mariestad"
       key="mariestad"
       geo="">se kort 2.</c>
@@ -222,6 +241,7 @@
       evidence="se-kort"
       person="false"
       place="Hällekis"
+      lemma="Hellekis"
       variant="Hellekis"
       key="hällekis"
       geo="">Hällekis; se kort 2.</c>
@@ -233,6 +253,7 @@
       evidence="se-kort+located"
       person="false"
       place="Leckø gamle Slot"
+      lemma="Leckø gamle Slot"
       variant="Leckø gamle Slot"
       key="leckø gamle slot"
       geo="">Läckö slott på Kållandsö (se kort 2). Anlagt i slutningen af 1300-tallet og senere udbygget til et barokslot.</c>
@@ -244,6 +265,7 @@
       evidence="se-kort"
       person="false"
       place="Lidköping"
+      lemma="Lidkøping"
       variant="Lidkøping"
       key="lidköping"
       geo="">Lidköping; se kort 2.</c>
@@ -255,6 +277,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Blomberg"
+      lemma="Blomberg"
       variant="Blomberg"
       key="blomberg"
       geo="">herregård.</c>
@@ -266,6 +289,7 @@
       evidence="place-type"
       person="false"
       place="Husaby-Kirke"
+      lemma="Husaby-Kirke"
       variant="Husaby-Kirke"
       key="husaby-kirke"
       geo="">Husaby kyrko; romansk stenkirke, hvis ældste del er fra ca. 1100.</c>
@@ -277,6 +301,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="den gamle catholske Bispegaard"
+      lemma="den gamle catholske Bispegaard"
       variant="den gamle catholske Bispegaard"
       key="den gamle catholske bispegaard"
       geo="">ruinerne af en stor bispegård fra 1400-tallet.</c>
@@ -288,6 +313,7 @@
       evidence="place-type"
       person="false"
       place="Sacristi"
+      lemma="Sacristi(ets)"
       variant="Sacristi"
       key="sacristi"
       geo="">sakristi; siderum i en kirke ved siden af koret hvor præsten kan klæde om, og hvor man opbevarer de ting, der bruges til gudstjenesten.</c>
@@ -299,6 +325,7 @@
       evidence="place-type"
       person="false"
       place="Klostret"
+      lemma="Klostret(s)"
       variant="Klostret"
       key="klostret"
       geo="">muligvis menes der ruinerne af en biskopborg fra 1400-tallet nær ved kirken.</c>
@@ -310,6 +337,7 @@
       evidence="se-kort"
       person="false"
       place="Kinne-Kleva"
+      lemma="Kleven"
       variant="Kleven"
       key="kinne-kleva"
       geo="">Kinne-Kleva; se kort 2.</c>
@@ -321,6 +349,7 @@
       evidence="place-type"
       person="false"
       place="Ghatsbjerget"
+      lemma="Ghatsbjerget"
       variant="Ghatsbjerget"
       key="ghatsbjerget"
       geo="">i dette tilfælde en bjergkæde, der strækker sig langs Indiens vestkyst fra Satmala Hills til landets sydspids.</c>
@@ -332,6 +361,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Ellora"
+      lemma="Ellora"
       variant="Ellora"
       key="ellora"
       geo="">by i Indien, der er kendt for et kompleks af 34 templer, der er udhugget i klipperne i byens omegn.</c>
@@ -343,6 +373,7 @@
       evidence="se-kort"
       person="false"
       place="Viken"
+      lemma="Wigen"
       variant="Wigen"
       key="viken"
       geo="">Viken; se kort 2.</c>
@@ -354,6 +385,7 @@
       evidence="se-kort"
       person="false"
       place="Vadstena"
+      lemma="Wadstena"
       variant="Wadstena"
       key="vadstena"
       geo="">Vadstena; se kort 2.</c>
@@ -365,6 +397,7 @@
       evidence="se-kort"
       person="false"
       place="Vättern"
+      lemma="Wettern"
       variant="Wettern"
       key="vättern"
       geo="">Vättern; se kort 1-2.</c>
@@ -376,6 +409,7 @@
       evidence="place-type"
       person="false"
       place="Wadstena Slot"
+      lemma="Wadstena Slot"
       variant="Wadstena Slot"
       key="wadstena slot"
       geo="">Vadstena slott; oprindeligt bygget i 1545 som en fæstning, men i 1555 ombygget til et slot. Det ophørte med at være kongelig residens i begyndelsen af 1700-tallet og husede siden en tekstilfabrik, et kornmagasin og et statsligt brænderi.</c>
@@ -387,6 +421,7 @@
       evidence="located"
       person="false"
       place="de Dødes … Mindernes by"
+      lemma="de Dødes … Mindernes by"
       variant="de Dødes … Mindernes by"
       key="de dødes … mindernes by"
       geo="">H.C. Andersen citerer og bygger her på Pontin, s. 9.</c>
@@ -398,6 +433,7 @@
       evidence="place-type"
       person="false"
       place="Herculaneum"
+      lemma="Herculanum"
       variant="Herculanum"
       key="herculaneum"
       geo="">Herculaneum; romersk by, der sammen med Pompeji og Stabiae blev begravet ved Vesuvs udbrud 79 e.Kr.</c>
@@ -409,6 +445,7 @@
       evidence="place-type"
       person="false"
       place="Klostret"
+      lemma="Klostret(s)"
       variant="Klostret"
       key="klostret"
       geo="">Vadstena kloster; opførslen blev muliggjort af kongelige donationer 1346, hvorefter klostret blev opført efter den hellige Birgittas (1303-1373) anvisninger.</c>
@@ -420,6 +457,7 @@
       evidence="place-type"
       person="false"
       place="Abbedisse"
+      lemma="Abbedisse(n)"
       variant="Abbedisse"
       key="abbedisse"
       geo="">kvindelig forstander for et nonnekloster.</c>
@@ -431,6 +469,7 @@
       evidence="se-kort"
       person="true"
       place="Hans Brask"
+      lemma="Hans Brask"
       variant="Hans Brask"
       key="hans brask"
       geo="">(1464-1539), biskop i Linköping (se kort 2) fra 1513. Modstander af reformationen.</c>
@@ -442,6 +481,7 @@
       evidence="place-type"
       person="false"
       place="Banstraale"
+      lemma="Banstraale(n)"
       variant="Banstraale"
       key="banstraale"
       geo="">dannet af at bandlyse. Udelukkelse fra den katolske kirke og dens sakramenter.</c>
@@ -453,6 +493,7 @@
       evidence="place-type"
       person="false"
       place="Hellekis"
+      lemma="Hellekis"
       variant="Hellekis"
       key="hellekis"
       geo="">der er sandsynligvis tale om Hällekis herregård, der kendes allerede fra 1300-tallet.</c>
@@ -464,6 +505,7 @@
       evidence="se-kort"
       person="false"
       place="Husaby"
+      lemma="Husaby"
       variant="Husaby"
       key="husaby"
       geo="">se kort.</c>
@@ -475,6 +517,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Guldkroken"
+      lemma="Guldkroken"
       variant="Guldkroken"
       key="guldkroken"
       geo="">ældre navn på egnen omkring byen Hjo (se kort 2) på vestsiden af Vättern.</c>
@@ -486,6 +529,7 @@
       evidence="se-kort"
       person="false"
       place="Västergötland"
+      lemma="Westergötland"
       variant="Westergötland"
       key="västergötland"
       geo="">Västergötland; se kort.</c>
@@ -497,6 +541,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Dalarne"
+      lemma="Dalarne"
       variant="Dalarne"
       key="dalarne"
       geo="">landskab, der omfatter den indre, nordlige del af Mellemsverige.</c>
@@ -508,6 +553,7 @@
       evidence="place-type"
       person="false"
       place="Blaakirken"
+      lemma="Blaakirken"
       variant="Blaakirken"
       key="blaakirken"
       geo="">Vadstena klosterkirke, også kaldet Blåkyrkan, blev påbegyndt ca. 1369 og indviet 1430, men stod først helt færdig 10 år senere. Klosteret blev ophævet 1595 og frem til 1900- tallet brugt til hospital.</c>
@@ -519,6 +565,7 @@
       evidence="place-type"
       person="true"
       place="Bo Jonsson Grip"
+      lemma="Bo Jonsson Grip"
       variant="Bo Jonsson Grip"
       key="bo jonsson grip"
       geo="">(d. 1386), svensk stormand og drost (højeste embedsmand). Han var gavmild mod kirken og støttede planerne for Birgittas kanonisering og bygningen af Vadstena kloster. Han skal have været brutal og hensynsløs i sin erhvervelse af rigdomme. Om gravstenen jf. Pontin (s. 50, 243).</c>
@@ -530,6 +577,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Torpa"
+      lemma="Torpa"
       variant="Torpa"
       key="torpa"
       geo="">gods i Länghem sogn, Västergötland, som tilhørte Stenbock-slægten.</c>
@@ -541,6 +589,7 @@
       evidence="se-kort+head-noun+located+place-type"
       person="false"
       place="Mem"
+      lemma="Mem"
       variant="Mem"
       key="mem"
       geo="">by ved Göta kanals udmunding i Slätbaken, som fører ud i Østersøen (se kort 2). Her blev kanalen indviet i 1832.</c>
@@ -552,6 +601,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Stegeborgs Ruiner"
+      lemma="Stegeborgs Ruiner"
       variant="Stegeborgs Ruiner"
       key="stegeborgs ruiner"
       geo="">gods beliggende på en holm i Slätbaken. Det var oprindeligt et fæstningsanlæg fra 1200-tallet, der i de følgende århundreder blev omdannet til et kongeligt renæssanceslot, men som forfaldt fra slutningen af 1600-tallet.</c>
@@ -563,6 +613,7 @@
       evidence="place-type"
       person="false"
       place="Havgudens … Hest"
+      lemma="Havgudens … Hest"
       variant="Havgudens … Hest"
       key="havgudens … hest"
       geo="">i græsk mytologi bevæger havguden Poseidon sig over havet i en vogn trukket af hurtigt flyvende heste.</c>
@@ -574,6 +625,7 @@
       evidence="place-type"
       person="false"
       place="Næs"
+      lemma="Næs(set)"
       variant="Næs"
       key="næs"
       geo="">landområde, der danner et fremspring ud i havet eller i en sø.</c>
@@ -585,6 +637,7 @@
       evidence="place-type"
       person="false"
       place="Holmgang"
+      lemma="Holmgang(en)"
       variant="Holmgang"
       key="holmgang"
       geo="">tvekamp, som foregik på en holm eller en anden afgrænset plads, og som blev brugt til afgørelse af visse retlige stridigheder i det gamle Norden. Holmgang forekommer ofte i sagaerne.</c>
@@ -596,6 +649,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Archipel"
+      lemma="Archipel"
       variant="Archipel"
       key="archipel"
       geo="">øhav, oprindeligt brugt om Ægæerhavet.</c>
@@ -607,6 +661,7 @@
       evidence="located+place-type"
       person="false"
       place="Hvidehavet"
+      lemma="det hvide Hav"
       variant="det hvide Hav"
       key="hvidehavet"
       geo="">Hvidehavet; havbugt i Barentshavet syd for Kolahalvøen.</c>
@@ -618,6 +673,7 @@
       evidence="place-type"
       person="false"
       place="Thinge"
+      lemma="Thinge"
       variant="Thinge"
       key="thinge"
       geo="">ting; forsamling af vigtige og indflydelsesrige personer i et sogn, en landsby eller lignende, der holdt rådslagning og afgjorde retssager.</c>
@@ -629,6 +685,7 @@
       evidence="se-kort"
       person="false"
       place="Bråviken"
+      lemma="Braavigen"
       variant="Braavigen"
       key="bråviken"
       geo="">Bråviken; se kort 2.</c>
@@ -640,6 +697,7 @@
       evidence="located+place-type"
       person="false"
       place="Marathons Slette"
+      lemma="Marathons Slette"
       variant="Marathons Slette"
       key="marathons slette"
       geo="">på denne slette i Grækenland besejrede en talmæssigt underlegen athensk styrke en persisk invasionsstyrke i 490 f.Kr.</c>
@@ -651,6 +709,7 @@
       evidence="se-kort"
       person="false"
       place="Mälaran"
+      lemma="Mälaran(s)"
       variant="Mälaran"
       key="mälaran"
       geo="">Sveriges tredjestørste sø; se kort.</c>
@@ -662,6 +721,7 @@
       evidence="located+place-type"
       person="false"
       place="Saltsøen"
+      lemma="Saltsøen"
       variant="Saltsøen"
       key="saltsøen"
       geo="">Saltsjön i Stockholms indre havn syd for Djurgården, hvis vand er mere saltholdigt end Mälarens.</c>
@@ -673,6 +733,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Sigtuna"
+      lemma="Sigtuna"
       variant="Sigtuna"
       key="sigtuna"
       geo="">en af Sveriges ældste byer og biskopsæder. Se kort 2.</c>
@@ -684,6 +745,7 @@
       evidence="place-type"
       person="false"
       place="Kongedyb"
+      lemma="Kongedyb"
       variant="Kongedyb"
       key="kongedyb"
       geo="">Snorri benævner den udgravne kanal Kongesund, af nogle forstået som den nuværende Söderström ved Slussen, men der er uenighed om sagnets historiske forankring.</c>
@@ -695,6 +757,7 @@
       evidence="located"
       person="false"
       place="Kärna"
+      lemma="Kärna"
       variant="Kärna"
       key="kärna"
       geo="">(svensk) kerne. I midten af 1200-tallet lod Birger Jarl opføre et fæstningsværk på Stadsholmen (nuværende Gamla Stan), som blev til det senere Stockholms slott. I midten var et rundt tårn, som kaldtes Kärnan og senere Tre kronor.</c>
@@ -706,6 +769,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Rørstrands-Søen"
+      lemma="Rørstrands-Søen"
       variant="Rørstrands-Søen"
       key="rørstrands-søen"
       geo="">søen har ligget i forbindelse med Karlbergssjön og Klara sjö i det nuværende Norrmalm i Stockholm.</c>
@@ -717,6 +781,7 @@
       evidence="place-type"
       person="true"
       place="Clara Kloster"
+      lemma="Clara Kloster"
       variant="Clara Kloster"
       key="clara kloster"
       geo="">Sankta Klara kloster; opkaldt efter den italienske nonne Clara af Assisi (1194-1253). Klosteret blev grundlagt i 1289, efter at den svenske kong Magnus Ladulås (ca. 1240-1290, konge fra 1275) året før havde doneret land på området Rörstrand. Klosteret blev revet ned i 1527 efter ordre af Gustav 1. Vasa.</c>
@@ -728,6 +793,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Versailles sminkede Guddom"
+      lemma="Versailles sminkede Guddom"
       variant="Versailles sminkede Guddom"
       key="versailles sminkede guddom"
       geo="">slottet Versailles blev opført 1623, men ombygget til det nuværende slot af den franske konge Ludvig 14. den Store (1638-1715, konge fra 1643), der også kaldes solkongen, idet han lod sig dyrke som hoflivets sol.</c>
@@ -739,6 +805,7 @@
       evidence="place-type"
       person="false"
       place="Tessins Slot"
+      lemma="Tessins Slot"
       variant="Tessins Slot"
       key="tessins slot"
       geo="">efter branden 1697 blev Stockholms slott genopbygget som et barokslot tegnet af Nicodemus Tessin den yngre (1654-1728). Det blev dog først taget i brug 1750.</c>
@@ -750,6 +817,7 @@
       evidence="located+place-type"
       person="false"
       place="Villa reale"
+      lemma="Villa reale"
       variant="Villa reale"
       key="villa reale"
       geo="">offentligt parkanlæg ud mod havet i Napoli anlagt 1780, nu Villa Communale.</c>
@@ -761,6 +829,7 @@
       evidence="in-register+located+place-type"
       person="false"
       place="Jungfernstieg"
+      lemma="Jungfernstieg"
       variant="Jungfernstieg"
       key="jungfernstieg"
       geo="geo-6944304">(tysk) jomfrutrappe; promenade i Hamburg beliggende på sydvest-siden af den kunstige sø Binnen-Alster.</c>
@@ -772,6 +841,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Skeppsholmen"
+      lemma="Skibsholmen"
       variant="Skibsholmen"
       key="skeppsholmen"
       geo="">Skeppsholmen; lille ø i Saltsjön i det centrale Stockholm. I perioden 1634-1968 var øen Stockholms flådestation.</c>
@@ -783,6 +853,7 @@
       evidence="place-type"
       person="false"
       place="Lejonet i öknen"
+      lemma="Lejonet i öknen"
       variant="Lejonet i öknen"
       key="lejonet i öknen"
       geo="">(svensk) løven i ørkenen; digtcyklus fra 1838.</c>
@@ -794,6 +865,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Strada Balbi"
+      lemma="Strada Balbi"
       variant="Strada Balbi"
       key="strada balbi"
       geo="">hovedgade i Genova.</c>
@@ -805,6 +877,7 @@
       evidence="located+place-type"
       person="false"
       place="Riddarholmskyrkan"
+      lemma="Ridderholms-Kirken"
       variant="Ridderholms-Kirken"
       key="riddarholmskyrkan"
       geo="">Riddarholmskyrkan; opført i slutningen af 1200-tallet som kirke til franciskanerklosteret på Riddarholmen og siden brugt til grave og mindesmærker, fx er en stor del af Sveriges regenter begravet her. Det luftige smedejernsspir kom først til 1838-1846.</c>
@@ -816,6 +889,7 @@
       evidence="place-type"
       person="false"
       place="Slottet"
+      lemma="Slottet"
       variant="Slottet"
       key="slottet"
       geo="">Stockholm slott; opført i 1200-tallet, ud- og ombygget flere gange siden. Slottet er den svenske konges officielle residens.</c>
@@ -827,6 +901,7 @@
       evidence="located"
       person="false"
       place="Dalkulle"
+      lemma="Dalkulle(n)"
       variant="Dalkulle"
       key="dalkulle"
       geo="">dalkulla (svensk), kvinde fra Dalarna. Fra 1820’erne til 1860’erne roede dalkullar de såkaldte kull-både i Stockholm; i 1830’erne indførte man dog hjulbåde, der blev drevet med håndsving af dalkullar i folkedragt.</c>
@@ -838,6 +913,7 @@
       evidence="in-register+located+place-type"
       person="false"
       place="Bosporusstrædet"
+      lemma="Bosporus"
       variant="Bosporus"
       key="bosporusstrædet"
       geo="">Bosporusstrædet, 30 km langt stræde ved Istanbul.</c>
@@ -849,6 +925,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Pera"
+      lemma="Pera"
       variant="Pera"
       key="pera"
       geo="">bydel i Istanbul.</c>
@@ -860,6 +937,7 @@
       evidence="located+place-type"
       person="false"
       place="Villa-Borghese"
+      lemma="Villa-Borghese"
       variant="Villa-Borghese"
       key="villa-borghese"
       geo="">fyrsteslægten Borgheses lystslot og parkanlæg i Rom.</c>
@@ -871,6 +949,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Øen med … Slot"
+      lemma="Øen med … Slot"
       variant="Øen med … Slot"
       key="øen med … slot"
       geo="">øen Stadsholmen, hvor blandt andet Stockholms slott findes.</c>
@@ -882,6 +961,7 @@
       evidence="place-type"
       person="false"
       place="Anadyomene"
+      lemma="Anadyomene"
       variant="Anadyomene"
       key="anadyomene"
       geo="">(græsk) den af havet opdukkende. Tilnavn til kærlighedsgudinden Afrodite.</c>
@@ -893,6 +973,7 @@
       evidence="located"
       person="false"
       place="Clara Kirkegaard"
+      lemma="Clara Kirkegaard"
       variant="Clara Kirkegaard"
       key="clara kirkegaard"
       geo="">kirkegård ved Sankta Clara kyrka i Stockholm.</c>
@@ -904,6 +985,7 @@
       evidence="se-kort"
       person="false"
       place="Uppsala"
+      lemma="Upsala"
       variant="Upsala"
       key="uppsala"
       geo="">Uppsala; se kort 1-2.</c>
@@ -915,6 +997,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Riddarholmen"
+      lemma="Riddarholmen"
       variant="Riddarholmen"
       key="riddarholmen"
       geo="">ø beliggende i søen Mälaren i det centrale Stockholm.</c>
@@ -926,6 +1009,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Fyrisaa"
+      lemma="Fyrisaa"
       variant="Fyrisaa"
       key="fyrisaa"
       geo="">å, der løber igennem Uppsala og ud i Mälaren.</c>
@@ -937,6 +1021,7 @@
       evidence="place-type"
       person="false"
       place="Notre-Dame"
+      lemma="Notre-Dame"
       variant="Notre-Dame"
       key="notre-dame"
       geo="">(fransk) Vor Frue. Hovedkirken i Paris i gotisk stil, som blev opført mellem 1163 og ca. 1345. Notre-Dame har som Uppsala domkyrka to tårne.</c>
@@ -948,6 +1033,7 @@
       evidence="se-kort"
       person="false"
       place="Västerås"
+      lemma="Westeraas"
       variant="Westeraas"
       key="västerås"
       geo="">Västerås; se kort 1-2.</c>
@@ -959,6 +1045,7 @@
       evidence="place-type"
       person="false"
       place="Herre min …"
+      lemma="Herre min …"
       variant="Herre min …"
       key="herre min …"
       geo="">(svensk) Herre min Gud, hvor den måne lyser / Se, hvilken glans ud over land og by! Citat fra »En månskensnatt på Slottsbacken« fra Gunnar Wennerbergs (1817-1901) Gluntarne. En samling duetter (drengene), 1849-1851.</c>
@@ -970,6 +1057,7 @@
       evidence="place-type"
       person="false"
       place="Högt opp …"
+      lemma="Högt opp …"
       variant="Högt opp …"
       key="högt opp …"
       geo="">(svensk) Højt oppe i slottet hver eneste rude / Lyner, som var den en ædelsten. Citat fra samme sted som ovenfor.</c>
@@ -981,6 +1069,7 @@
       evidence="place-type"
       person="false"
       place="Landshøvding"
+      lemma="Landshøvding(ens)"
       variant="Landshøvding"
       key="landshøvding"
       geo="">amtmand, øverste embedsmand i et len. Landshøvdingen har sin bolig på slottet.</c>
@@ -992,6 +1081,7 @@
       evidence="se-kort"
       person="false"
       place="Bohus"
+      lemma="Bohus"
       variant="Bohus"
       key="bohus"
       geo="">se kort 2.</c>
@@ -1003,6 +1093,7 @@
       evidence="place-type"
       person="false"
       place="Danmarks Kirke … mod de Danske"
+      lemma="Danmarks Kirke … mod de Danske"
       variant="Danmarks Kirke … mod de Danske"
       key="danmarks kirke … mod de danske"
       geo="">Danmarks kyrka; ifølge gammel tradition er kirken bygget for krigsbyttet efter et slag mellem svenskere og danskere 1160. De tidligste dele af kirken er imidlertid fra ca. 1300.</c>
@@ -1014,6 +1105,7 @@
       evidence="se-kort+head-noun+place-type"
       person="false"
       place="Sala"
+      lemma="Sala"
       variant="Sala"
       key="sala"
       geo="">byen er anlagt af Gustav 2. Adolf i 1624 til sølvminen, der har været i drift fra før 1500-tallet. Se kort 2.</c>
@@ -1025,6 +1117,7 @@
       evidence="place-type"
       person="false"
       place="ligger i … nejd"
+      lemma="ligger i … nejd"
       variant="ligger i … nejd"
       key="ligger i … nejd"
       geo="">(svensk) ligger i en lille dal, i en flad og lidet behagelig egn. Upræcist citeret efter H.C. Andersens rejsehåndbog: Abraham Bohlin Handbok för resande i Sverige; innehållande skildringar af de särskilta provinserne och deres egenheter, med beskrifning öfver kanaler, städer, helsobrunnar, bruk, grufvor, herrgårdar och märkvärdigheter, 2. udg., 1847, s. 200.</c>
@@ -1036,6 +1129,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Säterdalen"
+      lemma="Sæther-Dalen"
       variant="Sæther-Dalen"
       key="säterdalen"
       geo="">Säterdalen; snæver v-formet dal med rig natur mellem byen Säter og Dalälven. Se kort 2.</c>
@@ -1047,6 +1141,7 @@
       evidence="se-kort"
       person="false"
       place="Hedemora eller Brunnbäck"
+      lemma="Hedemora eller Brunnbäck"
       variant="Hedemora eller Brunnbäck"
       key="hedemora eller brunnbäck"
       geo="">se kort 2.</c>
@@ -1058,6 +1153,7 @@
       evidence="se-kort"
       person="false"
       place="Leksand"
+      lemma="Leksand"
       variant="Leksand"
       key="leksand"
       geo="">se kort 2.</c>
@@ -1069,6 +1165,7 @@
       evidence="se-kort"
       person="false"
       place="Siljan"
+      lemma="Siljans Søen"
       variant="Siljans Søen"
       key="siljan"
       geo="">Siljan; se kort 1-2.</c>
@@ -1080,6 +1177,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Barkedalen"
+      lemma="Barkedalen"
       variant="Barkedalen"
       key="barkedalen"
       geo="">Barkdalen ved Leksand, hvor kirkegængere, der kom ad søvejen, lagde til.</c>
@@ -1091,6 +1189,7 @@
       evidence="place-type"
       person="false"
       place="Gondol"
+      lemma="Gondol(er)"
       variant="Gondol"
       key="gondol"
       geo="">lang, smal, fladbundet båd, der har høje stævne og drives frem ved hjælp af én åre.</c>
@@ -1102,6 +1201,7 @@
       evidence="place-type"
       person="false"
       place="Altergang"
+      lemma="Altergang"
       variant="Altergang"
       key="altergang"
       geo="">det at gå op til alteret i en kirke og dér modtage nadveren.</c>
@@ -1113,6 +1213,7 @@
       evidence="place-type"
       person="false"
       place="Pulpitur"
+      lemma="Pulpitur(er)"
       variant="Pulpitur"
       key="pulpitur"
       geo="">galleri i en kirke, med plads til stole, bænke eller orgel.</c>
@@ -1124,6 +1225,7 @@
       evidence="place-type"
       person="false"
       place="Minaret"
+      lemma="Minaret(er)"
       variant="Minaret"
       key="minaret"
       geo="">højt, slankt tårn med balkon i tilknytning til en moské.</c>
@@ -1135,6 +1237,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Sollerön"
+      lemma="Soller-Øen"
       variant="Soller-Øen"
       key="sollerön"
       geo="">Sollerön; ø i Siljan.</c>
@@ -1146,6 +1249,7 @@
       evidence="place-type"
       person="false"
       place="Fata Morgana"
+      lemma="Fata Morgana"
       variant="Fata Morgana"
       key="fata morgana"
       geo="">(italiensk) feen Morgana. Ifølge en legende bor Fata Morgana i et krystalslot under vandet ved Messinastrædets bjerge. Hendes magiske kræfter er så store, at hun kan bygge fantastiske slotte af den bare luft.</c>
@@ -1157,6 +1261,7 @@
       evidence="se-kort+head-noun+place-type"
       person="false"
       place="Kopparberget"
+      lemma="Kopparberget"
       variant="Kopparberget"
       key="kopparberget"
       geo="">(svensk) kobberbjerget. Navn på såvel området som malmminen i Falun. Se kort 1-2.</c>
@@ -1168,6 +1273,7 @@
       evidence="se-kort"
       person="false"
       place="Rättvik og Mora"
+      lemma="Rättvik og Mora"
       variant="Rättvik og Mora"
       key="rättvik og mora"
       geo="">se kort 2.</c>
@@ -1179,6 +1285,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="det blaa Taarn"
+      lemma="det blaa Taarn"
       variant="det blaa Taarn"
       key="det blaa taarn"
       geo="">tårn i det tidligere Københavns Slot, der blev brugt som fængsel til prominente fanger.</c>
@@ -1190,6 +1297,7 @@
       evidence="located+place-type"
       person="false"
       place="Kalø Slot"
+      lemma="Kalø Slot"
       variant="Kalø Slot"
       key="kalø slot"
       geo="">kongeligt borganlæg på en holm i Kalø Vig, hvor Gustav 1. Vasa blev sat i arrest 1518. Den svenske konges eventyr er genfortalt efter Afzelius (bd. V, s. 238-261).</c>
@@ -1201,6 +1309,7 @@
       evidence="se-kort"
       person="false"
       place="Kalmar"
+      lemma="Calmar"
       variant="Calmar"
       key="kalmar"
       geo="">Kalmar; se kort 1.</c>
@@ -1212,6 +1321,7 @@
       evidence="place-type"
       person="false"
       place="Rankhyttan"
+      lemma="Rankhyttan"
       variant="Rankhyttan"
       key="rankhyttan"
       geo="">gård ved søen Runns sydøstlige strand.</c>
@@ -1223,6 +1333,7 @@
       evidence="located"
       person="true"
       place="Anders Pehrsson"
+      lemma="Anders Pehrsson"
       variant="Anders Pehrsson"
       key="anders pehrsson"
       geo="">(d. 1534), bjergmand i Dalarna. Støttede Gustav 1. Vasas frigørelseskamp.</c>
@@ -1234,6 +1345,7 @@
       evidence="place-type"
       person="false"
       place="Lillälven"
+      lemma="Lill-Aaen"
       variant="Lill-Aaen"
       key="lillälven"
       geo="">Lillälven; forbinder søen Runn med Dalälven. Afzelius skriver dog også »Lill-ån« (bd. V, s. 246).</c>
@@ -1245,6 +1357,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Ornäs"
+      lemma="Ørnæs"
       variant="Ørnæs"
       key="ornäs"
       geo="">Ornäs; navn på såvel en gård som byen ved den sydvestlige bred af Runn; se kort 2.</c>
@@ -1256,6 +1369,7 @@
       evidence="se-kort"
       person="false"
       place="Korsnäs"
+      lemma="Korsnæs"
       variant="Korsnæs"
       key="korsnäs"
       geo="">Korsnäs; se kort 2.</c>
@@ -1267,6 +1381,7 @@
       evidence="se-kort"
       person="false"
       place="Sandviken"
+      lemma="Sandwik(s-Hyttorna)"
       variant="Sandwik"
       key="sandviken"
       geo="">Sandviken; se kort 2.</c>
@@ -1278,6 +1393,7 @@
       evidence="se-kort"
       person="false"
       place="Svärdsjö"
+      lemma="Svardsjø"
       variant="Svardsjø"
       key="svärdsjö"
       geo="">Svärdsjö; se kort 2.</c>
@@ -1289,6 +1405,7 @@
       evidence="se-kort"
       person="false"
       place="Marnäs"
+      lemma="Marnäs"
       variant="Marnäs"
       key="marnäs"
       geo="">se kort 2.</c>
@@ -1300,6 +1417,7 @@
       evidence="se-kort"
       person="false"
       place="Mora"
+      lemma="Mora"
       variant="Mora"
       key="mora"
       geo="">se kort 2.</c>
@@ -1311,6 +1429,7 @@
       evidence="se-kort"
       person="false"
       place="Lima"
+      lemma="Lima"
       variant="Lima"
       key="lima"
       geo="">se kort 2.</c>
@@ -1322,6 +1441,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Kirke"
+      lemma="Kirke"
       variant="Kirke"
       key="kirke"
       geo="">Lima kyrka; stenkirke fra middelalderen, der nedbrændte i 1852.</c>
@@ -1333,6 +1453,7 @@
       evidence="se-kort"
       person="false"
       place="Sälens By"
+      lemma="Sälens By"
       variant="Sälens By"
       key="sälens by"
       geo="">se kort 2.</c>
@@ -1344,6 +1465,7 @@
       evidence="se-kort+located"
       person="false"
       place="Brunnbäcks Färja"
+      lemma="Brunbäck Færge"
       variant="Brunbäck Færge"
       key="brunnbäcks färja"
       geo="">Brunnbäcks Färja; færgested ved Dalälvens udmunding nær Avesta. Se kort 2.</c>
@@ -1355,6 +1477,7 @@
       evidence="place-type"
       person="false"
       place="Brunbäcka älf …"
+      lemma="Brunbäcka älf …"
       variant="Brunbäcka älf …"
       key="brunbäcka älf …"
       geo="">(svensk) Brunbäcka elv er meget dyb og ligeså bred, / der sænkede de så mange jyder ned. / Sådan blev de danske jaget ud af Sverige. Upræcist citeret efter Afzelius (bd. V, s. 260).</c>
@@ -1366,6 +1489,7 @@
       evidence="se-kort"
       person="false"
       place="Bergsäng"
+      lemma="Bergsäng"
       variant="Bergsäng"
       key="bergsäng"
       geo="">se kort 2 (mellem Leksand og Rättvik).</c>
@@ -1377,6 +1501,7 @@
       evidence="place-type"
       person="false"
       place="Mora Kirke"
+      lemma="Mora Kirke(s)"
       variant="Mora Kirke"
       key="mora kirke"
       geo="">Mora kyrka, hvis ældste dele stammer fra ca. 1300. Kirken brændte i 1671, men genopførtes med blandt andet det nuværende spir.</c>
@@ -1388,6 +1513,7 @@
       evidence="place-type"
       person="false"
       place="Bade-Anstalt"
+      lemma="Bade-Anstalt"
       variant="Bade-Anstalt"
       key="bade-anstalt"
       geo="">i Lerdal ved Rättvik åbnede et koldtvandskurbad 1848.</c>
@@ -1399,6 +1525,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Porphyr-Værket"
+      lemma="Porphyr-Værket"
       variant="Porphyr-Værket"
       key="porphyr-værket"
       geo="">Elfdals Porfyrverk i Älvdalen (se kort 2), grundlagt 1788.</c>
@@ -1410,6 +1537,7 @@
       evidence="place-type"
       person="false"
       place="Jakob, der brydes med Jehova"
+      lemma="Jakob, der brydes med Jehova"
       variant="Jakob, der brydes med Jehova"
       key="jakob der brydes med jehova"
       geo="">i 1. Mosebog 32,25-30 fortælles det, hvordan Jakob ved floden Jabbok kæmper en hel nat med en fremmed mand, der viser sig at være Gud, som han tvinger til at velsigne sig.</c>
@@ -1421,6 +1549,7 @@
       evidence="place-type"
       person="false"
       place="tag denne Kalk …"
+      lemma="tag denne Kalk …"
       variant="tag denne Kalk …"
       key="tag denne kalk …"
       geo="">Jesu ord da han kort før sin død bad til Gud ved Oliebjerget, jf. fx Lukas 22,42.</c>
@@ -1432,6 +1561,7 @@
       evidence="place-type"
       person="false"
       place="Stackars du …"
+      lemma="Stackars du …"
       variant="Stackars du …"
       key="stackars du …"
       geo="">(svensk) Stakkels dig min dreng, / Som står i skoven! / Åh, uden sko og træsko! / Det går vel, som det går. Citat fra Dybeck (nr. 22, s. 29).</c>
@@ -1443,6 +1573,7 @@
       evidence="se-kort"
       person="false"
       place="Falun"
+      lemma="Fahlun"
       variant="Fahlun"
       key="falun"
       geo="">Falun; se kort 1-2.</c>
@@ -1454,6 +1585,7 @@
       evidence="located"
       person="false"
       place="Solfatara"
+      lemma="Solfatara"
       variant="Solfatara"
       key="solfatara"
       geo="">vulkankrater ved Napoli.</c>
@@ -1465,6 +1597,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="stora Kopparberget"
+      lemma="stora Kopparberget"
       variant="stora Kopparberget"
       key="stora kopparberget"
       geo="">(svensk) det store kobberbjerg.</c>
@@ -1476,6 +1609,7 @@
       evidence="se-kort"
       person="false"
       place="Säter"
+      lemma="Säther"
       variant="Säther"
       key="säter"
       geo="">Säter; se kort 2.</c>
@@ -1487,6 +1621,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Kastaliavæld"
+      lemma="Kastaliavæld"
       variant="Kastaliavæld"
       key="kastaliavæld"
       geo="">kilde på Parnassosbjerget ved Delfi, der ifølge legenden har fået sit navn efter en pige, der druknede sig for at undslippe Apollons forfølgelse. Den blev anset for at kunne skænke poetisk inspiration.</c>
@@ -1498,6 +1633,7 @@
       evidence="se-kort"
       person="false"
       place="Dalälven"
+      lemma="Dal-Elven"
       variant="Dal-Elven"
       key="dalälven"
       geo="">Dalälven; se kort 2.</c>
@@ -1509,6 +1645,7 @@
       evidence="se-kort+located+place-type"
       person="false"
       place="Elfkarleby Fald"
+      lemma="Elfkarleby Fald"
       variant="Elfkarleby Fald"
       key="elfkarleby fald"
       geo="">Dalälvens nederste og største vandfald ved Älvkarleby (se kort 2), nu vandkraftværk.</c>
@@ -1520,6 +1657,7 @@
       evidence="se-kort"
       person="false"
       place="Bålstad"
+      lemma="Bålstad"
       variant="Bålstad"
       key="bålstad"
       geo="">muligvis Båtsta ca. 3 km nordvest for Borlänge (se kort 2). Österdalälven og Västerdalälven mødes dog lidt længere mod vest, nemlig syd for Siljan.</c>
@@ -1531,6 +1669,7 @@
       evidence="se-kort"
       person="false"
       place="Särna"
+      lemma="Sernasogn"
       variant="Sernasogn"
       key="särna"
       geo="">Särna; se kort 2.</c>
@@ -1542,6 +1681,7 @@
       evidence="located+place-type"
       person="false"
       place="Njupeskärs Vandfald"
+      lemma="Njupeskärs Vandfald"
       variant="Njupeskärs Vandfald"
       key="njupeskärs vandfald"
       geo="">Sveriges højeste vandfald på Fulufjällets nordlige skråning.</c>
@@ -1553,6 +1693,7 @@
       evidence="se-kort"
       person="false"
       place="Avesta"
+      lemma="Avesta(’s)"
       variant="Avesta"
       key="avesta"
       geo="">se kort 2. Fra 1636 lå her et kobberforædlingsværk.</c>
@@ -1564,6 +1705,7 @@
       evidence="located+place-type"
       person="false"
       place="Rhinen"
+      lemma="Rhinen"
       variant="Rhinen"
       key="rhinen"
       geo="">1320 km lang flod i Mellem- og Nordvesteuropa.</c>
@@ -1575,6 +1717,7 @@
       evidence="se-kort"
       person="false"
       place="Gävle"
+      lemma="Gefle"
       variant="Gefle"
       key="gävle"
       geo="">Gävle; se kort 1 og 2.</c>
@@ -1586,6 +1729,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Herregaarden"
+      lemma="Herregaarden"
       variant="Herregaarden"
       key="herregaarden"
       geo="">den nuværende herregård blev bygget i 1700-tallet.</c>
@@ -1597,6 +1741,7 @@
       evidence="place-type"
       person="false"
       place="Holm"
+      lemma="Holm(e)"
       variant="Holm"
       key="holm"
       geo="">lille, ubeboet ø.</c>
@@ -1608,6 +1753,7 @@
       evidence="se-kort"
       person="false"
       place="Dannemora"
+      lemma="Dannemora"
       variant="Dannemora"
       key="dannemora"
       geo="">se kort 2. Jernmalmminen Dannemora gruva i Uppland 100 km nord for Stockholm har været i drift siden 1400-tallet.</c>
@@ -1619,6 +1765,7 @@
       evidence="located"
       person="false"
       place="Lorelei"
+      lemma="Lore-Ley"
       variant="Lore-Ley"
       key="lorelei"
       geo="">Lorelei; 132 m højt, næsten lodret klippeparti ved Rhinen. Gennem kunsteventyr og sagn er Lorelei blevet personificeret som en fortryllende og forførende kvinde, der lokkede sejlende (mænd) i døden. Fremtrædende behandlinger af Lorelei-figuren findes i Clemens Maria Brentanos (1778-1842) digt »Zu Bacharach am Rheine« fra den anonymt udgivne roman Godwi oder Das steinerne Bild der Mutter. Ein verwilderter Roman, 1801-1802 (2. del, 36. kapitel) og Heinrich Heines (1797-1856) digt »Ich weiß nicht, was soll es bedeuten«, der blev trykt i Der Gesellschafter oder Blätter für Geist und Herz, 26. marts 1824.</c>
@@ -1630,6 +1777,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Sundet"
+      lemma="Sundet"
       variant="Sundet"
       key="sundet"
       geo="">Øresund.</c>
@@ -1641,6 +1789,7 @@
       evidence="located"
       person="false"
       place="Harzen"
+      lemma="Harzen"
       variant="Harzen"
       key="harzen"
       geo="">nordligt beliggende bjergområde i Tyskland.</c>
@@ -1652,6 +1801,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Rammelsberg"
+      lemma="Rammelsberg"
       variant="Rammelsberg"
       key="rammelsberg"
       geo="">bjerg med sølvmine.</c>
@@ -1663,6 +1813,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Hallein … Saltkogeriet"
+      lemma="Hallein … Saltkogeriet"
       variant="Hallein … Saltkogeriet"
       key="hallein … saltkogeriet"
       geo="">by i Østrig med saltmine, hvorigennem besøgende kunne gå og rutsche ad meget stejle gange til bjergets fod.</c>
@@ -1674,6 +1825,7 @@
       evidence="head-noun+place-type"
       person="true"
       place="Den Californiske Halvø"
+      lemma="Californiens Halvø"
       variant="Californiens Halvø"
       key="den californiske halvø"
       geo="">Den Californiske Halvø, på spansk kaldet Baja California, har siden Den Mexicansk-Amerikanske Krig (1846-1848) hørt til Mexico.</c>
@@ -1685,6 +1837,7 @@
       evidence="located+place-type"
       person="false"
       place="Balle-Kirke"
+      lemma="Balle-Kirke"
       variant="Balle-Kirke"
       key="balle-kirke"
       geo="">i sognet nord for Silkeborg i det daværende Viborg amt.</c>
@@ -1696,6 +1849,7 @@
       evidence="place-type"
       person="false"
       place="Slottet … lagt øde"
+      lemma="Slottet … lagt øde"
       variant="Slottet … lagt øde"
       key="slottet … lagt øde"
       geo="">jf. SGr 18 / ADr XXI, der omhandler slottet, jf. SGr17, der omhandler svenskekrigene og deres grusomheder (Karl Gustav-krigene 1657-1658 og 1658-1660).</c>
@@ -1707,6 +1861,7 @@
       evidence="located"
       person="true"
       place="J. C. Drewsen"
+      lemma="J. C. Drewsen"
       variant="J. C. Drewsen"
       key="j c drewsen"
       geo="">Johan Chr. Drewsen (1777-1851), broder til Adolph Drewsen, fortsatte tidligere generationers virke på papirfabrikken Strandmøllen ved Øresund og var aktiv politiker; hans sønner Christian (1799-1896) og Michael (1804-1874) overtog virksomheden 1844, men grundlagde samme år på faderens forslag Silkeborg Papirfabrik, som fik væsentlig betydning for den kommende købstad. Det gælder især Michael Drewsens virke; han overtog fabrikken for egen regning, men solgte den 1870.</c>
@@ -1718,6 +1873,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Oplagssted"
+      lemma="Oplagssted"
       variant="Oplagssted"
       key="oplagssted"
       geo="">plads, pakhus o.l. til opbevaring af varer.</c>
@@ -1729,6 +1885,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Villaer ved Blankenese"
+      lemma="Villaer ved Blankenese"
       variant="Villaer ved Blankenese"
       key="villaer ved blankenese"
       geo="">den holstenske by nær Altona var netop bekendt herfor; villaerne tilhørte især rige borgere fra Hamborg.</c>
@@ -1740,6 +1897,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Ragaz med Bad-Pfäffers"
+      lemma="Ragaz med Bad-Pfäffers"
       variant="Ragaz med Bad-Pfäffers"
       key="ragaz med bad-pfäffers"
       geo="">Bad Pfäfers er et kursted, opstået omkring en varm kilde (36,5°), opdaget ca. 1250 ved Taminaslugten af jægere fra benediktinerklostret Pfäfers. Det første badehus over Taminaslugten blev bygget omkring 1350. I 1840 blev vandet ledt ned i dalen til landsbyen Ragaz, hvor kurstedet Bad Ragaz blev skabt; se kort.</c>
@@ -1751,6 +1909,7 @@
       evidence="se-kort"
       person="false"
       place="Rorschach"
+      lemma="Rorschach"
       variant="Rorschach"
       key="rorschach"
       geo="">se kort.</c>
@@ -1762,6 +1921,7 @@
       evidence="se-kort"
       person="false"
       place="Bodensee"
+      lemma="Bodensøe"
       variant="Bodensøe"
       key="bodensee"
       geo="">Bodensee; se kort.</c>
@@ -1773,6 +1933,7 @@
       evidence="se-kort+head-noun+located+place-type"
       person="false"
       place="Schaffhausen"
+      lemma="Schaffhausen"
       variant="Schaffhausen"
       key="schaffhausen"
       geo="">by ved Rhinen; se kort.</c>
@@ -1784,6 +1945,7 @@
       evidence="se-kort"
       person="false"
       place="Zürich"
+      lemma="Zürich"
       variant="Zürich"
       key="zürich"
       geo="">se kort.</c>
@@ -1795,6 +1957,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Rhinfald"
+      lemma="Rhinfald"
       variant="Rhinfald"
       key="rhinfald"
       geo="">der Rheinfall ved Neuhausen (se kort), Europas største vandfald 150 m bredt og 23 m højt. Banen krydser Rhinen nedenfor faldet, hvorefter den passerer en tunnel under den klippe, hvorpå det middelalderlige slot Laufen er bygget.</c>
@@ -1806,6 +1969,7 @@
       evidence="se-kort"
       person="false"
       place="Olten"
+      lemma="Olten"
       variant="Olten"
       key="olten"
       geo="">se kort.</c>
@@ -1817,6 +1981,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Linth-Canalen … Wallenstädtersøe"
+      lemma="Linth-Canalen … Wallenstädtersøe"
       variant="Linth-Canalen … Wallenstädtersøe"
       key="linth-canalen … wallenstädtersøe"
       geo="">Linthkanal ved floden Weesen fører ud i Wallensee; se kort.</c>
@@ -1828,6 +1993,7 @@
       evidence="se-kort"
       person="false"
       place="Sargans"
+      lemma="Sarganz(-Dalen)"
       variant="Sarganz"
       key="sargans"
       geo="">Sargans; se kort.</c>
@@ -1839,6 +2005,7 @@
       evidence="se-kort"
       person="false"
       place="St. Gallen"
+      lemma="St. Gallen"
       variant="St. Gallen"
       key="st gallen"
       geo="">se kort.</c>
@@ -1850,6 +2017,7 @@
       evidence="located+place-type"
       person="false"
       place="Calais til Dover"
+      lemma="Calais til Dover"
       variant="Calais til Dover"
       key="calais til dover"
       geo="">havnebyer ved Den engelske Kanal (strædet ved Dover/Calais) i henholdsvis Nordfrankrig og Sydengland. – Ramsgate: havneby stik vest for London i det vestlige Kent, nord for Dover. – Han havde indbudt mig: i et brev dateret Tavistock House, London den 3.april 1857, indklæbet i Album s. 33. De følgende citater er oversatte fra brevet: »We shall not be at home here in London itself, after the first week in June, but we shall be at a little country house I have, only twenty seven miles away. It is on a line of Railroad, and within an hour and a half of London, in a very beautiful part of Kent«.</c>
@@ -1861,6 +2029,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Rochester"
+      lemma="Rochester"
       variant="Rochester"
       key="rochester"
       geo="">by 28 km sydøst for London.</c>
@@ -1872,6 +2041,7 @@
       evidence="place-type"
       person="true"
       place="Cromwell"
+      lemma="Cromwell"
       variant="Cromwell"
       key="cromwell"
       geo="">Oliver Cromwell (1599-1658), engelsk statsmand, indførte republikken 1649 efter at have fået kong Charles 2. dødsdømt, fra 1653 Lord Protector.</c>
@@ -1883,6 +2053,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Barnaby Rudge"
+      lemma="Barnaby Rudge"
       variant="Barnaby Rudge"
       key="barnaby rudge"
       geo="">Barnaby Rudge, 1840-1841, (dansk med samme titel 1845).</c>
@@ -1894,6 +2065,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="den nye Bro"
+      lemma="den nye Bro"
       variant="den nye Bro"
       key="den nye bro"
       geo="">bro opført i støbejern 1850 til aflastning for den middeladerlige bro fra o. 1391.</c>
@@ -1905,6 +2077,7 @@
       evidence="place-type"
       person="false"
       place="Pulpitur"
+      lemma="Pulpitur(er)"
       variant="Pulpitur"
       key="pulpitur"
       geo="">ophøjet, lukket galleri med siddepladser i en kirke.</c>
@@ -1916,6 +2089,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Ninive"
+      lemma="Ninive(s)"
       variant="Ninive"
       key="ninive"
       geo="">hovedstaden i oldtidens Assyrien (Mesopotamien), dengang under udgravning af britiske arkæologer.</c>
@@ -1927,6 +2101,7 @@
       evidence="in-register"
       person="false"
       place="Parthenon"
+      lemma="Parthenon(s)"
       variant="Parthenon"
       key="parthenon"
       geo="geo-8354432">parthenonfrisen fra Parthenontemplet på Athens akropolis, opført 477-438. I 1801-1802 fik den engelske Lord Elgin osmannernes tilladelse til at fjerne en del af skulpturerne fra Parthenons ruiner og hjemførte dem til England. Siden 1816 i den engelske stats eje.</c>
@@ -1938,6 +2113,7 @@
       evidence="place-type"
       person="false"
       place="Ægineterne"
+      lemma="Ægineterne(s)"
       variant="Ægineterne"
       key="ægineterne"
       geo="">formodentlig skulpturer fra tempel i Aigina på øen af samme navn ud for Piræus i Den Saronniske Bugt, udgravet i 1811.</c>
@@ -1949,6 +2125,7 @@
       evidence="place-type"
       person="false"
       place="en Kritik over min sidste Bog"
+      lemma="en Kritik over min sidste Bog"
       variant="en Kritik over min sidste Bog"
       key="en kritik over min sidste bog"
       geo="">romanen »At være eller ikke være«, 1857 (oversat af Anne S. Bushby); den handler om en ung fritænker, som dog til sidst kommer på bedre tanker. Kritikken, som stod i Athenæum 27. juni 1857, vendte sig voldsomt mod bogens tanker og slutter med at betegne den som farlig for et intelligent og modtageligt ungt hjerte.</c>
@@ -1960,6 +2137,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Maidstone"
+      lemma="Maidstone"
       variant="Maidstone"
       key="maidstone"
       geo="">by mellem London og havnebyen Folkstone vest for Dover.</c>
@@ -1971,6 +2149,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="den tilfygede … Kirke"
+      lemma="den tilfygede … Kirke"
       variant="den tilfygede … Kirke"
       key="den tilfygede … kirke"
       geo="">kirken, Sankt Laurentius, er fra begyndelsen af 1400-tallet og blev nedlagt i 1795; den var forfalden og man opgav at redde den fra sandflugten.</c>
@@ -1982,6 +2161,7 @@
       evidence="located+place-type"
       person="false"
       place="Pompeji"
+      lemma="Pompeji(s)"
       variant="Pompeji"
       key="pompeji"
       geo="">antik romersk by, begravet ved Vesuvs udbrud i 79 e.Kr.</c>
@@ -1993,6 +2173,7 @@
       evidence="place-type"
       person="false"
       place="Citadellet"
+      lemma="Citadellet"
       variant="Citadellet"
       key="citadellet"
       geo="">anlagt til værn for havnen 1627, funktionen ophørt 1864; Frederikshavn fik købstadrettigheder 1818.</c>
@@ -2004,6 +2185,7 @@
       evidence="located+place-type"
       person="false"
       place="Knivsholt, Flade Banker og Bangsbo"
+      lemma="Knivsholt, Flade Banker og Bangsbo"
       variant="Knivsholt, Flade Banker og Bangsbo"
       key="knivsholt flade banker og bangsbo"
       geo="">Knivholt og Bangsbo er middelalderlige hovedgårde syd for Frederikshavn, oprettet henholdsvis 1419 og o. 1364 (nævnt første gang), mens Fladestrand (Flade Banker) var et fiskerleje oprindeligt underlagt de to hovedgårde.</c>
@@ -2015,6 +2197,7 @@
       evidence="place-type"
       person="false"
       place="Hirtsholmene"
+      lemma="Hirtsholmene"
       variant="Hirtsholmene"
       key="hirtsholmene"
       geo="">Hirsholmene 7 km nordøst for Frederikshavn; dannet af store sten efterladt af isen under sidste istid.</c>
@@ -2026,6 +2209,7 @@
       evidence="place-type"
       person="false"
       place="Aalbæk"
+      lemma="Aalbæk"
       variant="Aalbæk"
       key="aalbæk"
       geo="">mellem Skagen og Frederikshavn.</c>
@@ -2037,6 +2221,7 @@
       evidence="place-type"
       person="false"
       place="Byens Oprindelse"
+      lemma="Byens Oprindelse"
       variant="Byens Oprindelse"
       key="byens oprindelse"
       geo="">oprindeligt et fiskerleje; Kronen havde gods på stedet, og i 1355 bekræfter et tingsvidne, at en fordums konge havde givet bonden Thorkil Skarpe mark til græsning, hvorefter flere flyttede til.</c>
@@ -2048,6 +2233,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="1284 … plyndret af Nordmændene"
+      lemma="1284 … plyndret af Nordmændene"
       variant="1284 … plyndret af Nordmændene"
       key="1284 … plyndret af nordmændene"
       geo="">kilden er ikke fundet.</c>
@@ -2059,6 +2245,7 @@
       evidence="place-type"
       person="false"
       place="Pulpitur"
+      lemma="Pulpitur(et)"
       variant="Pulpitur"
       key="pulpitur"
       geo="">ophøjet, lukket galleri med siddepladser i en kirke.</c>
@@ -2070,6 +2257,7 @@
       evidence="place-type"
       person="false"
       place="en større Gaard … Herregaard"
+      lemma="en større Gaard … Herregaard"
       variant="en større Gaard … Herregaard"
       key="en større gaard … herregaard"
       geo="">muligvis den middelalderlige Lun(d)holm, ødelagt af sandet og erstattet af en ladegård; if. Olavius s. 73 var der intet tilbage.</c>
@@ -2081,6 +2269,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Brudeskare … forsvunden"
+      lemma="Brudeskare … forsvunden"
       variant="Brudeskare … forsvunden"
       key="brudeskare … forsvunden"
       geo="">kilden er ikke fundet.</c>
@@ -2092,6 +2281,7 @@
       evidence="place-type"
       person="false"
       place="Hjørring"
+      lemma="Hjørring"
       variant="Hjørring"
       key="hjørring"
       geo="">vest for Frederikshavn, syd for Hirtshals.</c>
@@ -2103,6 +2293,7 @@
       evidence="place-type"
       person="false"
       place="Børglum-Kloster"
+      lemma="Børglum-Kloster"
       variant="Børglum-Kloster"
       key="børglum-kloster"
       geo="">20 km sydvest for Hjørring, anlagt o. 1100; oprindeligt præmonstranserkloster, overtaget af kongen fra 1540. 1669 overgik klostret til privateje; i 1859 var ejeren cand.jur. Chr. Michael Rottbøll (1805-1894), hos hvem H.C. Andersen boede 30. juli -10. august.</c>
@@ -2114,6 +2305,7 @@
       evidence="place-type"
       person="false"
       place="Vildmosen"
+      lemma="Vildmosen"
       variant="Vildmosen"
       key="vildmosen"
       geo="">Store Vildmose 20 km nordvest for Ålborg.</c>
@@ -2125,6 +2317,7 @@
       evidence="se-kort+head-noun+located+place-type"
       person="false"
       place="Oberammergau"
+      lemma="Oberammergau"
       variant="Oberammergau"
       key="oberammergau"
       geo="">landsby i Voralpen i Bayern sydvest for München (se kort), hvor der siden 1634 med enkelte undtagelser hvert tiende år har været opført spil over Jesu lidelseshistorie fra maj til september. Hver af de ca. 100 opførelser varer fra morgen til aften og varetages af lokale amatører.</c>
@@ -2136,6 +2329,7 @@
       evidence="located"
       person="true"
       place="Daisenberger"
+      lemma="Daisenberger"
       variant="Daisenberger"
       key="daisenberger"
       geo="">Joseph Alois Daisenberger (1799-1883), sognepræst i Oberammergau fra 1845 til sin død; ændrede i samarbejde med Devrient i 1850’erne passionsspillenes form.</c>
@@ -2147,6 +2341,7 @@
       evidence="located+place-type"
       person="true"
       place="Luzerns Løve"
+      lemma="Luzerns Løve"
       variant="Luzerns Løve"
       key="luzerns løve"
       geo="">Löwendenkmal indhugget i klippe uden for Luzern. Initiativtager var Karl Pfyffer von Altishofen (1771-1840), Luzerns »Militärdirektor« og præsident for Luzerns Kunstsammenslutning; han kontaktede i 1818 den danske billedhugger Bertel Thorvaldsen (1770-1844), som udførte den model mindesmærket blev udhugget efter af Lukas Ahorn (1789-1856), fordi man ikke havde midler til at lade Thorvaldsen selv udføre arbejdet. Den døende løve er skabt til minde om Schweizergardens fald ved stormen på Tuillerierne i 1792 og indviet den 10. august 1821, 29-årsdagen for stormen.</c>
@@ -2158,6 +2353,7 @@
       evidence="se-kort"
       person="false"
       place="Rütli"
+      lemma="Rütli"
       variant="Rütli"
       key="rütli"
       geo="">eng ved Vierwaldstättersee (se kort), hvor if. traditionen det første schweiziske forbund blev stiftet i 1291.</c>
@@ -2169,6 +2365,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Freiburg"
+      lemma="Freiburg"
       variant="Freiburg"
       key="freiburg"
       geo="">Freibourg eller Fribourg, by i det vestlige Schweiz ved floden Saane; se kort.</c>
@@ -2180,6 +2377,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Oberammergau"
+      lemma="Oberammergau"
       variant="Oberammergau"
       key="oberammergau"
       geo="">by i Voralpen i Bayern sydvest for München, hvor der siden 1634 med enkelte undtagelser hvert tiende år har været opført spil over Jesu lidelseshistorie fra maj til september. Hver af de ca. 100 opførelser varer fra morgen til aften og varetages af lokale amatører.</c>
@@ -2191,6 +2389,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Altdorf"
+      lemma="Altorf"
       variant="Altorf"
       key="altdorf"
       geo="">Altdorf, by ved enden af Vierwaldstättersees østlige gren; se kort.</c>
@@ -2202,6 +2401,7 @@
       evidence="se-kort+head-noun+place-type"
       person="false"
       place="Reuss"
+      lemma="Reuss"
       variant="Reuss"
       key="reuss"
       geo="">floden Reuss løber gennem Luzern; se kort.</c>
@@ -2213,6 +2413,7 @@
       evidence="located+place-type"
       person="false"
       place="Tuillerierne"
+      lemma="Tuillerierne"
       variant="Tuillerierne"
       key="tuillerierne"
       geo="">Palais des Tuileries, 1564, kongeligt residensslot i Paris.</c>
@@ -2224,6 +2425,7 @@
       evidence="se-kort"
       person="false"
       place="Florents"
+      lemma="Florents"
       variant="Florents"
       key="florents"
       geo="">tysk for Firenze; se kort.</c>
@@ -2235,6 +2437,7 @@
       evidence="se-kort+head-noun+located+place-type"
       person="false"
       place="Civita Vecchia"
+      lemma="Civita Vecchia"
       variant="Civita Vecchia"
       key="civita vecchia"
       geo="">havneby i Pavestaten; se kort.</c>
@@ -2246,6 +2449,7 @@
       evidence="head-noun+place-type"
       person="true"
       place="Bonaventura"
+      lemma="Bonaventura"
       variant="Bonaventura"
       key="bonaventura"
       geo="">kloster opkaldt efter den katolske teolog og mystiker Bonaventura (1221-1274), leder af franciskanerordenen fra 1257.</c>
@@ -2257,6 +2461,7 @@
       evidence="in-register+se-kort"
       person="false"
       place="Livorno"
+      lemma="Livorno"
       variant="Livorno"
       key="livorno"
       geo="geo-3174659">se kort.</c>
@@ -2268,6 +2473,7 @@
       evidence="place-type"
       person="false"
       place="Paladset Vecchio"
+      lemma="Paladset Vecchio"
       variant="Paladset Vecchio"
       key="paladset vecchio"
       geo="">Palazzo Vecchio (italiensk) det gamle palads, bygget 1298-1314, herskernes residens.</c>
@@ -2279,6 +2485,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Pyrenæer"
+      lemma="Pyrenæer"
       variant="Pyrenæer"
       key="pyrenæer"
       geo="">bjergkæde langs grænsen mellem Frankrig og Spanien.</c>
@@ -2290,6 +2497,7 @@
       evidence="located+place-type"
       person="false"
       place="Perpignan"
+      lemma="Perpignan"
       variant="Perpignan"
       key="perpignan"
       geo="">fransk by nær grænsen til Spanien.</c>
@@ -2301,6 +2509,7 @@
       evidence="se-kort"
       person="false"
       place="La Junquera"
+      lemma="la Junquera"
       variant="la Junquera"
       key="la junquera"
       geo="">La Junquera, se kort.</c>
@@ -2312,6 +2521,7 @@
       evidence="place-type"
       person="false"
       place="Visitation"
+      lemma="Visitation(en)"
       variant="Visitation"
       key="visitation"
       geo="">undersøgelse af papirer og gods.</c>
@@ -2323,6 +2533,7 @@
       evidence="se-kort"
       person="false"
       place="Figueras"
+      lemma="Figueras"
       variant="Figueras"
       key="figueras"
       geo="">se kort.</c>
@@ -2334,6 +2545,7 @@
       evidence="located+place-type"
       person="false"
       place="Masanasa"
+      lemma="Masanasa"
       variant="Masanasa"
       key="masanasa"
       geo="">uvis betydning; muligvis Massanassa, navn på landsby ca. 6 km syd for Valencia.</c>
@@ -2345,6 +2557,7 @@
       evidence="se-kort"
       person="false"
       place="Bascara"
+      lemma="Bascara"
       variant="Bascara"
       key="bascara"
       geo="">se kort.</c>
@@ -2356,6 +2569,7 @@
       evidence="se-kort"
       person="false"
       place="Fluvia"
+      lemma="Fluvia"
       variant="Fluvia"
       key="fluvia"
       geo="">se kort.</c>
@@ -2367,6 +2581,7 @@
       evidence="se-kort"
       person="false"
       place="Medinya"
+      lemma="Medina"
       variant="Medina"
       key="medinya"
       geo="">Medinya, ca. 7 km nord for Gerona, se kort.</c>
@@ -2378,6 +2593,7 @@
       evidence="place-type"
       person="false"
       place="Lyon"
+      lemma="Lyon"
       variant="Lyon"
       key="lyon"
       geo="">fransk by.</c>
@@ -2389,6 +2605,7 @@
       evidence="se-kort"
       person="false"
       place="Barcelona"
+      lemma="Barcelona"
       variant="Barcelona"
       key="barcelona"
       geo="">se kort; H.C. Andersen opholdt sig her 6.-16. september 1862.</c>
@@ -2400,6 +2617,7 @@
       evidence="place-type"
       person="false"
       place="havnet"
+      lemma="havnet"
       variant="havnet"
       key="havnet"
       geo="">i havn, i sikkerhed.</c>
@@ -2411,6 +2629,7 @@
       evidence="place-type"
       person="false"
       place="la rambla"
+      lemma="la rambla"
       variant="la rambla"
       key="la rambla"
       geo="">(spansk) boulevard (nær havnen) i en række spanske byer; her Las Ramplas de Barcelona.</c>
@@ -2422,6 +2641,7 @@
       evidence="place-type"
       person="false"
       place="Catalonien"
+      lemma="Catalonien(s)"
       variant="Catalonien"
       key="catalonien"
       geo="">Spaniens nordøstligste region.</c>
@@ -2433,6 +2653,7 @@
       evidence="se-kort"
       person="false"
       place="Pamplona"
+      lemma="Pamplona"
       variant="Pamplona"
       key="pamplona"
       geo="">se kort.</c>
@@ -2444,6 +2665,7 @@
       evidence="place-type"
       person="false"
       place="Gæs"
+      lemma="Gæs"
       variant="Gæs"
       key="gæs"
       geo="">i haven i det tilstødende kloster fra 1300-tallet går 13 gæs, der ifølge en tradition står for hvert af martyren Eulalias leveår.</c>
@@ -2455,6 +2677,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Dronningens Palais"
+      lemma="Dronningens Palais"
       variant="Dronningens Palais"
       key="dronningens palais"
       geo="">slottet fra 1359-1362 på Plaça del Rei var da residens for Isabel 2.</c>
@@ -2466,6 +2689,7 @@
       evidence="se-kort"
       person="false"
       place="Valencia"
+      lemma="Valencia"
       variant="Valencia"
       key="valencia"
       geo="">se kort.</c>
@@ -2477,6 +2701,7 @@
       evidence="place-type"
       person="true"
       place="Jeppe … dog Dette"
+      lemma="Jeppe … dog Dette"
       variant="Jeppe … dog Dette"
       key="jeppe … dog dette"
       geo="">2,1 i komedien Jeppe paa Bjerget, 1722, af den norsk-danske forfatter Ludvig Holberg (1684-1754).</c>
@@ -2488,6 +2713,7 @@
       evidence="se-kort"
       person="false"
       place="Zaragoza"
+      lemma="Saragossa"
       variant="Saragossa"
       key="zaragoza"
       geo="">Zaragoza, se kort.</c>
@@ -2499,6 +2725,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Mont Serrat"
+      lemma="Mont Serrat"
       variant="Mont Serrat"
       key="mont serrat"
       geo="">bjerg nordvest for Barcelona, hvis navn kan betyde savtakket bjerg (latin) el. helligt bjerg (catalansk). Bjerget er pilgrimsmål især pga. benediktinerklosterets sorte Madonnastatue, som ifølge traditionen er skåret af sankt Lukas.</c>
@@ -2510,6 +2737,7 @@
       evidence="place-type"
       person="false"
       place="Ørkenens Manna"
+      lemma="Ørkenens Manna"
       variant="Ørkenens Manna"
       key="ørkenens manna"
       geo="">Gud lod det regne med manna til israelitterne i ørkenen, jf. 2. Mosebog 16.</c>
@@ -2521,6 +2749,7 @@
       evidence="place-type"
       person="false"
       place="Nattevagter"
+      lemma="Nattevagter"
       variant="Nattevagter"
       key="nattevagter"
       geo="">en vagt på søen er normalt på 4 timer, nattevagten kan dog være to sammenslåede vagter.</c>
@@ -2532,6 +2761,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Sagunto"
+      lemma="Sagunt"
       variant="Sagunt"
       key="sagunto"
       geo="">Sagunto, se kort. Byen sluttede forbund med romerne i 220-tallet f.Kr.</c>
@@ -2543,6 +2773,7 @@
       evidence="place-type"
       person="false"
       place="Murviedro"
+      lemma="Murviedro"
       variant="Murviedro"
       key="murviedro"
       geo="">under arabisk herredømme fik byen navnet Murbiter (gamle mure), der siden blev til Murviedro. Navnet ændredes tilbage til Sagunto i 1868.</c>
@@ -2554,6 +2785,7 @@
       evidence="place-type"
       person="false"
       place="Grao"
+      lemma="Grao"
       variant="Grao"
       key="grao"
       geo="">Valencias havneby.</c>
@@ -2565,6 +2797,7 @@
       evidence="place-type"
       person="false"
       place="Sjerra de Santa Ana"
+      lemma="Sjerra de Santa Ana"
       variant="Sjerra de Santa Ana"
       key="sjerra de santa ana"
       geo="">evt. bjergene Sierra de Aitana i Valenciaregionens sydlige del.</c>
@@ -2576,6 +2809,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Domkirken … Øiesyn"
+      lemma="Domkirken … Øiesyn"
       variant="Domkirken … Øiesyn"
       key="domkirken … øiesyn"
       geo="">domkirken blev påbegyndt 1262, dvs. Cid har ikke kunnet overse byen fra kirkens tårn.</c>
@@ -2587,6 +2821,7 @@
       evidence="place-type"
       person="false"
       place="Alameda"
+      lemma="Alameda"
       variant="Alameda"
       key="alameda"
       geo="">(spansk) boulevard el. promenade; egentlig poppelallé.</c>
@@ -2598,6 +2833,7 @@
       evidence="located+place-type"
       person="false"
       place="Guadalaviar"
+      lemma="Guadalaviar(s)"
       variant="Guadalaviar"
       key="guadalaviar"
       geo="">også kaldet Turia; flod, der munder ud i Middelhavet ved Valencia.</c>
@@ -2609,6 +2845,7 @@
       evidence="se-kort"
       person="false"
       place="Til San Peder de Cordoña"
+      lemma="Til San Peder de Cordoña"
       variant="Til San Peder de Cordoña"
       key="til san peder de cordoña"
       geo="">oversat fra Oskar 2. nr. 68 s. 391, jf. Der Cid s. 245. Cid blev begravet i klosteret San Pedro de Cardeña ved Burgos (se kort), jf. s. 210.</c>
@@ -2620,6 +2857,7 @@
       evidence="se-kort"
       person="false"
       place="Almansa og Alicante"
+      lemma="Almansa og Alicante"
       variant="Almansa og Alicante"
       key="almansa og alicante"
       geo="">se kort. H.C. Andersen gjorde ophold i Almansa og ankom til Alicante 20. september, hvor han opholdt sig til 23 september 1862.</c>
@@ -2631,6 +2869,7 @@
       evidence="se-kort"
       person="false"
       place="Jativa"
+      lemma="Jativa"
       variant="Jativa"
       key="jativa"
       geo="">se kort.</c>
@@ -2642,6 +2881,7 @@
       evidence="se-kort"
       person="false"
       place="Madrid"
+      lemma="Madrid"
       variant="Madrid"
       key="madrid"
       geo="">se kort.</c>
@@ -2653,6 +2893,7 @@
       evidence="se-kort"
       person="false"
       place="Sevilla"
+      lemma="Sevilla"
       variant="Sevilla"
       key="sevilla"
       geo="">se kort.</c>
@@ -2664,6 +2905,7 @@
       evidence="se-kort"
       person="false"
       place="Elche Murcia"
+      lemma="Elche (til) Murcia"
       variant="Elche Murcia"
       key="elche murcia"
       geo="">se kort.</c>
@@ -2675,6 +2917,7 @@
       evidence="se-kort"
       person="false"
       place="Algeciras"
+      lemma="Algeciras"
       variant="Algeciras"
       key="algeciras"
       geo="">se kort.</c>
@@ -2686,6 +2929,7 @@
       evidence="place-type"
       person="false"
       place="Marseille"
+      lemma="Marseille"
       variant="Marseille"
       key="marseille"
       geo="">fransk havneby.</c>
@@ -2697,6 +2941,7 @@
       evidence="place-type"
       person="false"
       place="Algier"
+      lemma="Algier"
       variant="Algier"
       key="algier"
       geo="">Algeriets hovedstad.</c>
@@ -2708,6 +2953,7 @@
       evidence="se-kort"
       person="false"
       place="Málaga"
+      lemma="Malaga"
       variant="Malaga"
       key="málaga"
       geo="">Málaga, se kort.</c>
@@ -2719,6 +2965,7 @@
       evidence="se-kort"
       person="false"
       place="Granada"
+      lemma="Granada"
       variant="Granada"
       key="granada"
       geo="">se kort.</c>
@@ -2730,6 +2977,7 @@
       evidence="se-kort"
       person="false"
       place="Cartagena"
+      lemma="Cartagena"
       variant="Cartagena"
       key="cartagena"
       geo="">se kort.</c>
@@ -2741,6 +2989,7 @@
       evidence="se-kort+located+place-type"
       person="false"
       place="Sierra Morena"
+      lemma="Sjerra Morena(s)"
       variant="Sjerra Morena"
       key="sierra morena"
       geo="">Sierra Morena, bjergkæde i Sydvestspanien (se kort), som stadig i 1800-tallet var tilholdssted for røverbander.</c>
@@ -2752,6 +3001,7 @@
       evidence="place-type"
       person="false"
       place="Campagne"
+      lemma="Campagne"
       variant="Campagne"
       key="campagne"
       geo="">(af italiensk) mark, slette.</c>
@@ -2763,6 +3013,7 @@
       evidence="place-type"
       person="false"
       place="i Romernes … Havn"
+      lemma="i Romernes … Havn"
       variant="i Romernes … Havn"
       key="i romernes … havn"
       geo="">Elche blev en romersk koloni ved navn Iulia Ilice Augusta i det første årh. e.Kr. og lå da 2 km syd for den nuværende placering. Den egentlige havn, Portas ilicitanus lå i det nuværende Santa Pola ved kysten.</c>
@@ -2774,6 +3025,7 @@
       evidence="se-kort"
       person="false"
       place="Orihuela"
+      lemma="Orihuela"
       variant="Orihuela"
       key="orihuela"
       geo="">se kort.</c>
@@ -2785,6 +3037,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Domkirken"
+      lemma="Domkirken"
       variant="Domkirken"
       key="domkirken"
       geo="">kirken El Salvador er påbegyndt i 1300-tallet og fik status af domkirke i 1500-tallet, da Orihuela blev bispedømme.</c>
@@ -2796,6 +3049,7 @@
       evidence="place-type"
       person="false"
       place="la glorieta"
+      lemma="la glorieta"
       variant="la glorieta"
       key="la glorieta"
       geo="">(spansk) lille rund plads, anlæg; (her) en central plads ved floden Segura, der  løber igennem Murcia.</c>
@@ -2807,6 +3061,7 @@
       evidence="place-type"
       person="false"
       place="Bro … Plads"
+      lemma="Bro … Plads"
       variant="Bro … Plads"
       key="bro … plads"
       geo="">formentlig Puente Viejo (den gamle bro) og Plaza Comaches.</c>
@@ -2818,6 +3073,7 @@
       evidence="place-type"
       person="false"
       place="Calle del caballeros"
+      lemma="Calle del caballeros"
       variant="Calle del caballeros"
       key="calle del caballeros"
       geo="">Calle de los caballeros, (spansk) riddernes el. herrernes gade; nuværende Gran Vía Escultor Francisco Sal Zillo.</c>
@@ -2829,6 +3085,7 @@
       evidence="head-noun+place-type"
       person="true"
       place="Spartaria"
+      lemma="Spartaria"
       variant="Spartaria"
       key="spartaria"
       geo="">byen blev grundlagt af Hasdrubal (d. 221) fra Karthago, romerne kaldte byen Carthago Nova (nye Karthago) og Carthago Spartaria efter eksportvaren.</c>
@@ -2840,6 +3097,7 @@
       evidence="place-type"
       person="false"
       place="Mistral"
+      lemma="Mistral"
       variant="Mistral"
       key="mistral"
       geo="">hård, kold og tør nordlig vind i Sydfrankrig ud over Middelhavet.</c>
@@ -2851,6 +3109,7 @@
       evidence="located"
       person="false"
       place="Rigoletto"
+      lemma="Rigoletto"
       variant="Rigoletto"
       key="rigoletto"
       geo="">opera fra 1851. H.C. Andersen havde set den i Berlin 5. nov. 1860.</c>
@@ -2862,6 +3121,7 @@
       evidence="se-kort"
       person="false"
       place="Almadén"
+      lemma="Almaden"
       variant="Almaden"
       key="almadén"
       geo="">Almadén, se kort.</c>
@@ -2873,6 +3133,7 @@
       evidence="place-type"
       person="false"
       place="Anadyomene"
+      lemma="Anadyomene"
       variant="Anadyomene"
       key="anadyomene"
       geo="">(græsk) den af havet opdukkende, tilnavn til kærlighedsgudinden Afrodite i græsk mytologi.</c>
@@ -2884,6 +3145,7 @@
       evidence="place-type"
       person="false"
       place="Alhambra"
+      lemma="Alhambra"
       variant="Alhambra"
       key="alhambra"
       geo="">maurisk fæstningsværk og paladsby på en klippe i byen Granada, opført i 1200- og 1300-tallet for fyrsteslægten Nasride. Jf. s. 89-93.</c>
@@ -2895,6 +3157,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Guadalmedina-Floden"
+      lemma="Guadalmedina-Floden"
       variant="Guadalmedina-Floden"
       key="guadalmedina-floden"
       geo="">floden løber igennem den østlige del af byens centrum.</c>
@@ -2906,6 +3169,7 @@
       evidence="place-type"
       person="false"
       place="andalusiske"
+      lemma="andalusiske"
       variant="andalusiske"
       key="andalusiske"
       geo="">fra Spaniens sydlige region, Andalusien.</c>
@@ -2917,6 +3181,7 @@
       evidence="in-register"
       person="false"
       place="Halle"
+      lemma="Halle"
       variant="Halle"
       key="halle"
       geo="geo-2911522">hal.</c>
@@ -2928,6 +3193,7 @@
       evidence="se-kort"
       person="false"
       place="Almería"
+      lemma="Almeria"
       variant="Almeria"
       key="almería"
       geo="">Almería, se kort.</c>
@@ -2939,6 +3205,7 @@
       evidence="place-type"
       person="true"
       place="Visby"
+      lemma="Visby"
       variant="Visby"
       key="visby"
       geo="">Lauri Christian Visby (1828-1889), bestyrer af en papirfabrik i Granada.</c>
@@ -2950,6 +3217,7 @@
       evidence="place-type"
       person="true"
       place="Præsten i Storeheddinge"
+      lemma="Præsten i Storeheddinge"
       variant="Præsten i Storeheddinge"
       key="præsten i storeheddinge"
       geo="">Carl Holger Visby (1801-1871), præst i Store Heddinge fra 1854.</c>
@@ -2961,6 +3229,7 @@
       evidence="se-kort"
       person="false"
       place="Vélez Málaga"
+      lemma="Velez-Malaga"
       variant="Velez-Malaga"
       key="vélez málaga"
       geo="">Vélez Málaga, se kort.</c>
@@ -2972,6 +3241,7 @@
       evidence="se-kort"
       person="false"
       place="Alhama de Granada"
+      lemma="Alhama"
       variant="Alhama"
       key="alhama de granada"
       geo="">Alhama de Granada, se kort.</c>
@@ -2983,6 +3253,7 @@
       evidence="se-kort"
       person="false"
       place="Loja"
+      lemma="Loja"
       variant="Loja"
       key="loja"
       geo="">se kort.</c>
@@ -2994,6 +3265,7 @@
       evidence="se-kort"
       person="false"
       place="Xenil"
+      lemma="Xenil"
       variant="Xenil"
       key="xenil"
       geo="">el. Genil, se kort.</c>
@@ -3005,6 +3277,7 @@
       evidence="place-type"
       person="false"
       place="Infiernos de Loja"
+      lemma="Infiernos de Loja"
       variant="Infiernos de Loja"
       key="infiernos de loja"
       geo="">(spansk) Lojas dødsrige; navn på byens vandfald.</c>
@@ -3016,6 +3289,7 @@
       evidence="located+place-type"
       person="false"
       place="Santa Fé"
+      lemma="Santa-Fé"
       variant="Santa-Fé"
       key="santa fé"
       geo="">Santa Fé, by ca. 9 km øst for Granada.</c>
@@ -3027,6 +3301,7 @@
       evidence="se-kort+head-noun+located+place-type"
       person="false"
       place="Sierra Nevada"
+      lemma="Sierra Nevada(s)"
       variant="Sierra Nevada"
       key="sierra nevada"
       geo="">bjergkæde ved Granada, se kort.</c>
@@ -3038,6 +3313,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="guldførende Darro"
+      lemma="guldførende Darro"
       variant="guldførende Darro"
       key="guldførende darro"
       geo="">floden løber fra øst igennem Granada og har været guldholdig, jf. Hackländer 2 s. 252 »ihren goldführenden Sand«.</c>
@@ -3049,6 +3325,7 @@
       evidence="place-type"
       person="false"
       place="Terrasse"
+      lemma="Terrasse"
       variant="Terrasse"
       key="terrasse"
       geo="">Plaza de los Aljibes (cisternernes plads).</c>
@@ -3060,6 +3337,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Akropolis"
+      lemma="Akropolis"
       variant="Akropolis"
       key="akropolis"
       geo="">ruinerne af en befæstet by og religiøst centrum i Athen. Jf. Hackländer: »man könnte sagen, sie ist die Akropolis von Granada« (2 s. 254).</c>
@@ -3071,6 +3349,7 @@
       evidence="place-type"
       person="false"
       place="Santa Maria de la Alhambra"
+      lemma="Santa Maria de la Alhambra"
       variant="Santa Maria de la Alhambra"
       key="santa maria de la alhambra"
       geo="">Santa María de la Alhambra, renæssancekirke.</c>
@@ -3082,6 +3361,7 @@
       evidence="place-type"
       person="false"
       place="eneste Spøgelsestro"
+      lemma="eneste Spøgelsestro"
       variant="eneste Spøgelsestro"
       key="eneste spøgelsestro"
       geo="">Hackländer udnævner derimod en plads, formodentlig cisternernes plads, til at være det eneste hjemsøgte sted i hele Spanien: »Es ist eigentümlich, daß dieser wüste Platz auf der Alhambra fast der einzige Ort in ganz Spanien ist, den man zur Mitternachtstunde von übernatürlichen, gespentlischen Wesen bevölkert glaubt, was man bei uns in Deutschland von fast jedem Kreuzwege sagt.« (2 s. 297).</c>
@@ -3093,6 +3373,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Cartuja"
+      lemma="Cartuja"
       variant="Cartuja"
       key="cartuja"
       geo="">karteuserkloster fra 1516.</c>
@@ -3104,6 +3385,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Zigeuner-Qvarteret"
+      lemma="Zigeuner-Qvarteret"
       variant="Zigeuner-Qvarteret"
       key="zigeuner-qvarteret"
       geo="">bydelen Albaicin, som menes før at have huset maurerflygtninge, jf. Hackländer 2 s. 252.</c>
@@ -3115,6 +3397,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Asturien"
+      lemma="Asturien"
       variant="Asturien"
       key="asturien"
       geo="">region i Nordvestspanien.</c>
@@ -3126,6 +3409,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Plaza Nueva"
+      lemma="Plaza Nueva"
       variant="Plaza Nueva"
       key="plaza nueva"
       geo="">Den Nye Plads.</c>
@@ -3137,6 +3421,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Zacatin"
+      lemma="Zacatin"
       variant="Zacatin"
       key="zacatin"
       geo="">handelsgade fra maurisk tid.</c>
@@ -3148,6 +3433,7 @@
       evidence="place-type"
       person="false"
       place="Changement"
+      lemma="Changement"
       variant="Changement"
       key="changement"
       geo="">(fransk) forandring; dansetrin, hvor fødderne skifter plads i luften.</c>
@@ -3159,6 +3445,7 @@
       evidence="located+place-type"
       person="false"
       place="Alleenberg"
+      lemma="Alleenberg"
       variant="Alleenberg"
       key="alleenberg"
       geo="">forlystelseshave på Frederiksberg Allé 1841-1923.</c>
@@ -3170,6 +3457,7 @@
       evidence="place-type"
       person="false"
       place="Vega"
+      lemma="Vega"
       variant="Vega"
       key="vega"
       geo="">frugtbar slette omkring floden Xenil.</c>
@@ -3181,6 +3469,7 @@
       evidence="se-kort"
       person="false"
       place="Gibraltar"
+      lemma="Gibraltar"
       variant="Gibraltar"
       key="gibraltar"
       geo="">se kort. H.C. Andersen opholdt sig her 30. oktober-2. november 1862.</c>
@@ -3192,6 +3481,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Guadalmedina"
+      lemma="Guadalmedina(s)"
       variant="Guadalmedina"
       key="guadalmedina"
       geo="">flod, der løber igennem og udmunder i Málaga.</c>
@@ -3203,6 +3493,7 @@
       evidence="se-kort"
       person="false"
       place="Sydspids"
+      lemma="Sydspids"
       variant="Sydspids"
       key="sydspids"
       geo="">Punta Marroqui ved Tarifa er dog sydligere, se kort.</c>
@@ -3214,6 +3505,7 @@
       evidence="se-kort"
       person="false"
       place="Tanger"
+      lemma="Tanger"
       variant="Tanger"
       key="tanger"
       geo="">se kort.</c>
@@ -3225,6 +3517,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Ceuta"
+      lemma="Ceuta"
       variant="Ceuta"
       key="ceuta"
       geo="">spansk enklave ved Marokkos kyst, se kort.</c>
@@ -3236,6 +3529,7 @@
       evidence="place-type"
       person="false"
       place="sprængte"
+      lemma="sprængte"
       variant="sprængte"
       key="sprængte"
       geo="">fæstningsværkerne er delvist indhuggede i klippen, og under den spanske belejring 1779-1783 påbegyndte man desuden arbejdet med at sprænge tunneler gennem klippen.</c>
@@ -3247,6 +3541,7 @@
       evidence="place-type"
       person="false"
       place="Bjergrækker"
+      lemma="Bjergrækker"
       variant="Bjergrækker"
       key="bjergrækker"
       geo="">formentlig Rifbjergene.</c>
@@ -3258,6 +3553,7 @@
       evidence="place-type"
       person="false"
       place="Fæstning"
+      lemma="Fæstning"
       variant="Fæstning"
       key="fæstning"
       geo="">kasba’en, et befæstet residenskvarter fra 1600-tallet i den gamle bydel.</c>
@@ -3269,6 +3565,7 @@
       evidence="place-type"
       person="false"
       place="Damascus"
+      lemma="Damascus"
       variant="Damascus"
       key="damascus"
       geo="">Syriens hovedstad.</c>
@@ -3280,6 +3577,7 @@
       evidence="located"
       person="false"
       place="Barbarer"
+      lemma="Barbarer"
       variant="Barbarer"
       key="barbarer"
       geo="">både i betydningen ucivilicerede, barbariske folk og berbere, indbyggere i Berberiet el. Barbareskstaterne, som er en ældre fællesbetegnelse for Marokko, Algeriet, Tunis og Tripolitania (i Libyen).</c>
@@ -3291,6 +3589,7 @@
       evidence="place-type"
       person="false"
       place="Tunis, Algier og Tripolis"
+      lemma="Tunis, Algier og Tripolis"
       variant="Tunis, Algier og Tripolis"
       key="tunis algier og tripolis"
       geo="">havnebyer i hhv. Tunesien, Algeriet og Libyen.</c>
@@ -3302,6 +3601,7 @@
       evidence="place-type"
       person="true"
       place="Mr. Green"
+      lemma="Mr. Green"
       variant="Mr. Green"
       key="mr green"
       geo="">William Kirby Green (d. 1891), engelsk konsulatsekretær i Tanger fra 1859, fra 1862 vicekonsul i Tetuan og fra 1886 Drummond Hays efterfølger.</c>
@@ -3313,6 +3613,7 @@
       evidence="se-kort"
       person="false"
       place="Trafalgar-Bugten"
+      lemma="Trafalgar-Bugten"
       variant="Trafalgar-Bugten"
       key="trafalgar-bugten"
       geo="">ud for Cabo (Kap) Trafalgar, se kort.</c>
@@ -3324,6 +3625,7 @@
       evidence="se-kort"
       person="false"
       place="Cádiz"
+      lemma="Cadiz"
       variant="Cadiz"
       key="cádiz"
       geo="">Cádiz, se kort.</c>
@@ -3335,6 +3637,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Atlasbjerge"
+      lemma="Atlasbjerge"
       variant="Atlasbjerge"
       key="atlasbjerge"
       geo="">bjergkæde, der strækker sig fra Sydvest-Marokko til Nordøst-Tunesien.</c>
@@ -3346,6 +3649,7 @@
       evidence="place-type"
       person="false"
       place="Serail"
+      lemma="Serail(ets)"
       variant="Serail"
       key="serail"
       geo="">(her) sultanens palads.</c>
@@ -3357,6 +3661,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Oran"
+      lemma="Oran"
       variant="Oran"
       key="oran"
       geo="">havneby i Nordvest-Algeriet.</c>
@@ -3368,6 +3673,7 @@
       evidence="se-kort"
       person="false"
       place="Tétouan"
+      lemma="Tetuan"
       variant="Tetuan"
       key="tétouan"
       geo="">Tétouan, se kort.</c>
@@ -3379,6 +3685,7 @@
       evidence="place-type"
       person="false"
       place="Slippe"
+      lemma="Slippe"
       variant="Slippe"
       key="slippe"
       geo="">smalt stræde, gyde el. passage.</c>
@@ -3390,6 +3697,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Castellet"
+      lemma="Castellet"
       variant="Castellet"
       key="castellet"
       geo="">paladset Dar el Makhzen, bygget af Mulay Ismail, fungerede som bolig for sultanens repræsentant i byen.</c>
@@ -3401,6 +3709,7 @@
       evidence="located+place-type"
       person="false"
       place="Bayonne"
+      lemma="Bayonne"
       variant="Bayonne"
       key="bayonne"
       geo="">fransk by ved grænsen til Spanien.</c>
@@ -3412,6 +3721,7 @@
       evidence="place-type"
       person="false"
       place="Rhed"
+      lemma="Rhed(en)"
       variant="Rhed"
       key="rhed"
       geo="">ankerplads uden for havnen.</c>
@@ -3423,6 +3733,7 @@
       evidence="se-kort"
       person="false"
       place="Xeres de la Frontera"
+      lemma="Xeres de la Frontera"
       variant="Xeres de la Frontera"
       key="xeres de la frontera"
       geo="">el. Jeres de la Frontera, se kort.</c>
@@ -3434,6 +3745,7 @@
       evidence="located+place-type"
       person="false"
       place="Würtemberg"
+      lemma="Würtemberg"
       variant="Würtemberg"
       key="würtemberg"
       geo="">da et selvstændigt kongerige i Det Tyske Forbund, nu Baden-Württemberg.</c>
@@ -3445,6 +3757,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Guadalquivir"
+      lemma="Guadalquivir"
       variant="Guadalquivir"
       key="guadalquivir"
       geo="">flod, der udspringer nord for Sierra Nevada og løber forbi Cordóba, Sevilla og dernæst ud i Cádiz-golfen, nord for byen Cádiz.</c>
@@ -3456,6 +3769,7 @@
       evidence="located+place-type"
       person="false"
       place="Sète"
+      lemma="Cette"
       variant="Cette"
       key="sète"
       geo="">Sète, fransk by ved Middelhavet, som H.C. Andersen passerede på rejsen mod Spanien.</c>
@@ -3467,6 +3781,7 @@
       evidence="se-kort+head-noun+located+place-type"
       person="false"
       place="Pinieskov"
+      lemma="Pinieskov"
       variant="Pinieskov"
       key="pinieskov"
       geo="">skoven strakte sig tidligere fra Puerto Real til Puerto de Santa María, se kort.</c>
@@ -3478,6 +3793,7 @@
       evidence="place-type"
       person="false"
       place="Julius Cæsars Tid"
+      lemma="Julius Cæsars Tid"
       variant="Julius Cæsars Tid"
       key="julius cæsars tid"
       geo="">Julius Cæsar (ca. 100-44 f.Kr.) gav 45 f.Kr. byen navnet Iulia Romula Hispalis og borgerne fulde rettigheder som romere.</c>
@@ -3489,6 +3805,7 @@
       evidence="place-type"
       person="false"
       place="Alcazar"
+      lemma="Alcazar"
       variant="Alcazar"
       key="alcazar"
       geo="">alcázar, (spansk) fæstning el. slot; paladsområdet Reales Alcázares i Sevilla er påbegyndt i maurisk tid (1181) og udbygget af Pedro (Peter) 1. den Grusomme el. Retfærdige (1334-1369), konge af Castilien og León fra 1350, og af senere spanske monarker.</c>
@@ -3500,6 +3817,7 @@
       evidence="place-type"
       person="false"
       place="Konstacademiets Sale"
+      lemma="Konstacademiets Sale"
       variant="Konstacademiets Sale"
       key="konstacademiets sale"
       geo="">Museo de Bellas Artes har siden 1839 haft til huse i et tidligere kloster, Convento de la Merced Calzada. Selve kunstakademiet blev grundlagt 1660 af bl.a. Murillo.</c>
@@ -3511,6 +3829,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Casa de Pilatos"
+      lemma="Pilati Huus … Jerusalem"
       variant="Pilati Huus … Jerusalem"
       key="casa de pilatos"
       geo="">Casa de Pilatos, palads fra midten af 1500-tallet. Størstedelen er bygget af don Fabrique, marquis af Tarifa efter en rejse til Jerusalem, og det fik ry for at være en efterligning af den romerske præfekt Pontius Pilatus’ (d. 35 e.Kr.) hus. Det blev siden residens for hertugerne af Alcalá de los Gazules (se kort) og Medinaceli (se kort).</c>
@@ -3522,6 +3841,7 @@
       evidence="located"
       person="false"
       place="La Torro del Oro"
+      lemma="La Torro del Oro"
       variant="La Torro del Oro"
       key="la torro del oro"
       geo="">El Torre del Oro, (spansk) guldtårnet; oprindeligt en del af fæstningsværket omkring Alcázar.</c>
@@ -3533,6 +3853,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Triana"
+      lemma="Triana"
       variant="Triana"
       key="triana"
       geo="">bydel, der tidligere var sigøjnerkvarter. Den er opkaldt efter den romerske kejser Trajan (ca. 53-117 e.Kr.), der var født i den romerske by Italica nær Sevilla.</c>
@@ -3544,6 +3865,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Inqvisitionsfængsler"
+      lemma="Inqvisitionsfængsler"
       variant="Inqvisitionsfængsler"
       key="inqvisitionsfængsler"
       geo="">fæstningen Castillo de San Jorge husede den spanske inkvisition 1481-1785. Den blev revet ned senere i 1800-tallet.</c>
@@ -3555,6 +3877,7 @@
       evidence="se-kort"
       person="false"
       place="Ecija"
+      lemma="Ecija"
       variant="Ecija"
       key="ecija"
       geo="">se kort.</c>
@@ -3566,6 +3889,7 @@
       evidence="place-type"
       person="false"
       place="Corduan"
+      lemma="Corduan"
       variant="Corduan"
       key="corduan"
       geo="">fint skind af bukke- el. gedelæder opkaldt efter byen.</c>
@@ -3577,6 +3901,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Tiberen"
+      lemma="Tiberen(s)"
       variant="Tiberen"
       key="tiberen"
       geo="">flod, der løber gennem Rom.</c>
@@ -3588,6 +3913,7 @@
       evidence="place-type"
       person="false"
       place="Stabat mater dolorosa"
+      lemma="Stabat mater dolorosa"
       variant="Stabat mater dolorosa"
       key="stabat mater dolorosa"
       geo="">(latin) stod en moder fuld af smerte; sekvens i den katolske kirke til mindedagen for Jomfru Marias syv smerter ved Jesu korsfæstelse. Teksten er tilskrevet Jacopone da Todi (ca. 1230-1306).</c>
@@ -3599,6 +3925,7 @@
       evidence="place-type"
       person="false"
       place="Ny-Castilien"
+      lemma="Ny-Castilien"
       variant="Ny-Castilien"
       key="ny-castilien"
       geo="">Castilla la Nueva (spansk), Kastiliens sydlige del, nu den selvstyrende region Castillala Mancha.</c>
@@ -3610,6 +3937,7 @@
       evidence="se-kort"
       person="false"
       place="Santa Cruz de Mudela"
+      lemma="Santa Cruz de Mudela"
       variant="Santa Cruz de Mudela"
       key="santa cruz de mudela"
       geo="">se kort.</c>
@@ -3621,6 +3949,7 @@
       evidence="se-kort"
       person="false"
       place="Andújar"
+      lemma="Andujar"
       variant="Andujar"
       key="andújar"
       geo="">Andújar, se kort.</c>
@@ -3632,6 +3961,7 @@
       evidence="se-kort"
       person="false"
       place="Bailen"
+      lemma="Baylen"
       variant="Baylen"
       key="bailen"
       geo="">Bailen, se kort; her sejrede spanske styrker over Napoleon juli 1808 under uafhængighedskrigen.</c>
@@ -3643,6 +3973,7 @@
       evidence="se-kort+head-noun+place-type"
       person="false"
       place="La Carolina"
+      lemma="la Carolina"
       variant="la Carolina"
       key="la carolina"
       geo="">La Carolina, se kort; byen er grundlagt af Karl 3. (1716-1788, konge fra 1759) i 1767-1770 som led i nybefolkningen af området i Sierra Morena, fortrinsvis med tyske indvandrere.</c>
@@ -3654,6 +3985,7 @@
       evidence="se-kort"
       person="false"
       place="Alcázar de San Juan"
+      lemma="Alcazar de San Juan"
       variant="Alcazar de San Juan"
       key="alcázar de san juan"
       geo="">Alcázar de San Juan, se kort.</c>
@@ -3665,6 +3997,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Toboso"
+      lemma="Toboso"
       variant="Toboso"
       key="toboso"
       geo="">lille by ca. 20 km nordøst for Alcazar de San Juan, berømt som hjembyen for Don Quixotes elskede, Dulzinea.</c>
@@ -3676,6 +4009,7 @@
       evidence="se-kort"
       person="false"
       place="Aranjuez"
+      lemma="Aranjuez"
       variant="Aranjuez"
       key="aranjuez"
       geo="">se kort.</c>
@@ -3687,6 +4021,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Prado"
+      lemma="Prado(ens)"
       variant="Prado"
       key="prado"
       geo="">promenade, som da lå i udkanten af byen mod en række offentlige haver.</c>
@@ -3698,6 +4033,7 @@
       evidence="place-type"
       person="false"
       place="Puerta del Sol"
+      lemma="Puerta del Sol"
       variant="Puerta del Sol"
       key="puerta del sol"
       geo="">(spansk) solens port; Madrids centrale plads.</c>
@@ -3709,6 +4045,7 @@
       evidence="place-type"
       person="false"
       place="hin sida sundet"
+      lemma="hin sida sundet"
       variant="hin sida sundet"
       key="hin sida sundet"
       geo="">(svensk) på den anden side af sundet; også titlen på den svenske forfatter og kritiker Orvar Odds (Oscar Patric Sturzen-Becker, 1811-1869) rejseskildring Hinsidan Sundet. Danska epistlar 1-2, 1846.</c>
@@ -3720,6 +4057,7 @@
       evidence="place-type"
       person="false"
       place="Museo Del Prado"
+      lemma="Billedgalleriet"
       variant="Billedgalleriet"
       key="museo del prado"
       geo="">Museo Del Prado, oprindeligt bygget til et naturhistorisk museum fra 1785, men åbnet 1819 som kongeligt kunstmuseum med billeder fra de kongelige samlinger.</c>
@@ -3731,6 +4069,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Plaza de Oriente"
+      lemma="Plaza de Oriente"
       variant="Plaza de Oriente"
       key="plaza de oriente"
       geo="">plads på østsiden af slottet, anlagt mellem 1816 og 1850.</c>
@@ -3742,6 +4081,7 @@
       evidence="place-type"
       person="false"
       place="Residensslottet"
+      lemma="Residensslottet"
       variant="Residensslottet"
       key="residensslottet"
       geo="">bygget i 1500-tallet oven på et muslimsk fæstningsværk fra 800-tallet og genopbygget efter en brand 1734.</c>
@@ -3753,6 +4093,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Manzanares"
+      lemma="Manzanares"
       variant="Manzanares"
       key="manzanares"
       geo="">flod, der løber på vestsiden af slottet og Campo del Moro.</c>
@@ -3764,6 +4105,7 @@
       evidence="se-kort"
       person="false"
       place="Bjergene"
+      lemma="Bjergene"
       variant="Bjergene"
       key="bjergene"
       geo="">Sierra de Guadarrama nordøst for Madrid, se kort.</c>
@@ -3775,6 +4117,7 @@
       evidence="se-kort+located+place-type"
       person="false"
       place="El Escorial"
+      lemma="Escorial"
       variant="Escorial"
       key="el escorial"
       geo="">El Escorial, landsby 42 km uden for Madrid (se kort), hvor Filip 2. lod bygge et palads og kloster, San Lorenzo del Escorial 1563-1567, der samtidig skulle fungere som kongelig begravelsesplads.</c>
@@ -3786,6 +4129,7 @@
       evidence="located"
       person="false"
       place="Slavelænker"
+      lemma="Slavelænker"
       variant="Slavelænker"
       key="slavelænker"
       geo="">Cervantes blev 1575 taget til fange af sørøvere og solgt som slave i Algier, han blev frikøbt igen i 1780.</c>
@@ -3797,6 +4141,7 @@
       evidence="place-type"
       person="false"
       place="Dramaets Grundlægger"
+      lemma="Dramaets Grundlægger"
       variant="Dramaets Grundlægger"
       key="dramaets grundlægger"
       geo="">som den spanske dramatiks grundlægger (uden for kirken) regnes dog normalt forfatteren og teatermanden Lope de Rueda (1510-1565), jf. s. 190.</c>
@@ -3808,6 +4153,7 @@
       evidence="in-register"
       person="false"
       place="Museet"
+      lemma="Museet"
       variant="Museet"
       key="museet"
       geo="place-000050">Pradomuseet.</c>
@@ -3819,6 +4165,7 @@
       evidence="place-type"
       person="false"
       place="Barnets Skytsengel"
+      lemma="Skytsengelen"
       variant="Skytsengelen"
       key="barnets skytsengel"
       geo="">Barnets Skytsengel, 1838, opstillet i Københavns Domkirke 1840.</c>
@@ -3830,6 +4177,7 @@
       evidence="se-kort"
       person="false"
       place="Toledo"
+      lemma="Toledo"
       variant="Toledo"
       key="toledo"
       geo="">se kort. H.C. Andersen opholdt sig her 2.-7. december 1862.</c>
@@ -3841,6 +4189,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Tajo"
+      lemma="Tajo"
       variant="Tajo"
       key="tajo"
       geo="">flod, der udspringer i Østspanien og munder ud i Atlanterhavet ved Lissabon.</c>
@@ -3852,6 +4201,7 @@
       evidence="place-type"
       person="false"
       place="Alcazar"
+      lemma="Alcazar"
       variant="Alcazar"
       key="alcazar"
       geo="">oprindeligt en romansk fæstning fra 200-tallet, senere maurisk og endelig ombygget af kristne monarker fra slutningen af 1000-tallet og frem.</c>
@@ -3863,6 +4213,7 @@
       evidence="place-type"
       person="false"
       place="Carl den Tredies … det"
+      lemma="Carl den Tredies … det"
       variant="Carl den Tredies … det"
       key="carl den tredies … det"
       geo="">jf. Hackländer 2 s. 154. I dag regnes slottet snarere som Karl 5.s på grund af hans ombygninger i 1535. Karl 3. overdrog slottet til kirken i 1700-tallet hvorved det blev til Casa de la Caridad. Det brændte og blev genopbygget flere gange i løbet af de næste århundreder.</c>
@@ -3874,6 +4225,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="ørk"
+      lemma="(Steen)ørk"
       variant="ørk"
       key="ørk"
       geo="">ørken.</c>
@@ -3885,6 +4237,7 @@
       evidence="place-type"
       person="false"
       place="San Servando"
+      lemma="San Cervantes"
       variant="San Cervantes"
       key="san servando"
       geo="">San Servando, fæstning fra 1300-tallet med dele fra romersk og maurisk tid.</c>
@@ -3896,6 +4249,7 @@
       evidence="place-type"
       person="false"
       place="San Martins Bro"
+      lemma="San Martins Bro"
       variant="San Martins Bro"
       key="san martins bro"
       geo="">gotisk bro fra slutningen af 1200-tallet, genopbygget flere gange.</c>
@@ -3907,6 +4261,7 @@
       evidence="head-noun+place-type"
       person="true"
       place="San Juan … forjagne"
+      lemma="San Juan … forjagne"
       variant="San Juan … forjagne"
       key="san juan … forjagne"
       geo="">kirken er opført til minde om sejren over Alfonso 5. af Portugal (1432-1481) ved Toro 1476, og kæderne på dens yderside er ophængt til minde om befrielsen af kristne fanger ved generobringen af maurernes områder.</c>
@@ -3918,6 +4273,7 @@
       evidence="place-type"
       person="false"
       place="Ved en … Mosaik"
+      lemma="Ved en … Mosaik"
       variant="Ved en … Mosaik"
       key="ved en … mosaik"
       geo="">jf. Hackländer 2 s. 149-50 om indgangen til det jødiske kvarter.</c>
@@ -3929,6 +4285,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Spaniens Roeskilde"
+      lemma="Spaniens Roeskilde"
       variant="Spaniens Roeskilde"
       key="spaniens roeskilde"
       geo="">Roskilde Domkirke er tilsvarende den danske kongefamilies gravsted.</c>
@@ -3940,6 +4297,7 @@
       evidence="place-type"
       person="false"
       place="den sorte Gryde"
+      lemma="den sorte Gryde"
       variant="den sorte Gryde"
       key="den sorte gryde"
       geo="">hentyder til den udbredte sangleg Bro, bro, brille.</c>
@@ -3951,6 +4309,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Sanchidrián"
+      lemma="San Chidrian"
       variant="San Chidrian"
       key="sanchidrián"
       geo="">Sanchidrián, by på den anden side af Guadarramabjergene, se kort.</c>
@@ -3962,6 +4321,7 @@
       evidence="place-type"
       person="false"
       place="Santa María"
+      lemma="Domkirke(s)"
       variant="Domkirke"
       key="santa maría"
       geo="">Santa María, gotisk katedral grundlagt 1221 og færdiggjort 1765.</c>
@@ -3973,6 +4333,7 @@
       evidence="place-type"
       person="false"
       place="Cartuja de Miraflores"
+      lemma="Cartuja di Miraflores"
       variant="Cartuja di Miraflores"
       key="cartuja de miraflores"
       geo="">Cartuja de Miraflores, karteuserkloster fra 1400-tallet.</c>
@@ -3984,6 +4345,7 @@
       evidence="located+place-type"
       person="false"
       place="Biarritz"
+      lemma="Biarrits"
       variant="Biarrits"
       key="biarritz"
       geo="">Biarritz, fransk by ved den vestlige grænse til Spanien. H.C. Andersen opholdt sig her 27.-29. december 1862.</c>
@@ -3995,6 +4357,7 @@
       evidence="se-kort"
       person="false"
       place="Vitoria"
+      lemma="Vitoria"
       variant="Vitoria"
       key="vitoria"
       geo="">se kort.</c>
@@ -4006,6 +4369,7 @@
       evidence="se-kort"
       person="false"
       place="Olazagoitia"
+      lemma="Olazagoitia"
       variant="Olazagoitia"
       key="olazagoitia"
       geo="">Olazagutía el. Olazti, se kort.</c>
@@ -4017,6 +4381,7 @@
       evidence="se-kort"
       person="false"
       place="Bilbao"
+      lemma="Bilbao"
       variant="Bilbao"
       key="bilbao"
       geo="">se kort.</c>
@@ -4028,6 +4393,7 @@
       evidence="se-kort"
       person="false"
       place="San Sebastián"
+      lemma="San Sebastian"
       variant="San Sebastian"
       key="san sebastián"
       geo="">San Sebastián, se kort.</c>
@@ -4039,6 +4405,7 @@
       evidence="place-type"
       person="false"
       place="Iberer"
+      lemma="Iberer"
       variant="Iberer"
       key="iberer"
       geo="">fællesbetegnelse for den oprindelige befolkning på den Iberiske Halvø, sandsynligvis indvandret i bronzealderen.</c>
@@ -4050,6 +4417,7 @@
       evidence="se-kort"
       person="false"
       place="Yrun"
+      lemma="Yrun"
       variant="Yrun"
       key="yrun"
       geo="">Irún ved grænsen til Frankrig, se kort.</c>
@@ -4061,6 +4429,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Behobie"
+      lemma="Behobie"
       variant="Behobie"
       key="behobie"
       geo="">lille by ca. 2 km fra Irún.</c>
@@ -4072,6 +4441,7 @@
       evidence="located+place-type"
       person="false"
       place="Niagara Falls"
+      lemma="Niagara"
       variant="Niagara"
       key="niagara falls"
       geo="">Niagara Falls, ca. 50 m høje vandfald i Nordamerika.</c>
@@ -4083,6 +4453,7 @@
       evidence="place-type"
       person="true"
       place="Niels Gade"
+      lemma="Niels Gade"
       variant="Niels Gade"
       key="niels gade"
       geo="">Niels Wilhelm Gade (1817-1890), komponist og dirigent, ven med H.C. Andersen.</c>
@@ -4094,6 +4465,7 @@
       evidence="place-type"
       person="true"
       place="dal Borgo"
+      lemma="dal Borgo"
       variant="dal Borgo"
       key="dal borgo"
       geo="">Olinto dal Borgo de Primo (1775-1856), dansk chargé d’affaires i Lissabon 1823-1828, fra 1830 i Madrid.</c>
@@ -4105,6 +4477,7 @@
       evidence="located+place-type"
       person="true"
       place="Professor Nielsen"
+      lemma="Professor Nielsen(s)"
       variant="Professor Nielsen"
       key="professor nielsen"
       geo="">Michael Nielsen (1776-1846), leder af Borgerdydskolen i København 1813-1844.</c>
@@ -4116,6 +4489,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Bordeaux"
+      lemma="Bordeaux"
       variant="Bordeaux"
       key="bordeaux"
       geo="">by i det sydvestlige Frankrig ved Biscayabugten ca. 200 km fra grænsen til Spanien.</c>
@@ -4127,6 +4501,7 @@
       evidence="located+place-type"
       person="false"
       place="Bayonne"
+      lemma="Bajonne"
       variant="Bajonne"
       key="bayonne"
       geo="">Bayonne, by ved Golfe de Gascogne ca. 25 km fra grænsen til Spanien.</c>
@@ -4138,6 +4513,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Biarrits"
+      lemma="Biarrits"
       variant="Biarrits"
       key="biarrits"
       geo="">kystby sydvest for Bayonne.</c>
@@ -4149,6 +4525,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Irun"
+      lemma="Irun"
       variant="Irun"
       key="irun"
       geo="">første by efter grænsen på banestrækningen mod San Sebastian.</c>
@@ -4160,6 +4537,7 @@
       evidence="located"
       person="true"
       place="Folkedigtninger"
+      lemma="Folkedigtninger"
       variant="Folkedigtninger"
       key="folkedigtninger"
       geo="">den franske kulturhistoriker professor Francisque Michel (1809-1887) havde i Bordeaux den 21. april 1866 foræret H.C. Andersen »nogle af sine Skrifter« (Dagbøger VII s. 89), et af disse omtaler han senere i Mit Livs Eventyr, 1855-1867, som den »franske Gengivelse af de baskiske Folkesange« (MLE II, s. 312); formuleringen peger på Romancero du pays basque fra 1859 med prosagengivelser af ballader, som H.C. Andersen ejede.</c>
@@ -4171,6 +4549,7 @@
       evidence="place-type"
       person="false"
       place="Burgos’ mægtige Kathedral"
+      lemma="Burgos’ mægtige Kathedral"
       variant="Burgos’ mægtige Kathedral"
       key="burgos mægtige kathedral"
       geo="">Burgos i det centrale Nordspanien rummer landets tredjestørste gotiske katedral, opført 1221-1731.</c>
@@ -4182,6 +4561,7 @@
       evidence="in-register+located+place-type"
       person="false"
       place="Terracina"
+      lemma="Terracina"
       variant="Terracina"
       key="terracina"
       geo="geo-3165762">italiensk kystby syd for Napoli.</c>
@@ -4193,6 +4573,7 @@
       evidence="located+place-type"
       person="false"
       place="Madrid"
+      lemma="Madrid"
       variant="Madrid"
       key="madrid"
       geo="">Spaniens hovedstad beliggende ca. 215 km syd for Burgos i det centrale højland.</c>
@@ -4204,6 +4585,7 @@
       evidence="located+place-type"
       person="false"
       place="de revolutionaire Bevægelser"
+      lemma="de revolutionaire Bevægelser"
       variant="de revolutionaire Bevægelser"
       key="de revolutionaire bevægelser"
       geo="">den borgerlige revolution i Spanien 1868-1874 førte til udråbelse af republikken og dronning Isabellas afgang, men endte med et statskup 1874.</c>
@@ -4215,6 +4597,7 @@
       evidence="place-type"
       person="false"
       place="Talavera de la Reina"
+      lemma="Talavera de la Reina"
       variant="Talavera de la Reina"
       key="talavera de la reina"
       geo="">120 km sydvest for Madrid ved Tajo; provinsen Toledos hovedby.</c>
@@ -4226,6 +4609,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Roms Campagne"
+      lemma="Roms Campagne"
       variant="Roms Campagne"
       key="roms campagne"
       geo="">sletten omkring Rom.</c>
@@ -4237,6 +4621,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Civita Vecchia"
+      lemma="Civita Vecchia"
       variant="Civita Vecchia"
       key="civita vecchia"
       geo="">kystby nordøst for Rom.</c>
@@ -4248,6 +4633,7 @@
       evidence="located+place-type"
       person="false"
       place="Lissabon"
+      lemma="Lissabon"
       variant="Lissabon"
       key="lissabon"
       geo="">Portugals hovedstad ved Atlanterhavskysten.</c>
@@ -4259,6 +4645,7 @@
       evidence="place-type"
       person="false"
       place="Coimbra"
+      lemma="Coimbra"
       variant="Coimbra"
       key="coimbra"
       geo="">200 km nord for Lissabon, hovedstad 1139-1256, hjemsted for Portugals ældste universitet, grundlagt 1290.</c>
@@ -4270,6 +4657,7 @@
       evidence="located+place-type"
       person="false"
       place="ruas dos flores"
+      lemma="ruas dos flores"
       variant="ruas dos flores"
       key="ruas dos flores"
       geo="">Rua das Flores, blomsternes gade i Porto tæt ved domkirken.</c>
@@ -4281,6 +4669,7 @@
       evidence="located+place-type"
       person="false"
       place="Sintra"
+      lemma="Cintra"
       variant="Cintra"
       key="sintra"
       geo="">Sintra, gammel kongeby 32 km nordvest for Lissabon.</c>
@@ -4292,6 +4681,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="det gamle Slot"
+      lemma="det gamle Slot"
       variant="det gamle Slot"
       key="det gamle slot"
       geo="">kongeslottet Paço Real, nu kaldt Palácio Nacional de Sintra, bygget af João 1. i slutningen af 1300-tallet, tilbygninger i maurisk stil fra begyndelsen af 1500-tallet, residens til 1880’erne.</c>
@@ -4303,6 +4693,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Castelo de Palmela"
+      lemma="Palmella"
       variant="Palmella"
       key="castelo de palmela"
       geo="">Castelo de Palmela, beliggende på en klippe højt over bjerglandsbyen Palmela i Serra da Arrábida; se kort. Fæstningen, som går tilbage til maurertiden, blev erobret af portugiserne i 1100-taller, ombygget til kloster i 1423 under João 1.</c>
@@ -4314,6 +4705,7 @@
       evidence="located+place-type"
       person="false"
       place="Serra da Arrábida"
+      lemma="St. Luis og Monte Arrabida"
       variant="St. Luis og Monte Arrabida"
       key="serra da arrábida"
       geo="">Serra da Arrábida, kæde af kalkstensbjerge langs kysten mellem Sesimbra og Setúbal.</c>
@@ -4325,6 +4717,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Verdenshav"
+      lemma="Verdenshav"
       variant="Verdenshav"
       key="verdenshav"
       geo="">Atlanterhavet.</c>
@@ -4336,6 +4729,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Slaget ved Waterloo"
+      lemma="Slaget ved Waterloo"
       variant="Slaget ved Waterloo"
       key="slaget ved waterloo"
       geo="">by 15 km syd for Bruxelles, hvor Napoleon led sit afgørende nederlag 18. juni 1815.</c>
@@ -4347,6 +4741,7 @@
       evidence="place-type"
       person="false"
       place="antediluviansk"
+      lemma="antediluviansk"
       variant="antediluviansk"
       key="antediluviansk"
       geo="">fra før syndfloden, ældgamle.</c>
@@ -4358,6 +4753,7 @@
       evidence="located+place-type"
       person="false"
       place="Genova"
+      lemma="Genua"
       variant="Genua"
       key="genova"
       geo="">Genova, italiensk havneby ved Det Liguriske Hav.</c>
@@ -4369,6 +4765,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Edinburgh"
+      lemma="Edinburgh"
       variant="Edinburgh"
       key="edinburgh"
       geo="">hovedstaden i Skotland.</c>
@@ -4380,6 +4777,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="Goa"
+      lemma="Goa"
       variant="Goa"
       key="goa"
       geo="">førende handelsby på Malabarkysten, nu kun ruinby.</c>
@@ -4391,6 +4789,7 @@
       evidence="located+place-type"
       person="false"
       place="Macao"
+      lemma="Macao"
       variant="Macao"
       key="macao"
       geo="">portugisisk koloni på Kinas sydkyst 60 km vest for Hongkong.</c>
@@ -4402,6 +4801,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Setubal"
+      lemma="Setubal"
       variant="Setubal"
       key="setubal"
       geo="">på engelsk St. Ubes eller St. Ybes; en af landets ældste byer; se kort.</c>
@@ -4413,6 +4813,7 @@
       evidence="place-type"
       person="false"
       place="Ana Carlota Xavier Vidal"
+      lemma="Frøken Vidal"
       variant="Frøken Vidal"
       key="ana carlota xavier vidal"
       geo="">Ana Carlota Xavier Vidal, datter af Manuel Claude Vidal, portugisisk konsul i Helsingør 1824-1840; hun blev gift med Castilho i 1840 og døde i 1871.</c>
@@ -4424,6 +4825,7 @@
       evidence="se-kort"
       person="false"
       place="Oporto"
+      lemma="Oporto"
       variant="Oporto"
       key="oporto"
       geo="">se kort.</c>
@@ -4435,6 +4837,7 @@
       evidence="place-type"
       person="false"
       place="de sidste tre og tredive Aars Historie"
+      lemma="de sidste tre og tredive Aars Historie"
       variant="de sidste tre og tredive Aars Historie"
       key="de sidste tre og tredive aars historie"
       geo="">Portugals historie i begyndelsen af 1800-tallet er kompliceret. Napoleons herredømme blev i tiden efter 1807 afløst af et engelsk, men franskmændene blev først endeligt fordrevet i 1814. Ved Wienerkongressen i 1815 blev Portugal formelt selvstændigt, men den engelske indflydelse fortsatte. I 1820 gjorde portugiserne oprør mod englænderne, og den i Brasilien eksilerede João 6. blev genindsat i 1821, men først efter at have underskrevet en ny borgerlig (liberal) forfatning (Septemberforfatningen af 1822). Underskrivelsen gav anledning til at Brasilien rev sig løs i oktober 1822 og udnævnte Joãos søn Dom Pedro (1798-1834) til kejser (1822-1831). Da João døde i 1826 gav Dom Pedro Portugal en ny forfatning, Carta de lei, og overgav magten til sin syvårige datter Maria 2. da Gloria, som han forlovede med broderen Dom Miguel (1802-1866), der tidligere havde forsøgt at afsætte João 6. og var blevet landsforvist. Miguel, der var tilhænger af absolutismen, ophævede forfatningen og lod sig udråbe til konge i 1828, men blev endeligt fordrevet i 1834 og Carta de lei blev genindført. Samme år døde Dom Pedro og Maria overtog styret. I de følgende år skiftes tilhængere af henholdsvis Septemberforfatningen og Carta de lei til at have magten. Da H.C. Andersen besøgte Portugal var den politiske situation fortsat kompliceret med hyppigt skiftende regeringer.</c>
@@ -4446,6 +4849,7 @@
       evidence="se-kort"
       person="false"
       place="Santarem"
+      lemma="Santarem"
       variant="Santarem"
       key="santarem"
       geo="">se kort.</c>
@@ -4457,6 +4861,7 @@
       evidence="se-kort"
       person="false"
       place="Monte Arrabida"
+      lemma="Monte Arrabida"
       variant="Monte Arrabida"
       key="monte arrabida"
       geo="">se kort.</c>
@@ -4468,6 +4873,7 @@
       evidence="head-noun+located+place-type"
       person="false"
       place="det gamle Belem"
+      lemma="det gamle Belem"
       variant="det gamle Belem"
       key="det gamle belem"
       geo="">forstad til Lissabon; der tænkes antagelig på Torre de Belém, Bethlehemstårnet, et 35 m højt, rigt ornamenteret fort fra 1515-1521, beliggende midt i Tejo-floden.</c>
@@ -4479,6 +4885,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Castelo de Palmela"
+      lemma="Palmella"
       variant="Palmella"
       key="castelo de palmela"
       geo="">Castelo de Palmela, beliggende på en klippe højt over bjerglandsbyen Palmela i Serra da Arrábida; se kort. Fæstningen, som går tilbage til maurertiden, blev erobret af portugiserne i 1100-taller, ombygget til kloster i 1423 under João 1.</c>
@@ -4490,6 +4897,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="et Akropolis"
+      lemma="et Akropolis"
       variant="et Akropolis"
       key="et akropolis"
       geo="">borg i de oldgræske byer, ofte placeret på et højdedrag.</c>
@@ -4501,6 +4909,7 @@
       evidence="se-kort"
       person="false"
       place="St. Luis"
+      lemma="St. Luis"
       variant="St. Luis"
       key="st luis"
       geo="">se kort.</c>
@@ -4512,6 +4921,7 @@
       evidence="se-kort"
       person="false"
       place="Sadofloden"
+      lemma="Adofloden"
       variant="Adofloden"
       key="sadofloden"
       geo="">Sadofloden; se kort.</c>
@@ -4523,6 +4933,7 @@
       evidence="place-type"
       person="false"
       place="Igreja de Jesus"
+      lemma="Jesuskirken"
       variant="Jesuskirken"
       key="igreja de jesus"
       geo="">Igreja de Jesus, gotisk kirke, tegnet af Diego Boita i 1494.</c>
@@ -4534,6 +4945,7 @@
       evidence="located"
       person="false"
       place="Arenz"
+      lemma="Arenz"
       variant="Arenz"
       key="arenz"
       geo="">Henr. Ahrenz var søn af en købmand i Hamburg, 1839 gift med en kusine til brødrene O’Neill.</c>
@@ -4545,6 +4957,7 @@
       evidence="located+place-type"
       person="false"
       place="Pompeji"
+      lemma="Pompeji"
       variant="Pompeji"
       key="pompeji"
       geo="">antik romersk by, begravet ved Vesuvs udbrud i 79 e.Kr.</c>
@@ -4556,6 +4969,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Tróia"
+      lemma="Troja"
       variant="Troja"
       key="tróia"
       geo="">Tróia, den fønikiske, senere romerske by Cetobriga, se kort.</c>
@@ -4567,6 +4981,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Castel"
+      lemma="Castel"
       variant="Castel"
       key="castel"
       geo="">(mindre) fæstning, skanse.</c>
@@ -4578,6 +4993,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Aveiro"
+      lemma="Aveiro"
       variant="Aveiro"
       key="aveiro"
       geo="">se kort; romernes Talabriga, gammelt bispesæde og vigtig havn med salteksport frem til 1575, da havnen sandede til. På H.C. Andersens tid var byen hensygnende. Udflugten fandt sted den 20.21. juli.</c>
@@ -4589,6 +5005,7 @@
       evidence="located+place-type"
       person="false"
       place="José"
+      lemma="José"
       variant="José"
       key="josé"
       geo="">levede som rentier på en smuk ejendom i en lille forstad til Sintra.</c>
@@ -4600,6 +5017,7 @@
       evidence="se-kort"
       person="false"
       place="Salvaterra"
+      lemma="Salvaterra"
       variant="Salvaterra"
       key="salvaterra"
       geo="">se kort.</c>
@@ -4611,6 +5029,7 @@
       evidence="se-kort"
       person="false"
       place="Benavente"
+      lemma="Benavente"
       variant="Benavente"
       key="benavente"
       geo="">se kort.</c>
@@ -4622,6 +5041,7 @@
       evidence="se-kort"
       person="false"
       place="Estrella"
+      lemma="Estrella"
       variant="Estrella"
       key="estrella"
       geo="">se kort.</c>
@@ -4633,6 +5053,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Coimbra"
+      lemma="Coimbra"
       variant="Coimbra"
       key="coimbra"
       geo="">se kort; byen har rod i den romerske Aeminium, senere Conimbriga; universitetsby 1308 og i en senere periode hovedstad; se kort.</c>
@@ -4644,6 +5065,7 @@
       evidence="se-kort"
       person="false"
       place="Mondegoflod"
+      lemma="Mondegoflod"
       variant="Mondegoflod"
       key="mondegoflod"
       geo="">se kort.</c>
@@ -4655,6 +5077,7 @@
       evidence="se-kort"
       person="false"
       place="Vouga"
+      lemma="Vouga"
       variant="Vouga"
       key="vouga"
       geo="">se kort.</c>
@@ -4666,6 +5089,7 @@
       evidence="place-type"
       person="false"
       place="Vesterhavsguse"
+      lemma="Vesterhavsguse"
       variant="Vesterhavsguse"
       key="vesterhavsguse"
       geo="">kold og klam, tæt tåge, som kommer ind fra havet.</c>
@@ -4677,6 +5101,7 @@
       evidence="place-type"
       person="false"
       place="Santa Clara"
+      lemma="Santa Clara"
       variant="Santa Clara"
       key="santa clara"
       geo="">formodentlig 1600-talsklosteret Santa Clara-a-Nova, der blev bygget som erstatning for det ofte oversvømmede Santa Clara-a-Velha, bygget i 1300-tallet.</c>
@@ -4688,6 +5113,7 @@
       evidence="place-type"
       person="false"
       place="Palácio de Queluz"
+      lemma="en stor Park med Lystslot"
       variant="en stor Park med Lystslot"
       key="palácio de queluz"
       geo="">Palácio de Queluz, barokslot med tilhørende have i fransk stil fra midten af 1700-tallet, hvor Maria 1. boede efter formælingen med Pedro; nu statsligt museum.</c>
@@ -4699,6 +5125,7 @@
       evidence="place-type"
       person="false"
       place="storartet Bygning"
+      lemma="storartet Bygning"
       variant="storartet Bygning"
       key="storartet bygning"
       geo="">Ramalhão-paladset fra 1700-tallet.</c>
@@ -4710,6 +5137,7 @@
       evidence="se-kort"
       person="false"
       place="Santa Maria"
+      lemma="Santa Maria"
       variant="Santa Maria"
       key="santa maria"
       geo="">se kort.</c>
@@ -4721,6 +5149,7 @@
       evidence="place-type"
       person="false"
       place="Kong Fernandos Slot"
+      lemma="Kong Fernandos Slot"
       variant="Kong Fernandos Slot"
       key="kong fernandos slot"
       geo="">det nyopførte (sommer)slot Pena var Fernandos gave til dronning Maria 2. da Gloria.</c>
@@ -4732,6 +5161,7 @@
       evidence="in-register+head-noun+located+place-type"
       person="false"
       place="Bloksbjerg"
+      lemma="Brocken(s)"
       variant="Brocken"
       key="bloksbjerg"
       geo="place-000023">Bloksbjerg, bjergkæde i Harzen.</c>
@@ -4743,6 +5173,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Genfersøen"
+      lemma="Genfersøen(s)"
       variant="Genfersøen"
       key="genfersøen"
       geo="">Genève søen, Lac Léman.</c>
@@ -4754,6 +5185,7 @@
       evidence="place-type"
       person="true"
       place="Fredsslutningen under Abrantes"
+      lemma="Fredsslutningen under Abrantes"
       variant="Fredsslutningen under Abrantes"
       key="fredsslutningen under abrantes"
       geo="">Napoleons general Jean-Andoche Junot (1771-1813) erobrede den portugisiske by Abrantes i 1807 og angreb Lissabon derfra; han fik titlen hertug af Abrantes. Formålet var at afsætte Portugals kongehus og dele landet mellem England og Frankrig, men Junot led nederlag.</c>
@@ -4765,6 +5197,7 @@
       evidence="se-kort"
       person="false"
       place="Cap Finisterre"
+      lemma="Cap Finisterre"
       variant="Cap Finisterre"
       key="cap finisterre"
       geo="">se kort.</c>
@@ -4776,6 +5209,7 @@
       evidence="head-noun+place-type"
       person="false"
       place="Dijon"
+      lemma="Dijon"
       variant="Dijon"
       key="dijon"
       geo="">by i det sydøstlige Frankrig ca. 120 km fra grænsen til Schweiz.</c>
@@ -4787,6 +5221,7 @@
       evidence="se-kort+located+place-type"
       person="false"
       place="Le Locle"
+      lemma="Locle"
       variant="Locle"
       key="le locle"
       geo="">Le Locle, by i Jurabjergene lidt nordvest for Neuchâtel; se kort.</c>
@@ -4798,6 +5233,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Chaux de Fonds"
+      lemma="Chaux de Fonds"
       variant="Chaux de Fonds"
       key="chaux de fonds"
       geo="">La Chaux de Fonds i Jurabjergene lidt nordøst for Le Locle; se kort.</c>
@@ -4809,6 +5245,7 @@
       evidence="place-type"
       person="false"
       place="Saut-du-Doubs"
+      lemma="Doubfaldet"
       variant="Doubfaldet"
       key="saut-du-doubs"
       geo="">Saut-du-Doubs, Jura-massivets største vandfald i floden Doubs tæt på Le Locle.</c>
@@ -4820,6 +5257,7 @@
       evidence="se-kort"
       person="false"
       place="Lago Maggiore"
+      lemma="Lago magiore"
       variant="Lago magiore"
       key="lago maggiore"
       geo="geo-2659792">Lago Maggiore; se kort.</c>
@@ -4831,6 +5269,7 @@
       evidence="place-type"
       person="false"
       place="Mailands Domkirke"
+      lemma="Mailands Domkirke"
       variant="Mailands Domkirke"
       key="mailands domkirke"
       geo="">Milanos domkirke, påbegyndt 1386, udvidet 1577, afsluttet i 1800-tallet.</c>
@@ -4842,6 +5281,7 @@
       evidence="se-kort+place-type"
       person="false"
       place="Genua"
+      lemma="Genua"
       variant="Genua"
       key="genua"
       geo="">stor handels- og havneby, tidligere selvstændig republik, 1814-1861 del af kongeriget Sardinien; se kort; jf. Dagbøger I, s.191-197.</c>
@@ -4853,6 +5293,7 @@
       evidence="in-register+se-kort"
       person="false"
       place="Pisa"
+      lemma="Pisa"
       variant="Pisa"
       key="pisa"
       geo="geo-3170647">se kort.</c>
@@ -4864,6 +5305,7 @@
       evidence="se-kort"
       person="false"
       place="Carrara"
+      lemma="Carrara"
       variant="Carrara"
       key="carrara"
       geo="">se kort.</c>
@@ -4875,6 +5317,7 @@
       evidence="in-register+se-kort"
       person="false"
       place="Livorno"
+      lemma="Livorno"
       variant="Livorno"
       key="livorno"
       geo="geo-3174659">se kort.</c>
@@ -4886,6 +5329,7 @@
       evidence="se-kort"
       person="false"
       place="Firenze"
+      lemma="Florents"
       variant="Florents"
       key="firenze"
       geo="">Firenze; se kort.</c>
@@ -4897,6 +5341,7 @@
       evidence="in-register"
       person="false"
       place="Pantheon"
+      lemma="Pantheon"
       variant="Pantheon"
       key="pantheon"
       geo="geo-6619450">(af græsk pantheion) viet til alle guderne; antikt tempel på Marsmarken i Rom viet til alle guder og oprindelig tænkt som helligdom for kejser Augustus – egl. Gajus Julius Caesar Octavian – (63 f.Kr.-14). Det nuværende kompleks er rejst i 120’erne, men grundlæggelsen fandt allerede sted i 27 f.Kr. I 609 indviet til kirke for Jomfru Maria og martyrer.</c>
@@ -4908,6 +5353,7 @@
       evidence="in-register+se-kort"
       person="false"
       place="Tivoli"
+      lemma="Tivoli"
       variant="Tivoli"
       key="tivoli"
       geo="geo-3165624">se kort.</c>
@@ -4919,6 +5365,7 @@
       evidence="se-kort"
       person="false"
       place="Albanerbjergene"
+      lemma="Albanerbjergene"
       variant="Albanerbjergene"
       key="albanerbjergene"
       geo="">30 km sydøst for Rom; se kort.</c>
@@ -4930,6 +5377,7 @@
       evidence="place-type"
       person="false"
       place="Kongeborg"
+      lemma="Kongeborg"
       variant="Kongeborg"
       key="kongeborg"
       geo="">Kaiserburg fra 1200-tallet, tårn fra 1377, omgivet af en delvis bevaret voldgrav. Borgen ligger på en sandstenshøjderyg i udkanten af den gamle bydel (Altstadt).</c>
