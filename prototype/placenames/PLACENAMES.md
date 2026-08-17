@@ -376,6 +376,14 @@ python reprocess_index.py \
   --out out/2026-08-17_placenames-ALL.tsv
 ```
 
+Every run also writes an `.xlsx` sibling next to `--out` (bold header row,
+frozen header, an Excel table with filter/sort dropdowns, wrapped
+`explanation`/`references`/`work` columns, tuned column widths) — for
+handing the index to someone whose workflow is Excel, not `grep`. It needs
+`openpyxl` (`pip install -r requirements-llm.txt`); without it the run just
+prints a one-line skip notice and the `.tsv` is unaffected. Point it
+elsewhere with `--xlsx path.xlsx`, or turn it off with `--no-xlsx`.
+
 Against the full-edition index (1,671 high/medium comments):
 
 | | comments | rows |

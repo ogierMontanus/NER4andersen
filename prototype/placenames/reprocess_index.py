@@ -323,12 +323,74 @@ def write_tsv(rows: list[dict], path: str):
             fh.write("\t".join(r[c] for c in COLUMNS) + "\n")
 
 
+# Columns worth a wide/wrapped cell for a human reading the sheet, vs. short
+# codes that read better unwrapped.
+WRAP_COLUMNS = {"explanation", "references", "work", "lemma_andersen"}
+COLUMN_WIDTHS = {
+    "place": 26, "lemma_andersen": 26, "explanation": 70, "year": 7,
+    "years": 14, "volumes": 12, "work": 30, "page": 7, "occurrences": 8,
+    "references": 34, "confidence": 11, "evidence": 24, "geo_id": 12,
+}
+
+
+def write_xlsx(rows: list[dict], path: str) -> bool:
+    """Write the same rows as a formatted .xlsx. Returns False (no-op, with
+    a message) if openpyxl isn't installed, so the pipeline stays TSV-usable
+    without the extra dependency — same graceful-degradation pattern as the
+    optional rapidfuzz/anthropic imports elsewhere in this pipeline."""
+    try:
+        import openpyxl
+        from openpyxl.styles import Alignment, Font, PatternFill
+        from openpyxl.utils import get_column_letter
+        from openpyxl.worksheet.table import Table, TableStyleInfo
+    except ImportError:
+        print("xlsx export skipped: install openpyxl (pip install -r requirements-llm.txt)")
+        return False
+
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "placenames"
+
+    ws.append(COLUMNS)
+    header_fill = PatternFill("solid", fgColor="1F4E78")
+    for cell in ws[1]:
+        cell.font = Font(bold=True, color="FFFFFF")
+        cell.fill = header_fill
+        cell.alignment = Alignment(vertical="center")
+
+    for r in rows:
+        ws.append([r[c] for c in COLUMNS])
+
+    for i, col in enumerate(COLUMNS, start=1):
+        letter = get_column_letter(i)
+        ws.column_dimensions[letter].width = COLUMN_WIDTHS.get(col, 16)
+        if col in WRAP_COLUMNS:
+            for cell in ws[letter][1:]:
+                cell.alignment = Alignment(wrap_text=True, vertical="top")
+
+    last_row = len(rows) + 1
+    last_col = get_column_letter(len(COLUMNS))
+    ws.add_table(Table(
+        displayName="Placenames",
+        ref=f"A1:{last_col}{last_row}",
+        tableStyleInfo=TableStyleInfo(name="TableStyleMedium2", showRowStripes=True),
+    ))
+    ws.freeze_panes = "A2"
+    ws.row_dimensions[1].height = 20
+
+    wb.save(path)
+    return True
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__,
                                   formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--categorized", default="out/comments-ALL-categorized.xml")
     ap.add_argument("--register", default="/home/user/svNames/data/registers/places.xml")
     ap.add_argument("--out", default="out/2026-08-17_placenames-ALL.tsv")
+    ap.add_argument("--xlsx", default=None,
+                     help="path for the .xlsx sibling; default: --out with .xlsx extension")
+    ap.add_argument("--no-xlsx", action="store_true", help="skip the .xlsx export")
     args = ap.parse_args(argv)
 
     register = load_register(args.register)
@@ -356,6 +418,11 @@ def main(argv=None):
 
     write_tsv(rows, args.out)
     print(f"written: {args.out}")
+
+    if not args.no_xlsx:
+        xlsx_path = args.xlsx or re.sub(r"\.tsv$", "", args.out) + ".xlsx"
+        if write_xlsx(rows, xlsx_path):
+            print(f"written: {xlsx_path}")
     return 0
 
 

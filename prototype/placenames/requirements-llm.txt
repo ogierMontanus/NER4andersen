@@ -1,12 +1,21 @@
-# Optional — only needed for homonym_eval.py's extras.
-# Stage A (rule/NLP divergence estimate) is stdlib-only and always runs; these
-# packages only improve/extend it:
-#   rapidfuzz  — better fuzzy string matching for Stage A (falls back to the
-#                stdlib difflib if not installed; scores may differ slightly)
-#   anthropic  — enables Stage B (--llm), the haiku adjudication call
+# Required by reprocess_index.py:
+#   lxml       — parses out/comments-ALL-categorized.xml and the svNames
+#                place register; no fallback, install this one unconditionally
+lxml>=5.0
+#
+# Optional — everything else degrades gracefully if missing:
+#   openpyxl   — reprocess_index.py's .xlsx export (--no-xlsx to skip it
+#                without installing; TSV output is unaffected either way)
+#   rapidfuzz  — better fuzzy string matching for homonym_eval.py's Stage A
+#                (falls back to the stdlib difflib if not installed; scores
+#                may differ slightly)
+#   anthropic  — enables homonym_eval.py's Stage B (--llm), the haiku
+#                adjudication call
 #
 #   pip install -r requirements-llm.txt
+#   python reprocess_index.py                                  # writes .tsv + .xlsx
 #   export ANTHROPIC_API_KEY=sk-ant-...
 #   python homonym_eval.py out/placenames-ALL.tsv --llm
+openpyxl>=3.1
 rapidfuzz>=3.0
 anthropic>=0.69
