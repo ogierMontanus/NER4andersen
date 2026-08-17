@@ -331,6 +331,22 @@ class RegisterIndexTests(unittest.TestCase):
             self.assertEqual(smap["Skuespil"], {1: 10, 4: 13})
             self.assertEqual(vser[15], "Rejseskildringer")
 
+    def test_build_index_authority_folds_into_person_register(self):
+        import shutil
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            # place the register fixture under a properly-named volume file
+            shutil.copy(REGISTER,
+                        os.path.join(d, "Andersen 15 - Rejseskildringer II_w_notes.xml"))
+            auth = rix.build_index_authority(d)
+            self.assertIn(normalize("Abrahams, Nicolai Christian Levin"), auth)
+            # merging into a base person register only adds keys
+            persons = load_person_register(PERSONS)
+            before = len(persons)
+            for k, ids in auth.items():
+                persons.setdefault(k, set()).update(ids)
+            self.assertGreater(len(persons), before)
+
 
 if __name__ == "__main__":
     unittest.main()

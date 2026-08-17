@@ -91,9 +91,15 @@ def process_volume(path: str, register, persons, gold: set[str]) -> dict:
     }
 
 
-def build_report(data_dir: str) -> tuple[str, list[dict]]:
+def build_report(data_dir: str, index_authority: bool = True) -> tuple[str, list[dict]]:
     register = load_place_register(os.path.join(data_dir, "registers", "places.xml"))
     persons = load_person_register(os.path.join(data_dir, "registers", "persons.xml"))
+    base_keys = len(persons)
+    idx_added = 0
+    if index_authority:
+        for key, ids in rix.build_index_authority(data_dir).items():
+            persons.setdefault(key, set()).update(ids)
+        idx_added = len(persons) - base_keys
     gold_by_vol = gold_surfaces_by_vol(data_dir)
 
     vols = sorted(glob.glob(os.path.join(data_dir, "Andersen [0-9]* - *_w_notes*.xml")),
@@ -113,7 +119,9 @@ def build_report(data_dir: str) -> tuple[str, list[dict]]:
         "(no network / external authorities).",
         "",
         f"- place register keys: **{len(register)}**  ·  "
-        f"person register keys: **{len(persons)}**",
+        f"person register keys: **{len(persons)}**"
+        + (f" (persons.xml + **{idx_added}** from the sub-series Navneregister, "
+           "folded in by default)" if idx_added else ""),
         "",
         "| Vol | Title | Rows | NE | Place | linked | Person | linked | P-recall* |",
         "| ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",

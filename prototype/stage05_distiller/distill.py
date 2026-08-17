@@ -26,6 +26,7 @@ from classify import classify, NAMED_ENTITY_TYPES
 from reconcile import reconcile_place, reconcile_person, candidate_shortlist
 from reconcile_llm import llm_available, llm_link
 from external_authority import propose_external
+from register_index import build_index_authority
 
 DEFAULT_VOL = (
     "/home/user/svNames/data/"
@@ -37,7 +38,8 @@ DEFAULT_PERSONS = "/home/user/svNames/data/registers/persons.xml"
 
 def run(vol_path: str, out_path: str | None, register_path: str | None,
         persons_path: str | None = None, use_llm: bool = False,
-        use_external: bool = False, external_max: int = 25) -> int:
+        use_external: bool = False, external_max: int = 25,
+        index_authority: bool = True) -> int:
     vol = load_volume(vol_path)
     if not vol.rows:
         print(f"No comment rows found in {vol_path}", file=sys.stderr)
@@ -48,8 +50,17 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
         register = load_place_register(register_path)
 
     persons = None
+    idx_added = 0
     if persons_path and os.path.exists(persons_path):
         persons = load_person_register(persons_path)
+        # By default, fold the sub-series Navneregister name indexes into the
+        # person authority (corpus person linkage 50% -> 66%). The registers
+        # live alongside the volumes in the data dir.
+        if index_authority:
+            before = len(persons)
+            for key, ids in build_index_authority(os.path.dirname(vol_path)).items():
+                persons.setdefault(key, set()).update(ids)
+            idx_added = len(persons) - before
 
     # Known places that anchor classification = body placeName surfaces
     # (running text) plus the internal register's names.
@@ -167,13 +178,13 @@ def run(vol_path: str, out_path: str | None, register_path: str | None,
             json.dump(candidates, fh, ensure_ascii=False, indent=2)
 
     _report(vol, distilled, out_path, register, place_matches, llm_links, llm_on,
-            persons, person_matches, use_external, external)
+            persons, person_matches, use_external, external, idx_added)
     return 0
 
 
 def _report(vol, distilled, out_path, register, place_matches,
             llm_links=None, llm_on=False, persons=None, person_matches=None,
-            use_external=False, external=None):
+            use_external=False, external=None, idx_added=0):
     counts = Counter(d.etype for d in distilled)
     ne = sum(1 for d in distilled if d.is_named_entity)
 
@@ -244,9 +255,13 @@ def _report(vol, distilled, out_path, register, place_matches,
                        if any(e.etype == "person" for e in d.entities)]
         linked_p = len(person_matches or {})
         print("-" * 64)
-        print("Person reconciliation vs. svNames persons.xml register:")
-        print(f"   register person-name keys : {len(persons)}")
-        print(f"   person rows linked to gnd : {linked_p} / {len(person_rows)} "
+        src = ("persons.xml + sub-series Navneregister"
+               if idx_added else "persons.xml")
+        print(f"Person reconciliation vs. {src}:")
+        keys_note = (f"{len(persons)} (incl. +{idx_added} from Navneregister)"
+                     if idx_added else str(len(persons)))
+        print(f"   register person-name keys : {keys_note}")
+        print(f"   person rows linked        : {linked_p} / {len(person_rows)} "
               f"({100*linked_p/max(len(person_rows),1):.1f}%)")
         print("   (closes the persName gap — only 4/1,307 persName tags carry a "
               "ref in the source vol-14 text)")
@@ -283,10 +298,14 @@ def main(argv=None):
                          "entities (opt-in, bounded, offline-safe)")
     ap.add_argument("--external-max", type=int, default=25,
                     help="cap on external lookups per run (default 25)")
+    ap.add_argument("--no-index-authority", action="store_true",
+                    help="do NOT fold the sub-series Navneregister into the "
+                         "person authority (on by default)")
     args = ap.parse_args(argv)
     return run(args.volume, args.out or None, args.register or None,
                persons_path=args.persons or None, use_llm=args.llm,
-               use_external=args.external, external_max=args.external_max)
+               use_external=args.external, external_max=args.external_max,
+               index_authority=not args.no_index_authority)
 
 
 if __name__ == "__main__":

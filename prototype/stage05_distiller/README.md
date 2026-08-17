@@ -133,11 +133,13 @@ fetching and unit-tested with canned JSON, so CI never makes a network call.
 
 **All 18 volumes** (`corpus_eval.py`, snapshot in `eval/corpus_report.md`):
 
-- **30,553** comment rows · **24%** named-entity · **1,287** person mentions and
+- **30,553** comment rows · **24%** named-entity · **1,689** person mentions and
   **926** place mentions linked to the internal registers.
-- Person linkage is highest on the travelogues (vol 14 **84%**, vol 15 **78%**)
-  where the editorial apparatus is densest; place recall is 1.00 on vol 14 (the
-  only volume with injected `geo-*` placeName tags).
+- Person reconciliation folds the sub-series **Navneregister** indexes into the
+  person authority **by default** (see below): corpus person linkage **66%**
+  (vol 14 **88%**, vol 15 **82%**); place recall is 1.00 on vol 14 (the only
+  volume with injected `geo-*` placeName tags). Disable with
+  `distill.py --no-index-authority` / `build_report(index_authority=False)`.
 
 ```bash
 python3 corpus_eval.py --data /path/to/svNames/data --out eval/corpus_report.md
@@ -172,12 +174,13 @@ Coverage in the current corpus (`eval/navneregister.json`):
 | Rejseskildringer | 15 | 14–15 | 1,073 |
 | Selvbiografier | 18 | 16–18 | 1,828 |
 
-**Folding these indexes in as an extra person authority** (`corpus_eval.py
---index-lift`, snapshot `eval/index_lift.md`) lifts corpus person linkage from
-**50% → 66%** (+402 mentions). The biggest gains are exactly the genres whose own
-name index wasn't previously loaded — e.g. Skuespil II (vol 11) **10 → 89**,
-Blandinger **157 → 237** — confirming the per-sub-series indexes are the missing
-authority source.
+**These indexes are folded into the person authority by default** in both
+`distill.py` and `corpus_eval.py` (opt out with `--no-index-authority`). The lift
+over `persons.xml` alone is **50% → 66%** corpus person linkage (+402 mentions;
+`corpus_eval.py --index-lift`, snapshot `eval/index_lift.md`). The biggest gains
+are exactly the genres whose own name index wasn't previously loaded — e.g.
+Skuespil II (vol 11) **10 → 89**, Blandinger **157 → 237** — confirming the
+per-sub-series indexes are the missing authority source.
 
 **Only `Navneregister` (name) indexes** are parsed; the Eventyr/Digte
 "Register" / "Titelregister" are *title* indexes (out of scope). **Romaner**:
