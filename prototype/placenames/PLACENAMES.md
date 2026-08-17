@@ -328,6 +328,77 @@ many rows go to the LLM; `--threshold` adjusts the Stage-A cutoff (default
 
 ---
 
+## 4d. Stricter re-emission — `reprocess_index.py`
+
+`placename-index.xsl`'s step-3 merge only ever looks at the *definition* text
+when deciding whether a comment is a place; it never checks whether the
+comment's own lemma actually looks like one. That lets three kinds of noise
+into the index: a comment whose definition merely *mentions* a place in
+passing ("spillede paa Det Kgl. Teater" satisfies the `located` pattern —
+lower-case common noun + preposition + proper noun — without ever defining
+one), a person or title picked up because a place word occurs somewhere in
+its gloss, and an apparatus lemma that is really an index-citation ellipsis
+("Abydos … Sestos") rather than a name.
+
+`reprocess_index.py` re-derives the index from the **per-comment** step-2
+output (`out/comments-ALL-categorized.xml` — every comment individually
+tagged, before step-3's grouping erases which lemma came from which note)
+and admits a comment only if:
+
+* its evidence is not `located` alone — an incidental place-mention in the
+  explanation is not sufficient grounds for entry, only a defining
+  head-noun, an in-register match, or an explicit map cross-reference is;
+* its own lemma looks like a name — every word has to start uppercase,
+  except a short whitelist of foreign name-linking particles (`af`, `von`,
+  `de`, `la`, `di`, …). Old Danish orthography capitalises *every* noun, so
+  this can't tell "Kirke"-the-church from "Kirke"-the-witch, but it reliably
+  throws out clauses: verbs, adjectives, pronouns and adverbs stay
+  lower-case regardless of orthography, so a lemma carrying one is prose,
+  not a name.
+
+An ellipsis lemma is split on `…` and each side is re-run through the same
+check independently, so "Abydos … Sestos" (both genuine — "antikke græske
+byer på hhv. den asiatiske og den europæiske side af Dardanellerne") becomes
+two rows, while a side that fails (a scene description, not a place) is
+dropped without dropping the side that passes. **Tivoli** — the running
+example of a homonym merge — is split by hand into `Tivoli (København)` and
+`Tivoli (Italien)`, sorted by reading each of the 9 underlying comments in
+its own work/page context (Carstensen/1843 → Copenhagen; "26 km øst for Rom"
+/ the waterfall beside Albanerbjergene → the Roman town). Where step 2
+already extracted a corrected spelling from the definition's opening
+("Kalmar; se kort 1." for lemma "Calmar"), that stays the index headword —
+this was already load-bearing for volumes 4b/4c merge and is preserved as-is.
+
+```bash
+python reprocess_index.py \
+  --categorized out/comments-ALL-categorized.xml \
+  --register /home/user/svNames/data/registers/places.xml \
+  --out out/2026-08-17_placenames-ALL.tsv
+```
+
+Against the full-edition index (1,671 high/medium comments):
+
+| | comments | rows |
+| --- | ---: | ---: |
+| unfiltered (`placenames-ALL.tsv`) | 1 671 | 1 365 |
+| `located`-only evidence, dropped | −207 | |
+| lemma isn't a placename, dropped | −164 | |
+| ellipsis lemmas: both sides kept / one side / both dropped | 33 / 22 / 6 | |
+| Tivoli, split by hand | 9 → 2 rows | |
+| **stricter (`2026-08-17_placenames-ALL.tsv`)** | **1 326 admitted** | **1 041** |
+
+**Known trade-off.** This trades recall for precision on purpose: some real
+places only ever got `located` evidence because their type-word isn't in
+`$TYPES`/`$COMP` (a landmark building, "curia hostilia"; a cliff, "Lorelei";
+a mountain massif, "Olympen") and are dropped along with the actual noise.
+And capitalisation alone can't catch every non-place: a capitalised person
+or title with no lower-case word in it ("Cecrops", a mythological king)
+still gets through. Both are visible, on request, by diffing against
+`placenames-ALL.tsv` — nothing is silently discarded, everything dropped is
+still sitting in `comments-ALL-categorized.xml`.
+
+---
+
 ## 5. Coverage across the 18 volumes
 
 Run as-is, no per-volume tuning:
